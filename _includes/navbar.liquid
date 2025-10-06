@@ -1,0 +1,58 @@
+
+
+
+<nav class="sidebar">
+  <ul class="nav-level-1">
+    <!-- Word Section -->
+    <li>
+      <button class="nav-toggle {% if active == 'word' %}active expanded{% endif %}" data-section="word">
+        Word <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 {% if active == 'word' %}show{% endif %}">
+        <li><a href="#" class="{% if page.url == '/word/#/' %}active{% endif %}">Getting started with Word</a></li>
+        <li><a href="/word/pages-and-views/" class="{% if page.url == '/word/pages-and-views/' %}active{% endif %}">Pages and views</a></li>
+        <li><a href="/word/saving-and-save-as/" class="{% if page.url == '/word/saving-and-save-as/' %}active{% endif %}">Saving and Save As</a></li>
+        <li><a href="/word/selecting-text/" class="{% if page.url == '/word/selecting-text/' %}active{% endif %}">Selecting text</a></li>
+        <li><a href="/word/formatting-text/" class="{% if page.url == '/word/formatting-text/' %}active{% endif %}">Formatting text</a></li>
+        <li><a href="/word/lists-fixing-number-lists/" class="{% if page.url == '/word/lists-fixing-number-lists/' %}active{% endif %}">Lists: Fixing number lists</a></li>
+        <li><a href="/word/lists-soft-hard-returns/" class="{% if page.url == '/word/lists-soft-hard-returns/' %}active{% endif %}">Lists: Soft & hard returns</a></li>
+        <li><a href="/word/tables/" class="{% if page.url == '/word/tables/' %}active{% endif %}">Tables</a></li>
+        <li><a href="/word/keyboard-shortcuts/" class="{% if page.url == '/word/keyboard-shortcuts/' %}active{% endif %}">Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+
+    <!-- Excel Section -->
+    <li>
+      <button class="nav-toggle {% if active == 'excel' %}active expanded{% endif %}" data-section="excel">
+        Excel <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 {% if active == 'excel' %}show{% endif %}">
+        <li><a href="/excel/#" class="{% if page.url == '/excel/#' %}active{% endif %}">Getting started with Excel</a></li>
+        <li><a href="/excel/selecting-cells-and-values" class="{% if page.url == '/excel/selecting-cells-and-values' %}active{% endif %}">Selecting cells and values</a></li>
+        <li><a href="/excel/understanding-formulas" class="{% if page.url == '/excel/understanding-formulas' %}active{% endif %}">Understanding formulas</a></li>
+        <li><a href="/excel/conditional-formatting" class="{% if page.url == '/excel/conditional-formatting' %}active{% endif %}">Conditional formatting</a></li>
+        <li><a href="/excel/data-validation" class="{% if page.url == '/excel/data-validation' %}active{% endif %}">Data validation</a></li>
+        <li><a href="#" class="{% if page.url == '/excel/#/' %}active{% endif %}">Glossary</a></li>
+      </ul>
+    </li>
+
+    <!-- PowerPoint Section -->
+    <li>
+      <button class="nav-toggle {% if active == 'powerpoint' %}active expanded{% endif %}" data-section="powerpoint">
+        PowerPoint <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 {% if active == 'powerpoint' %}show{% endif %}">
+        <li><a href="/powerpoint/#" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Getting started with PowerPoint</a></li>
+        <li><a href="/powerpoint/editing-slides" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Editing slides</a></li>
+        <li><a href="/powerpoint/animations" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Animations</a></li>
+        <li><a href="/powerpoint/fade-list-effect" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Fade list effect</a></li>
+        <li><a href="/powerpoint/presenter-view" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Presenter view</a></li>
+        <li><a href="#" class="{% if page.url == '/powerpoint/#/' %}active{% endif %}">Glossary</a></li>
+      </ul>
+    </li>
+
+    <!-- Glossary Section -->
+      <li><a href="/glossary/" class="{% if active == 'glossary' %}active{% endif %}">Glossary</a></li>
+    
+  </ul>
+</nav>

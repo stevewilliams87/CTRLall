@@ -1,0 +1,517 @@
+/* ─── Top Navigation Layout ───────────────────── */
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ─── Navigation Links ────────────────────────── */
+.topnav a,
+.dropbtn {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.topnav a:hover,
+.dropbtn:hover {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
+
+.topnav a.active {
+  color: #452c50;
+  font-weight: 600;
+}
+
+/* ─── Topbar Right Container ──────────────────── */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+/* ─── Dropdown Links ──────────────────────────── */
+#share-dropdown {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+}
+
+#share-dropdown a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* or whatever size fits your topbar */
+  height: 24px;
+}
+
+#share-dropdown a:hover {
+  background-color: #eaeaea;
+  color: #2c3e50;
+}
+
+#share-dropdown a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+#share-dropdown a {
+  background: red;
+}
+
+#share-dropdown img {
+  margin-top: -4px;
+}
+
+/* ─── glossary ──────────────── */
+:target {
+  scroll-margin-top: 70px; /* or whatever height your top bar is */
+}
+
+
+/* ─── Dropdown Fade-In Animation ──────────────── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#share-dropdown a {
+  all: unset;
+  display: block;
+  padding: 10px 16px;
+  color: c;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-decoration: none !important;
+
+}
+
+
+/* Tooltip for text with image */
+.text-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.text-tooltip-img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 300px;
+  z-index: 10;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.text-tooltip:hover .text-tooltip-img {
+  display: block;
+}
+
+.text-tooltip-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Base Reset and Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1rem;
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  color: #452c50;
+}
+
+h2 {
+  margin: 2rem 0 0.25rem 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+h3 {
+  margin: 1rem 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+h4 {
+  margin: 1rem 0 0.25rem 0;
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+p, li, a {
+  font-weight: 400;
+  text-decoration: none !important;
+}
+
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img.border {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #452c50;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Section Light */
+.section-light {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.section-light table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.section-light th:first-child,
+.section-light td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.section-light th {
+  background-color: #f5f5f5;
+}
+
+.section-light table.word-tables-cursor-icons td:nth-child(3) {
+  text-align: center !important;
+}
+
+.section-light table.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.section-light table.tooltip-gif {
+  display: none;
+  position: absolute;
+  top: 100%; /* below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.tooltip-wrapper:hover .tooltip-gif {
+  display: block;
+}
+
+
+.section-light table.tooltip-row:hover .tooltip-gif {
+  display: block;
+}
+
+#gif-tooltip {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 5px;
+  max-width: 400px;
+  transition: opacity 0.2s ease;
+}
+
+#gif-tooltip img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Table row hover highlight for special tables only */
+.table-row-hover tbody tr:hover {
+  background-color: #f0f0f0;
+  cursor: default;
+}
+
+/* Centered Intro Block */
+.center-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.intro-block {
+  background-color: #8d8e8f;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Topbar */
+.topbar {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.logo a:hover {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
+
+
+/* Sidebar Layout */
+.layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  padding: 60px 1rem 1rem 1rem;
+  border-right: 1px solid #ccc;
+  width: 300px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.content {
+  margin-left: 300px;
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Navigation */
+.nav-level-1 {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-level-1 a {
+  font-weight: 400;
+}
+
+.nav-level-1 > li {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.nav-level-2 {
+  list-style: none;
+  padding-left: 1;
+  display: none;
+}
+
+.nav-level-2.show {
+  display: block;
+}
+
+.nav-level-2 li {
+  margin: 0.25rem 0;
+}
+
+.nav-level-2 a {
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav-level-2 a:hover {
+  color: #452c50;
+  text-decoration: none;
+}
+
+.nav-level-2 a.active {
+  color: #452c50;
+  font-weight: 600;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle:hover {
+  color: #452c50;
+  text-decoration: none;
+}
+
+.nav-toggle.expanded .arrow {
+  transform: rotate(135deg);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+  margin-left: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #2c3e50;
+  color: #d0d0d0;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1001;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 4px 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
