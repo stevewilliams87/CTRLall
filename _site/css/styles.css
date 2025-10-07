@@ -38,9 +38,16 @@
 /* ─── Dropdown Links ──────────────────────────── */
 #share-dropdown {
   display: flex;
+  justify-content: flex-end; /* 🔥 aligns icons to the right */
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
-  padding: 8px;
+  padding: 12px 16px;
+  margin-right: 20px; /* 🔥 pushes it away from the edge */
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+  max-width: 100%;
 }
 
 #share-dropdown a {
@@ -286,7 +293,7 @@ table td {
   background-color: #f5f5f5;
 }
 
-.section-light table.word-tables-cursor-icons td:nth-child(3) {
+.section-light table.shortcut-tables-cursor-icons td:nth-child(3) {
   text-align: center !important;
 }
 
@@ -426,14 +433,13 @@ table td {
 }
 
 .nav-level-2 {
-  list-style: none;
-  padding-left: 1;
   display: none;
 }
 
 .nav-level-2.show {
   display: block;
 }
+
 
 .nav-level-2 li {
   margin: 0.25rem 0;

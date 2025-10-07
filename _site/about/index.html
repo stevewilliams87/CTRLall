@@ -29,18 +29,28 @@
 
 
 <div class="layout">
-  
-
-
-<nav class="sidebar">
+  <nav class="sidebar">
   <ul class="nav-level-1">
+
+    <!-- Content Control Section -->
+    <li>
+      <button class="nav-toggle " data-section="content-control">
+        Content control <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 ">
+        <li><a href="/content-control/moving-content/" class="">Moving content</a></li>
+        <li><a href="/content-control/copying-content/" class="">Copying content</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+
     <!-- Word Section -->
     <li>
       <button class="nav-toggle " data-section="word">
         Word <span class="arrow"></span>
       </button>
       <ul class="nav-level-2 ">
-        <li><a href="#" class="">Getting started with Word</a></li>
+        <li><a href="/word/#/" class="">Getting started with Word</a></li>
         <li><a href="/word/pages-and-views/" class="">Pages and views</a></li>
         <li><a href="/word/saving-and-save-as/" class="">Saving and Save As</a></li>
         <li><a href="/word/selecting-text/" class="">Selecting text</a></li>
@@ -48,7 +58,8 @@
         <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
         <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
         <li><a href="/word/tables/" class="">Tables</a></li>
-        <li><a href="/word/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
+        <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#word keyboard shortcuts" class="">Word Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
@@ -63,7 +74,7 @@
         <li><a href="/excel/understanding-formulas" class="">Understanding formulas</a></li>
         <li><a href="/excel/conditional-formatting" class="">Conditional formatting</a></li>
         <li><a href="/excel/data-validation" class="">Data validation</a></li>
-        <li><a href="#" class="">Glossary</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#excel keyboard shortcuts" class="">Excel Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
@@ -78,13 +89,26 @@
         <li><a href="/powerpoint/animations" class="">Animations</a></li>
         <li><a href="/powerpoint/fade-list-effect" class="">Fade list effect</a></li>
         <li><a href="/powerpoint/presenter-view" class="">Presenter view</a></li>
-        <li><a href="#" class="">Glossary</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#powerpoint keyboard shortcuts" class="">PowerPoint Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+
+    <!-- Outlook Section -->
+    <li>
+      <button class="nav-toggle " data-section="outlook">
+        Outlook <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 ">
+        <li><a href="/outlook/#" class="">Outlook signatures</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#outlook keyboard shortcuts" class="">Outlook Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
     <!-- Glossary Section -->
-      <li><a href="/glossary/" class="">Glossary</a></li>
-    
+    <li>
+      <a href="/glossary/" class="">Glossary</a>
+    </li>
+
   </ul>
 </nav>
 
@@ -120,10 +144,6 @@
   </main>
 </div>
 
-<footer class="site-footer">
-  © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
-</footer>
-
 <!-- Floating GIF tooltip container -->
 <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
   <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
@@ -137,19 +157,26 @@
   <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">
       📧Email this page
   </a>
+  <a id="linkedin-share" target="_blank">
+    <img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="height: 40px; width: auto; display: block;">
+  </a>
   <a id="facebook-share" target="_blank">
-    <img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 50px; width: auto; display: block;">
+    <img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 40px; width: auto; display: block;">
   </a>
   <a id="reddit-share" target="_blank">
-    <img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 50px; width: auto; display: block;">
+    <img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 40px; width: auto; display: block;">
   </a>
   <a id="bluesky-share" target="_blank">
-    <img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 50px; width: auto; display: block;">
+    <img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 40px; width: auto; display: block;">
   </a>
   <a id="threads-share" target="_blank">
-    <img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 50px; width: auto; display: block;">
+    <img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 40px; width: auto; display: block;">
   </a>
 </div>
+
+<footer class="site-footer">
+  © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+</footer>
 
 
 <script src="/js/main.js"></script>

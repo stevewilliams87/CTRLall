@@ -2,19 +2,20 @@ module.exports = function(eleventyConfig) {
   // ─── Passthrough Copies ─────────────────────
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy({ "assets/images/topbar": "assets/images/topbar" });
 
   // ─── Custom Collections ─────────────────────
-  eleventyConfig.addCollection("glossary", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("./src/word/glossary/*.md").sort((a, b) =>
+  eleventyConfig.addCollection("glossary", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/word/glossary/*.md").sort((a, b) =>
       a.data.title.localeCompare(b.data.title)
-    );
-  });
+    )
+  );
 
   // ─── Directory Structure ────────────────────
   return {
     dir: {
-      input: ".",       
+      input: "src",
+      includes: "../_includes",
       output: "_site"
     },
     pathPrefix: "/",

@@ -1,15 +1,25 @@
-
-
-
 <nav class="sidebar">
   <ul class="nav-level-1">
+
+    <!-- Content Control Section -->
+    <li>
+      <button class="nav-toggle {% if active == 'content-control' %}active expanded{% endif %}" data-section="content-control">
+        Content control <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 {% if active == 'content-control' %}show{% endif %}">
+        <li><a href="/content-control/moving-content/" class="{% if page.url == '/content-control/moving-content/' %}active{% endif %}">Moving content</a></li>
+        <li><a href="/content-control/copying-content/" class="{% if page.url == '/content-control/copying-content/' %}active{% endif %}">Copying content</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/" class="{% if page.url == '/content-control/keyboard-shortcuts/' %}active{% endif %}">Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+
     <!-- Word Section -->
     <li>
       <button class="nav-toggle {% if active == 'word' %}active expanded{% endif %}" data-section="word">
         Word <span class="arrow"></span>
       </button>
       <ul class="nav-level-2 {% if active == 'word' %}show{% endif %}">
-        <li><a href="#" class="{% if page.url == '/word/#/' %}active{% endif %}">Getting started with Word</a></li>
+        <li><a href="/word/#/" class="{% if page.url == '/word/#/' %}active{% endif %}">Getting started with Word</a></li>
         <li><a href="/word/pages-and-views/" class="{% if page.url == '/word/pages-and-views/' %}active{% endif %}">Pages and views</a></li>
         <li><a href="/word/saving-and-save-as/" class="{% if page.url == '/word/saving-and-save-as/' %}active{% endif %}">Saving and Save As</a></li>
         <li><a href="/word/selecting-text/" class="{% if page.url == '/word/selecting-text/' %}active{% endif %}">Selecting text</a></li>
@@ -17,7 +27,8 @@
         <li><a href="/word/lists-fixing-number-lists/" class="{% if page.url == '/word/lists-fixing-number-lists/' %}active{% endif %}">Lists: Fixing number lists</a></li>
         <li><a href="/word/lists-soft-hard-returns/" class="{% if page.url == '/word/lists-soft-hard-returns/' %}active{% endif %}">Lists: Soft & hard returns</a></li>
         <li><a href="/word/tables/" class="{% if page.url == '/word/tables/' %}active{% endif %}">Tables</a></li>
-        <li><a href="/word/keyboard-shortcuts/" class="{% if page.url == '/word/keyboard-shortcuts/' %}active{% endif %}">Keyboard Shortcuts</a></li>
+        <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="{% if page.url == '/word/tables-fixing-tables-extending-offscreen/' %}active{% endif %}">Tables: Fixing tables extending offscreen</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#word keyboard shortcuts" class="{% if page.url == '/content-control/keyboard-shortcuts/#word keyboard shortcuts' %}active{% endif %}">Word Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
@@ -32,7 +43,7 @@
         <li><a href="/excel/understanding-formulas" class="{% if page.url == '/excel/understanding-formulas' %}active{% endif %}">Understanding formulas</a></li>
         <li><a href="/excel/conditional-formatting" class="{% if page.url == '/excel/conditional-formatting' %}active{% endif %}">Conditional formatting</a></li>
         <li><a href="/excel/data-validation" class="{% if page.url == '/excel/data-validation' %}active{% endif %}">Data validation</a></li>
-        <li><a href="#" class="{% if page.url == '/excel/#/' %}active{% endif %}">Glossary</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#excel keyboard shortcuts" class="{% if page.url == '/content-control/keyboard-shortcuts/#excel keyboard shortcuts' %}active{% endif %}">Excel Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
@@ -43,16 +54,29 @@
       </button>
       <ul class="nav-level-2 {% if active == 'powerpoint' %}show{% endif %}">
         <li><a href="/powerpoint/#" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Getting started with PowerPoint</a></li>
-        <li><a href="/powerpoint/editing-slides" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Editing slides</a></li>
-        <li><a href="/powerpoint/animations" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Animations</a></li>
-        <li><a href="/powerpoint/fade-list-effect" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Fade list effect</a></li>
-        <li><a href="/powerpoint/presenter-view" class="{% if page.url == '/powerpoint/#' %}active{% endif %}">Presenter view</a></li>
-        <li><a href="#" class="{% if page.url == '/powerpoint/#/' %}active{% endif %}">Glossary</a></li>
+        <li><a href="/powerpoint/editing-slides" class="{% if page.url == '/powerpoint/editing-slides' %}active{% endif %}">Editing slides</a></li>
+        <li><a href="/powerpoint/animations" class="{% if page.url == '/powerpoint/animations' %}active{% endif %}">Animations</a></li>
+        <li><a href="/powerpoint/fade-list-effect" class="{% if page.url == '/powerpoint/fade-list-effect' %}active{% endif %}">Fade list effect</a></li>
+        <li><a href="/powerpoint/presenter-view" class="{% if page.url == '/powerpoint/presenter-view' %}active{% endif %}">Presenter view</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#powerpoint keyboard shortcuts" class="{% if page.url == '/content-control/keyboard-shortcuts/#powerpoint keyboard shortcuts' %}active{% endif %}">PowerPoint Keyboard Shortcuts</a></li>
+      </ul>
+    </li>
+
+    <!-- Outlook Section -->
+    <li>
+      <button class="nav-toggle {% if active == 'outlook' %}active expanded{% endif %}" data-section="outlook">
+        Outlook <span class="arrow"></span>
+      </button>
+      <ul class="nav-level-2 {% if active == 'outlook' %}show{% endif %}">
+        <li><a href="/outlook/#" class="{% if page.url == '/outlook/#/' %}active{% endif %}">Outlook signatures</a></li>
+        <li><a href="/content-control/keyboard-shortcuts/#outlook keyboard shortcuts" class="{% if page.url == '/content-control/keyboard-shortcuts/#outlook keyboard shortcuts' %}active{% endif %}">Outlook Keyboard Shortcuts</a></li>
       </ul>
     </li>
 
     <!-- Glossary Section -->
-      <li><a href="/glossary/" class="{% if active == 'glossary' %}active{% endif %}">Glossary</a></li>
-    
+    <li>
+      <a href="/glossary/" class="{% if active == 'glossary' %}active{% endif %}">Glossary</a>
+    </li>
+
   </ul>
 </nav>

@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("✅ Steve's unified main.js is running");
-
   // ─── Share Menu Actions ─────────────────────
   function copyPageLink() {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -19,11 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageUrl = encodeURIComponent(window.location.href);
   const pageTitle = encodeURIComponent(document.title);
 
+  const linkedin = document.getElementById("linkedin-share");
   const facebook = document.getElementById("facebook-share");
   const reddit = document.getElementById("reddit-share");
   const bluesky = document.getElementById("bluesky-share");
   const threads = document.getElementById("threads-share");
 
+  if (linkedin) linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
   if (facebook) facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
   if (reddit) reddit.href = `https://www.reddit.com/submit?url=${pageUrl}&title=${pageTitle}`;
   if (bluesky) bluesky.href = `https://bsky.app/intent/compose?text=${pageTitle}%20${pageUrl}`;
@@ -35,64 +35,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (dropbtn && dropdown) {
     dropbtn.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  const isVisible = dropdown.style.display === "block";
-
-  if (isVisible) {
-    dropdown.style.display = "none";
-    dropdown.style.animation = "";
-  } else {
-    const rect = dropbtn.getBoundingClientRect();
-    dropdown.style.position = "fixed";
-    dropdown.style.top = "60px";
-    dropdown.style.right = "20px";
-    dropdown.style.display = "flex"; // 🔥 force horizontal layout
-    dropdown.style.flexDirection = "row"; // 🔥 side-by-side
-    dropdown.style.gap = "12px"; // 🔥 spacing between icons
-    dropdown.style.alignItems = "center";
-    dropdown.style.animation = "fadeIn 0.2s ease-out";
-  }
-});
+      e.preventDefault();
+      const isVisible = dropdown.style.display === "block";
+      dropdown.style.display = isVisible ? "none" : "flex";
+      dropdown.style.position = "fixed";
+      dropdown.style.top = "60px";
+      dropdown.style.right = "20px";
+      dropdown.style.flexDirection = "row";
+      dropdown.style.gap = "12px";
+      dropdown.style.alignItems = "center";
+      dropdown.style.animation = isVisible ? "" : "fadeIn 0.2s ease-out";
+    });
 
     document.addEventListener("click", (e) => {
       if (!dropdown.contains(e.target) && !dropbtn.contains(e.target)) {
         dropdown.style.display = "none";
         dropdown.style.animation = "";
       }
-    });
-  }
-
-  // ─── Topbar Hover Behavior ──────────────────
-  const shareTrigger = document.querySelector(".topbar-share-trigger");
-  const shareBar = document.querySelector(".topbar-share-bar");
-
-  if (shareTrigger && shareBar) {
-    shareTrigger.addEventListener("click", (e) => {
-      e.preventDefault();
-      shareBar.classList.toggle("active");
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!shareBar.contains(e.target) && !shareTrigger.contains(e.target)) {
-        shareBar.classList.remove("active");
-      }
-    });
-
-    shareTrigger.addEventListener("mouseenter", () => {
-      shareBar.classList.add("active");
-    });
-
-    shareTrigger.addEventListener("mouseleave", () => {
-      setTimeout(() => {
-        if (!shareBar.matches(":hover")) {
-          shareBar.classList.remove("active");
-        }
-      }, 100);
-    });
-
-    shareBar.addEventListener("mouseleave", () => {
-      shareBar.classList.remove("active");
     });
   }
 
