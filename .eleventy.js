@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "assets/images/topbar": "assets/images/topbar" });
+  eleventyConfig.addPassthroughCopy("assets");
 
   // ─── Custom Collections ─────────────────────
   eleventyConfig.addCollection("glossary", (collectionApi) =>
