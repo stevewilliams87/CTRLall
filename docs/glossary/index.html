@@ -7,13 +7,13 @@
   <meta name="author" content="Steve – CTRL All">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="topbar">
+  <header class="topbar">
   <div class="logo">
     <a href="/">CTRL All</a>
   </div>
@@ -28,8 +28,8 @@
 </header>
 
 
-<div class="layout">
-  <nav class="sidebar">
+  <div class="layout">
+    <nav class="sidebar">
   <ul class="nav-level-1">
 
     <!-- Content Control Section -->
@@ -112,8 +112,8 @@
   </ul>
 </nav>
 
-  <main class="content">
-    <h1>Glossary</h1>
+    <main class="content">
+      <h1>Glossary</h1>
 <table>
     <colgroup>
       <col style="width: 20%;">
@@ -572,92 +572,29 @@
   </tbody>
 </table>
 <p><a href="#top">Back to top</a></p>
-  </main>
-</div>
+    </main>
+  </div>
 
-<!-- Floating GIF tooltip container -->
-<div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
-  <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
-</div>
+  <!-- Floating GIF tooltip container -->
+  <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
+    <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
+  </div>
 
-<!-- Dropdown share menu  -->
-<div id="share-dropdown" class="dropdown-content">
-  <a href="javascript:void(0)" onclick="copyPageLink()" style="color: #2c3e50; text-decoration: none;">
-      🔗Copy Link
-  </a>
-  <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">
-      📧Email this page
-  </a>
-  <a id="linkedin-share" target="_blank">
-    <img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="height: 40px; width: auto; display: block;">
-  </a>
-  <a id="facebook-share" target="_blank">
-    <img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 40px; width: auto; display: block;">
-  </a>
-  <a id="reddit-share" target="_blank">
-    <img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 40px; width: auto; display: block;">
-  </a>
-  <a id="bluesky-share" target="_blank">
-    <img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 40px; width: auto; display: block;">
-  </a>
-  <a id="threads-share" target="_blank">
-    <img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 40px; width: auto; display: block;">
-  </a>
-</div>
+  <!-- Dropdown share menu -->
+  <div id="share-dropdown" class="dropdown-content" style="display: none;">
+    <a href="javascript:void(0)" onclick="copyPageLink()" style="color: #2c3e50; text-decoration: none;">🔗Copy Link</a>
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">📧Email this page</a>
+    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="height: 40px; width: auto;"></a>
+    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 40px; width: auto;"></a>
+    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 40px; width: auto;"></a>
+    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 40px; width: auto;"></a>
+    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 40px; width: auto;"></a>
+  </div>
 
-<footer class="site-footer">
-  © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
-</footer>
+  <footer class="site-footer">
+    © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+  </footer>
 
-
-<script src="/js/main.js"></script>
-<script>
-function copyPageLink() {
-  const url = window.location.href;
-  navigator.clipboard.writeText(url)
-    .then(() => showTooltip("Copied!"))
-    .catch(err => console.error("Failed to copy:", err));
-}
-
-function emailCurrentPage(event) {
-  event.preventDefault();
-  const subject = "Check out this page";
-  const body = `Here's the link: ${window.location.href}`;
-  const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailto;
-}
-
-function showTooltip(message) {
-  const tooltip = document.createElement("div");
-  tooltip.textContent = message;
-  tooltip.style.position = "fixed";
-  tooltip.style.bottom = "20px";
-  tooltip.style.left = "50%";
-  tooltip.style.transform = "translateX(-50%)";
-  tooltip.style.background = "#2c3e50";
-  tooltip.style.color = "#fff";
-  tooltip.style.padding = "8px 16px";
-  tooltip.style.borderRadius = "6px";
-  tooltip.style.fontSize = "0.9rem";
-  tooltip.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
-  tooltip.style.zIndex = "9999";
-  tooltip.style.opacity = "0";
-  tooltip.style.transition = "opacity 0.3s ease";
-
-  document.body.appendChild(tooltip);
-
-  // Fade in
-  requestAnimationFrame(() => {
-    tooltip.style.opacity = "1";
-  });
-
-  // Remove after 2 seconds
-  setTimeout(() => {
-    tooltip.style.opacity = "0";
-    setTimeout(() => tooltip.remove(), 300);
-  }, 2000);
-}
-</script>
-
+  <script src="/js/main.js"></script>
 </body>
 </html>
