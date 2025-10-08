@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-console.log("✅ main.js is loaded");
-
-
   // ─── Topbar Navbar Toggle ───────────────
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
@@ -107,7 +104,7 @@ console.log("✅ main.js is loaded");
       });
     });
   }
-  
+
   // ─── GIF Mobile orientation checker ─────────
   function checkOrientation() {
     const overlay = document.getElementById("portrait-overlay");
