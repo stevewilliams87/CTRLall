@@ -38,5 +38,13 @@ When you open a template file, you end up saving what you edit as a separate doc
 
 <p>In the browser window that appears decide on the file name, the file type (e.g. document, template, PDF) and the location to save it.</p>
 
-<p><img src="{{ '/assets/images/word/Saving%20and%20Save%20as/c%20Browse%20window.png' | url }}"  alt="Save As browse window" style="height:70%; width:70%; vertical-align:middle"></p>
+<p><img class="thumbnail" src="{{ '/assets/images/word/Saving%20and%20Save%20as/c%20Browse%20window.png' | url }}"  alt="Save As browse window" style="height:70%; width:70%; vertical-align:middle"></p>
 </li>
+
+</section>
+
+<!-- Modal container -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="modal-content" src="" alt="">
+</div>

@@ -158,3 +158,25 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", checkOrientation);
   window.addEventListener("load", checkOrientation);
 });
+
+ // ─── Modal Image Preview ─────────────────────
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+
+  document.querySelectorAll(".thumbnail").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  document.querySelector(".close").addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+});
