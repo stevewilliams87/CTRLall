@@ -24,13 +24,24 @@
 
   {% include "topbar.liquid" %}
 
-  <button id="sidebar-toggle" class="sidebar-toggle">☰ Menu</button>
-  <div class="layout">
-    {% include "navbar.liquid", page: page %}
-    <main class="content">
+<!-- Sidebar toggle button (always visible on mobile) -->
+<button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+<!-- Sidebar navigation -->
+<nav class="sidebar">
+  {% include "navbar.liquid", page: page %}
+</nav>
+
+<!-- Main layout container -->
+<div class="layout">
+  <main class="content-wrapper">
+    <div class="content">
       {{ content }}
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
+
+
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">

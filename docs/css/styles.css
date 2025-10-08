@@ -410,11 +410,21 @@ table td {
   overflow-y: auto;
 }
 
+/* Main layout content */
 .content {
-  margin-left: 300px;
+  margin-left: 30px; /* 30px space between navbar and content */
   flex: 1;
   padding: 2rem;
+  transition: margin-left 0.3s ease;
 }
+
+/* Main layout content adjust for mobile navbar expand */
+@media (max-width: 768px) {
+  .sidebar.open ~ .layout .content {
+    margin-left: 250px;
+  }
+}
+
 
 /* Navigation */
 .nav-level-1 {
@@ -559,23 +569,32 @@ table td {
   padding: 0.5rem 1rem;
   cursor: pointer;
   z-index: 1001;
-  position: relative;
+  position: fixed;
+  top: 1rem;
+  left: 0.5rem;
+  color: white;
+  background-color: #333;
+  border-radius: 4px;
 }
 
+/* Mobile behavior: peek-and-expand sidebar */
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
-    position: absolute;
-    top: 3rem;
+    position: fixed;
+    top: 0;
     left: 0;
+    height: 100vh;
+    width: 250px;
     background: #fff;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     z-index: 1000;
+    transform: translateX(-220px); /* collapsed peek */
+    transition: transform 0.3s ease;
+    overflow-y: auto;
   }
 
   .sidebar.open {
-    display: block;
+    transform: translateX(0); /* fully expanded */
   }
 
   .sidebar-toggle {
@@ -586,3 +605,23 @@ table td {
     flex-direction: column;
   }
 }
+
+
+/* Default layout: sidebar visible on desktop */
+.content-wrapper {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Mobile layout: sidebar collapsed */
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
+
+  body.sidebar-open .content-wrapper {
+    margin-left: 250px;
+  }
+}
+
+

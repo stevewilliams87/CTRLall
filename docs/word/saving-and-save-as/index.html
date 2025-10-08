@@ -37,10 +37,12 @@
 </header>
 
 
-  <button id="sidebar-toggle" class="sidebar-toggle">☰ Menu</button>
-  <div class="layout">
-    <nav class="sidebar">
-  <ul class="nav-level-1">
+<!-- Sidebar toggle button (always visible on mobile) -->
+<button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+<!-- Sidebar navigation -->
+<nav class="sidebar">
+    <ul class="nav-level-1">
 
     <!-- Content Control Section -->
     <li>
@@ -116,13 +118,20 @@
 
     <!-- Glossary Section -->
     <li>
-      <a href="/glossary/" class="">Glossary</a>
+      <button class="nav-toggle " onclick="location.href='/glossary/'">
+        Glossary
+      </button>
     </li>
 
   </ul>
+
+
 </nav>
 
-    <main class="content">
+<!-- Main layout container -->
+<div class="layout">
+  <main class="content-wrapper">
+    <div class="content">
       <h1>Saving and Save As</h1>
 <section class="section-light">
 <h2>Saving from a template file</h2>
@@ -145,8 +154,11 @@ When you open a template file, you end up saving what you edit as a separate doc
 <p>In the browser window that appears decide on the file name, the file type (e.g. document, template, PDF) and the location to save it.</p>
 <p><img src="/assets/images/word/Saving and Save As/c Browse window.png"  alt="Save button in Word" style="height:50%; width:50%; vertical-align:middle"></p>
 </li>
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
+
+
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">

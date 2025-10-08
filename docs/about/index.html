@@ -37,10 +37,12 @@
 </header>
 
 
-  <button id="sidebar-toggle" class="sidebar-toggle">☰ Menu</button>
-  <div class="layout">
-    <nav class="sidebar">
-  <ul class="nav-level-1">
+<!-- Sidebar toggle button (always visible on mobile) -->
+<button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+<!-- Sidebar navigation -->
+<nav class="sidebar">
+    <ul class="nav-level-1">
 
     <!-- Content Control Section -->
     <li>
@@ -116,13 +118,20 @@
 
     <!-- Glossary Section -->
     <li>
-      <a href="/glossary/" class="">Glossary</a>
+      <button class="nav-toggle " onclick="location.href='/glossary/'">
+        Glossary
+      </button>
     </li>
 
   </ul>
+
+
 </nav>
 
-    <main class="content">
+<!-- Main layout container -->
+<div class="layout">
+  <main class="content-wrapper">
+    <div class="content">
       <section class="section-light">
   <h2>Why CTRL All?</h2>
   <p>Because digital literacy isn’t just about knowing which buttons to press; it’s about understanding the application, navigating it with confidence, and helping others do the same. CTRL All is built by a union member, educator, and open-source advocate who believes in legacy, clarity, and community.</p>
@@ -151,8 +160,11 @@
   <h2>©️ Why Creative Commons?</h2>
   <p>All content is shared under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 license</a> because knowledge should be free, remixable, and protected by ethics—not locked behind paywalls or proprietary gates. CTRL All is built on clarity, community, and legacy, so our content stays open, respectful, and reusable.</p>
 </section>
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
+
+
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">

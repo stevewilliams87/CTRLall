@@ -37,10 +37,12 @@
 </header>
 
 
-  <button id="sidebar-toggle" class="sidebar-toggle">☰ Menu</button>
-  <div class="layout">
-    <nav class="sidebar">
-  <ul class="nav-level-1">
+<!-- Sidebar toggle button (always visible on mobile) -->
+<button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+<!-- Sidebar navigation -->
+<nav class="sidebar">
+    <ul class="nav-level-1">
 
     <!-- Content Control Section -->
     <li>
@@ -116,13 +118,20 @@
 
     <!-- Glossary Section -->
     <li>
-      <a href="/glossary/" class="">Glossary</a>
+      <button class="nav-toggle " onclick="location.href='/glossary/'">
+        Glossary
+      </button>
     </li>
 
   </ul>
+
+
 </nav>
 
-    <main class="content">
+<!-- Main layout container -->
+<div class="layout">
+  <main class="content-wrapper">
+    <div class="content">
       <h1>Tables</h1>
 <section class="section-light">
 <h2>Creating tables</h2>
@@ -189,8 +198,11 @@ To create a table, select the <strong>Insert</strong> tab on the ribbon, then se
   <div style="height: 300px;"></div>
 </section>
 
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
+
+
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
