@@ -419,11 +419,17 @@ table td {
 }
 
 /* Main layout content adjust for mobile navbar expand */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 0; /* default when sidebar is collapsed */
+    transition: margin-left 0.3s ease;
+  }
+
   .sidebar.open ~ .layout .content {
-    margin-left: 250px;
+    margin-left: 250px; /* shift when sidebar is expanded */
   }
 }
+
 
 
 /* Navigation */
