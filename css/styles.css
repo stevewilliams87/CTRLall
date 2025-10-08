@@ -418,10 +418,30 @@ table td {
   transition: margin-left 0.3s ease;
 }
 
-/* Main layout content adjust for mobile navbar expand */
+/* ─── Default Layout ───────────────────────────── */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ─── Sidebar Expanded ─────────────────────────── */
+.sidebar.open ~ .layout .content {
+  margin-left: 250px; /* shift when sidebar is expanded */
+}
+
+/* ─── Responsive Layout: Tablet & Mobile ───────── */
 @media (max-width: 1366px) {
   .content {
-    margin-left: 30px; /* default when sidebar is collapsed */
+    margin-left: 50px; /* default when sidebar is collapsed */
     transition: margin-left 0.3s ease;
   }
 
@@ -429,8 +449,8 @@ table td {
     margin-left: 250px; /* shift when sidebar is expanded */
   }
 }
-/* Mobile & tablet view — up to large tablets in landscape */
-@media (max-width: 2500px) {
+
+@media (max-width: 770px) {
   .menu-toggle {
     display: block;
   }
