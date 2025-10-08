@@ -98,15 +98,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ─── GIF Mobile orientation checker ─────────
 function checkOrientation() {
+  const overlay = document.getElementById("portrait-overlay");
   if (window.innerHeight > window.innerWidth) {
-    document.body.classList.add("portrait");
+    overlay.style.display = "flex";
   } else {
-    document.body.classList.remove("portrait");
+    overlay.style.display = "none";
   }
 }
 
 window.addEventListener("resize", checkOrientation);
 window.addEventListener("load", checkOrientation);
+
 
 
   // ─── GIF Mobile navbar toggle ─────────

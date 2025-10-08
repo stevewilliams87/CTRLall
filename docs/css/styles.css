@@ -522,18 +522,32 @@ table td {
   background-color: #2c3e50;
 }
 
-/* mobile portait landscape prompt */
-
-body.portrait::before {
-  content: "🔄 For best experience, rotate your device to landscape.";
-  display: block;
-  background: #fff3cd;
-  color: #333;
-  padding: 1rem;
+/* mobile portrait landscape prompt overlay */
+#portrait-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 1rem;
-  border-bottom: 1px solid #ccc;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
+
+#portrait-overlay .overlay-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+
 
 /* mobile navbar layout */
 
