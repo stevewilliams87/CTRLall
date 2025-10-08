@@ -95,3 +95,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+  // ─── GIF Mobile orientation checker ─────────
+function checkOrientation() {
+  if (window.innerHeight > window.innerWidth) {
+    document.body.classList.add("portrait");
+  } else {
+    document.body.classList.remove("portrait");
+  }
+}
+
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("load", checkOrientation);
+
+
+  // ─── GIF Mobile navbar toggle ─────────
+document.getElementById("sidebar-toggle").addEventListener("click", function () {
+  document.querySelector(".sidebar").classList.toggle("open");
+});

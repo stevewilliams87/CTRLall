@@ -12,14 +12,16 @@
 </head>
 
 <body>
-
   {% include "topbar.liquid" %}
 
+  <button id="sidebar-toggle" class="sidebar-toggle">☰ Menu</button>
   <div class="layout">
     {% include "navbar.liquid", page: page %}
     <main class="content">
       {{ content }}
     </main>
+  </div>
+
   </div>
 
   <!-- Floating GIF tooltip container -->
