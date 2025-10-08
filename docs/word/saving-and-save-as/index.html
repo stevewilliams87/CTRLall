@@ -12,19 +12,15 @@
 </head>
 
 <body>
-<script>
-  console.log("✅ Inline JS is running");
-</script>
 
   <noscript>
-    <div style="background: #f44336; color: white; padding: 10px; text-align: center;">
+    <div class="noscript-warning">
       JavaScript is required for full site functionality.
     </div>
   </noscript>
 
   <div id="portrait-overlay">
-    <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
-    </div>
+    <div class="overlay-text">This site is best experienced in landscape.</div>
   </div>
 
   <header class="topbar">
@@ -48,97 +44,96 @@
 
   </header>
 
-  <nav class="sidebar">
-      
-  <!-- Sidebar toggle button (always visible on mobile) -->
-<button id="sidebar-toggle" class="sidebar-toggle">☰</button>
-  <ul class="nav-level-1">
+  <!-- ✅ Sidebar + Content Layout -->
+  <div class="layout-wrapper">
+    <nav class="sidebar-wrapper">
+      <div id="navbar-content" class="navbar-collapse collapse">
+        <ul class="nav-level-1">
 
-    <!-- Content Control Section -->
-    <li>
-      <button class="nav-toggle " data-section="content-control">
-        Content control <span class="arrow"></span>
-      </button>
-      <ul class="nav-level-2 ">
-        <li><a href="/content-control/moving-content/" class="">Moving content</a></li>
-        <li><a href="/content-control/copying-content/" class="">Copying content</a></li>
-        <li><a href="/content-control/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
-      </ul>
-    </li>
+  <!-- Content Control Section -->
+  <li>
+    <button class="nav-toggle " data-section="content-control" aria-expanded="false" aria-controls="nav-content-control">
+      Content control <span class="arrow"></span>
+    </button>
+    <ul id="nav-content-control" class="nav-level-2 ">
+      <li><a href="/content-control/moving-content/" class="">Moving content</a></li>
+      <li><a href="/content-control/copying-content/" class="">Copying content</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
 
-    <!-- Word Section -->
-    <li>
-      <button class="nav-toggle active expanded" data-section="word">
-        Word <span class="arrow"></span>
-      </button>
-      <ul class="nav-level-2 show">
-        <li><a href="/word/#/" class="">Getting started with Word</a></li>
-        <li><a href="/word/pages-and-views/" class="">Pages and views</a></li>
-        <li><a href="/word/saving-and-save-as/" class="active">Saving and Save As</a></li>
-        <li><a href="/word/selecting-text/" class="">Selecting text</a></li>
-        <li><a href="/word/formatting-text/" class="">Formatting text</a></li>
-        <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
-        <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
-        <li><a href="/word/tables/" class="">Tables</a></li>
-        <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
-        <li><a href="/content-control/keyboard-shortcuts/#word keyboard shortcuts" class="">Word Keyboard Shortcuts</a></li>
-      </ul>
-    </li>
+  <!-- Word Section -->
+  <li>
+    <button class="nav-toggle active expanded" data-section="word" aria-expanded="true" aria-controls="nav-word">
+      Word <span class="arrow"></span>
+    </button>
+    <ul id="nav-word" class="nav-level-2 show">
+      <li><a href="/word/" class="">Getting started with Word</a></li>
+      <li><a href="/word/pages-and-views/" class="">Pages and views</a></li>
+      <li><a href="/word/saving-and-save-as/" class="active">Saving and Save As</a></li>
+      <li><a href="/word/selecting-text/" class="">Selecting text</a></li>
+      <li><a href="/word/formatting-text/" class="">Formatting text</a></li>
+      <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
+      <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
+      <li><a href="/word/tables/" class="">Tables</a></li>
+      <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#word-keyboard-shortcuts" class="">Word Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
 
-    <!-- Excel Section -->
-    <li>
-      <button class="nav-toggle " data-section="excel">
-        Excel <span class="arrow"></span>
-      </button>
-      <ul class="nav-level-2 ">
-        <li><a href="/excel/#" class="">Getting started with Excel</a></li>
-        <li><a href="/excel/selecting-cells-and-values" class="">Selecting cells and values</a></li>
-        <li><a href="/excel/understanding-formulas" class="">Understanding formulas</a></li>
-        <li><a href="/excel/conditional-formatting" class="">Conditional formatting</a></li>
-        <li><a href="/excel/data-validation" class="">Data validation</a></li>
-        <li><a href="/content-control/keyboard-shortcuts/#excel keyboard shortcuts" class="">Excel Keyboard Shortcuts</a></li>
-      </ul>
-    </li>
+  <!-- Excel Section -->
+  <li>
+    <button class="nav-toggle " data-section="excel" aria-expanded="false" aria-controls="nav-excel">
+      Excel <span class="arrow"></span>
+    </button>
+    <ul id="nav-excel" class="nav-level-2 ">
+      <li><a href="/excel/" class="">Getting started with Excel</a></li>
+      <li><a href="/excel/selecting-cells-and-values/" class="">Selecting cells and values</a></li>
+      <li><a href="/excel/understanding-formulas/" class="">Understanding formulas</a></li>
+      <li><a href="/excel/conditional-formatting/" class="">Conditional formatting</a></li>
+      <li><a href="/excel/data-validation/" class="">Data validation</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#excel-keyboard-shortcuts" class="">Excel Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
 
-    <!-- PowerPoint Section -->
-    <li>
-      <button class="nav-toggle " data-section="powerpoint">
-        PowerPoint <span class="arrow"></span>
-      </button>
-      <ul class="nav-level-2 ">
-        <li><a href="/powerpoint/#" class="">Getting started with PowerPoint</a></li>
-        <li><a href="/powerpoint/editing-slides" class="">Editing slides</a></li>
-        <li><a href="/powerpoint/animations" class="">Animations</a></li>
-        <li><a href="/powerpoint/fade-list-effect" class="">Fade list effect</a></li>
-        <li><a href="/powerpoint/presenter-view" class="">Presenter view</a></li>
-        <li><a href="/content-control/keyboard-shortcuts/#powerpoint keyboard shortcuts" class="">PowerPoint Keyboard Shortcuts</a></li>
-      </ul>
-    </li>
+  <!-- PowerPoint Section -->
+  <li>
+    <button class="nav-toggle " data-section="powerpoint" aria-expanded="false" aria-controls="nav-powerpoint">
+      PowerPoint <span class="arrow"></span>
+    </button>
+    <ul id="nav-powerpoint" class="nav-level-2 ">
+      <li><a href="/powerpoint/" class="">Getting started with PowerPoint</a></li>
+      <li><a href="/powerpoint/editing-slides/" class="">Editing slides</a></li>
+      <li><a href="/powerpoint/animations/" class="">Animations</a></li>
+      <li><a href="/powerpoint/fade-list-effect/" class="">Fade list effect</a></li>
+      <li><a href="/powerpoint/presenter-view/" class="">Presenter view</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#powerpoint-keyboard-shortcuts" class="">PowerPoint Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
 
-    <!-- Outlook Section -->
-    <li>
-      <button class="nav-toggle " data-section="outlook">
-        Outlook <span class="arrow"></span>
-      </button>
-      <ul class="nav-level-2 ">
-        <li><a href="/outlook/#" class="">Outlook signatures</a></li>
-        <li><a href="/content-control/keyboard-shortcuts/#outlook keyboard shortcuts" class="">Outlook Keyboard Shortcuts</a></li>
-      </ul>
-    </li>
+  <!-- Outlook Section -->
+  <li>
+    <button class="nav-toggle " data-section="outlook" aria-expanded="false" aria-controls="nav-outlook">
+      Outlook <span class="arrow"></span>
+    </button>
+    <ul id="nav-outlook" class="nav-level-2 ">
+      <li><a href="/outlook/" class="">Outlook signatures</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#outlook-keyboard-shortcuts" class="">Outlook Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
 
-    <!-- Glossary Section -->
-    <li>
-      <button class="nav-toggle " onclick="location.href='/glossary/'">
-        Glossary
-      </button>
-    </li>
+  <!-- Glossary Section -->
+  <li>
+    <button class="nav-toggle " onclick="location.href='/glossary/'">
+      Glossary
+    </button>
+  </li>
 
-  </ul>
+</ul>
 
+      </div>
+    </nav>
 
-  </nav>
-
-  <div class="layout" style="padding-top: 60px;">
     <main class="content-wrapper">
       <div class="content">
         <h1>Saving and Save As</h1>
@@ -150,35 +145,36 @@ When you open a template file, you end up saving what you edit as a separate doc
 <ol>
   <li>Save over the same file (aka ‘overwrite’ the file) by simply saving the document. Either press <strong>Ctrl + S</strong> or click the <strong>Save</strong> button at the top left.</li>
 <p>In these example snips we're using Micrsoft Word, but you can do this in Excel and PowerPoint too.<p>
-<p><img src="/assets/images/word/Saving and Save As/1 Autosave.png"  alt="Save button in Word" style="height:15%; width:15%; vertical-align:middle"></p>
+<p><img src="/assets/images/word/Saving and Save As/1 Autosave.png"  alt="Save button in Word" style="height:20%; width:20%; vertical-align:middle"></p>
 <p>OR</p>
   <li>Save as a new document or a different format (e.g. a PDF) using <strong>File > Save As.</strong></li>
 <p>Click <strong>File</strong></p>
-<p><img src="/assets/images/word/Saving and Save As/2a File.png"  alt="Save button in Word" style="height:10%; width:10%; vertical-align:middle"></p>
+<p><img src="/assets/images/word/Saving and Save As/2a File.png"  alt="Save button in Word" style="height:13%; width:13%; vertical-align:middle"></p>
 <p>Then click 'Save As'</p>
-<p><img src="/assets/images/word/Saving and Save As/2b Save As.png"  alt="Save button in Word" style="height:10%; width:10%; vertical-align:middle"></p>
+<p><img src="/assets/images/word/Saving and Save As/2b Save As.png"  alt="Save button in Word" style="height:13%; width:13%; vertical-align:middle"></p>
 <p>This will then bring up these options to choose where to save, what the name of the file should be and what format you need to save it. If you are saving as a different file type always make sure to choose the location to save to first before choosing the file type.</p>
 <p>Double click <strong>This PC</strong> to browse a location.</p>
-<p><img src="/assets/images/word/Saving and Save As/3 Save As.png"  alt="Save button in Word" style="height:33%; width:33%; vertical-align:middle"></p>
+<p><img src="/assets/images/word/Saving and Save As/3 Save As.png"  alt="Save button in Word" style="height:37%; width:37%; vertical-align:middle"></p>
 <p>In the browser window that appears decide on the file name, the file type (e.g. document, template, PDF) and the location to save it.</p>
-<p><img src="/assets/images/word/Saving and Save As/c Browse window.png"  alt="Save button in Word" style="height:50%; width:50%; vertical-align:middle"></p>
+<p><img src="/assets/images/word/Saving and Save As/c Browse window.png"  alt="Save button in Word" style="height:70%; width:70%; vertical-align:middle"></p>
 </li>
       </div>
     </main>
   </div>
 
-  <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
-    <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
+  <!-- Tooltip & Share Dropdown -->
+  <div id="gif-tooltip" class="gif-tooltip">
+    <img src="" alt="Tooltip GIF">
   </div>
 
-  <div id="share-dropdown" class="dropdown-content" style="display: none;">
-    <a href="javascript:void(0)" onclick="copyPageLink()" style="color: #2c3e50; text-decoration: none;">🔗Copy Link</a>
-    <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">📧Email this page</a>
-    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="height: 40px; width: auto;"></a>
-    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 40px; width: auto;"></a>
-    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 40px; width: auto;"></a>
-    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 40px; width: auto;"></a>
-    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 40px; width: auto;"></a>
+  <div id="share-dropdown" class="dropdown-content">
+    <a href="javascript:void(0)" onclick="copyPageLink()">🔗Copy Link</a>
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin"></a>
+    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook"></a>
+    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit"></a>
+    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky"></a>
+    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads"></a>
   </div>
 
   <footer class="site-footer">
@@ -186,6 +182,5 @@ When you open a template file, you end up saving what you edit as a separate doc
   </footer>
 
   <script src="/js/main.js"></script>
-
 </body>
 </html>

@@ -14,14 +14,13 @@
 <body>
 
   <noscript>
-    <div style="background: #f44336; color: white; padding: 10px; text-align: center;">
+    <div class="noscript-warning">
       JavaScript is required for full site functionality.
     </div>
   </noscript>
 
   <div id="portrait-overlay">
-    <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
-    </div>
+    <div class="overlay-text">This site is best experienced in landscape.</div>
   </div>
 
   <header class="topbar">
@@ -29,11 +28,14 @@
     {% include "topbar.liquid" %}
   </header>
 
-  <nav class="sidebar">
-    {% include "navbar.liquid", page: page %}
-  </nav>
+  <!-- ✅ Sidebar + Content Layout -->
+  <div class="layout-wrapper">
+    <nav class="sidebar-wrapper">
+      <div id="navbar-content" class="navbar-collapse collapse">
+        {% include "navbar.liquid", page: page %}
+      </div>
+    </nav>
 
-  <div class="layout" style="padding-top: 60px;">
     <main class="content-wrapper">
       <div class="content">
         {{ content }}
@@ -41,18 +43,19 @@
     </main>
   </div>
 
-  <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
-    <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
+  <!-- Tooltip & Share Dropdown -->
+  <div id="gif-tooltip" class="gif-tooltip">
+    <img src="" alt="Tooltip GIF">
   </div>
 
-  <div id="share-dropdown" class="dropdown-content" style="display: none;">
-    <a href="javascript:void(0)" onclick="copyPageLink()" style="color: #2c3e50; text-decoration: none;">🔗Copy Link</a>
-    <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">📧Email this page</a>
-    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="height: 40px; width: auto;"></a>
-    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook" style="height: 40px; width: auto;"></a>
-    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit" style="height: 40px; width: auto;"></a>
-    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="height: 40px; width: auto;"></a>
-    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads" style="height: 40px; width: auto;"></a>
+  <div id="share-dropdown" class="dropdown-content">
+    <a href="javascript:void(0)" onclick="copyPageLink()">🔗Copy Link</a>
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin"></a>
+    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook"></a>
+    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit"></a>
+    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky"></a>
+    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads"></a>
   </div>
 
   <footer class="site-footer">
@@ -60,6 +63,5 @@
   </footer>
 
   <script src="/js/main.js"></script>
-
 </body>
 </html>

@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-console.log("✅ main.js is loaded");
-
-
-  // ─── Topbar Navbar Toggle ───────────────
+  // ─── Topbar Menu Toggle ─────────────────────
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -68,14 +65,46 @@ console.log("✅ main.js is loaded");
     });
   }
 
-  // ─── Sidebar Toggle ─────────────────────────
+  // ─── Sidebar Nested Toggle ──────────────────
   document.querySelectorAll(".nav-toggle").forEach((button) => {
     button.addEventListener("click", () => {
       const submenu = button.nextElementSibling;
       const isNowOpen = submenu.classList.toggle("show");
       button.classList.toggle("expanded", isNowOpen);
+      button.setAttribute("aria-expanded", isNowOpen);
     });
   });
+
+  // ─── Sidebar Collapse Toggle ────────────────
+  const toggleBtn = document.getElementById("navbar-toggle");
+  const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+
+  if (toggleBtn && sidebarWrapper) {
+    const savedState = localStorage.getItem("sidebarCollapsed") === "true";
+    if (savedState) {
+      sidebarWrapper.classList.add("collapsed");
+      toggleBtn.setAttribute("aria-expanded", "false");
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      const isCollapsed = sidebarWrapper.classList.toggle("collapsed");
+      toggleBtn.setAttribute("aria-expanded", !isCollapsed);
+      localStorage.setItem("sidebarCollapsed", isCollapsed);
+    });
+  }
+
+  // ─── Mobile Sidebar Toggle (Unified) ────────
+  const sidebarToggle = document.getElementById("sidebar-toggle");
+
+  if (sidebarToggle && sidebarWrapper) {
+    sidebarToggle.addEventListener("click", () => {
+      const isOpen = sidebarWrapper.classList.toggle("open");
+      document.body.classList.toggle("sidebar-open", isOpen);
+      console.log("Mobile sidebar toggled:", isOpen);
+    });
+  } else {
+    console.warn("Mobile sidebar toggle failed: missing #sidebar-toggle or .sidebar-wrapper");
+  }
 
   // ─── Footer Fade-In on Scroll ───────────────
   const footer = document.querySelector(".site-footer");
@@ -107,8 +136,8 @@ console.log("✅ main.js is loaded");
       });
     });
   }
-  
-  // ─── GIF Mobile orientation checker ─────────
+
+  // ─── Mobile Orientation Overlay ─────────────
   function checkOrientation() {
     const overlay = document.getElementById("portrait-overlay");
     if (window.innerHeight > window.innerWidth) {
@@ -120,14 +149,4 @@ console.log("✅ main.js is loaded");
 
   window.addEventListener("resize", checkOrientation);
   window.addEventListener("load", checkOrientation);
-
-  // ─── GIF Mobile navbar toggle ─────────
-  const sidebarToggle = document.getElementById("sidebar-toggle");
-  const sidebar = document.querySelector(".sidebar");
-
-  if (sidebarToggle && sidebar) {
-    sidebarToggle.addEventListener("click", () => {
-      sidebar.classList.toggle("open");
-    });
-  }
 });

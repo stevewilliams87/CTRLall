@@ -10,11 +10,11 @@ active: word
 <section class="section-light">
 On the <strong>Home</strong> tab of the ribbon are formatting tools. This article explains what each does.
 
-<p><img src="{{ '/assets/images/word/Formatting text/01 Home tab on ribbon.png' | url }}"  alt="Home tab on ribbon" style="height:40%; width:40%; vertical-align:middle"></p>
+<p><img src="{{ '/assets/images/word/Formatting text/01 Home tab on ribbon.png' | url }}"  alt="Home tab on ribbon" style="height:55%; width:55%; vertical-align:middle"></p>
 <br>
 
 <strong>Clipboard tools</strong>
-<p><img src="{{ '/assets/images/word/Formatting text/02 Home Clipboard.png' | url }}"  alt="Home Clipboard tools on ribbon" style="height:25%; width:25%; vertical-align:middle"></p>
+<p><img src="{{ '/assets/images/word/Formatting text/02 Home Clipboard.png' | url }}"  alt="Home Clipboard tools on ribbon" style="height:35%; width:35%; vertical-align:middle"></p>
 
 <strong>Format Painter</strong> 
 <img src="{{ '/assets/images/word/Formatting text/02a Format painter icon.png' | url }}"  alt="Format painter icon" style="height:5%; width:5%; vertical-align:middle"> 
@@ -23,7 +23,7 @@ On the <strong>Home</strong> tab of the ribbon are formatting tools. This articl
 <p><img src="{{ '/assets/images/word/Formatting text/02b Format painter example.gif' | url }}"  alt="Format painter" style="height:60%; width:60%; vertical-align:middle"></p>
 
 <strong>Font tools</istrong>
-<p><img src="{{ '/assets/images/word/Formatting text/03 Home Font.png' | url }}"  alt="Home Font tools on ribbon" style="height:45%; width:45%; vertical-align:middle"></p>
+<p><img src="{{ '/assets/images/word/Formatting text/03 Home Font.png' | url }}"  alt="Home Font tools on ribbon" style="height:55%; width:55%; vertical-align:middle"></p>
 <table>
   <thead>
     <tr>
@@ -81,7 +81,7 @@ On the <strong>Home</strong> tab of the ribbon are formatting tools. This articl
 <br>
 
 <strong>Paragraph</strong>
-<p><img src="{{ '/assets/images/word/Formatting text/05 Home Paragraph.png' | url }}"  alt="Home Paragraph tools on ribbon" style="height:45%; width:45%; vertical-align:middle"></p>
+<p><img src="{{ '/assets/images/word/Formatting text/05 Home Paragraph.png' | url }}"  alt="Home Paragraph tools on ribbon" style="height:55%; width:55%; vertical-align:middle"></p>
 
 <table>
   <thead>
