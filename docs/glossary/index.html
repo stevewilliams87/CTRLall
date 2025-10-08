@@ -12,6 +12,16 @@
 </head>
 
 <body>
+<script>
+  console.log("✅ Inline JS is running");
+</script>
+
+  <noscript>
+    <div style="background: #f44336; color: white; padding: 10px; text-align: center;">
+      JavaScript is required for full site functionality.
+    </div>
+  </noscript>
+
   <div id="portrait-overlay">
     <div class="overlay-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
       <img src="/assets/images/Rotate%20screen.png" alt="Rotate device" width="80">
@@ -19,7 +29,6 @@
     </div>
   </div>
 
-  <!-- Topbar with embedded sidebar toggle -->
   <header class="topbar">
     <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
     <header class="topbar">
@@ -41,7 +50,6 @@
 
   </header>
 
-  <!-- Sidebar navigation -->
   <nav class="sidebar">
       
   <!-- Sidebar toggle button (always visible on mobile) -->
@@ -132,7 +140,6 @@
 
   </nav>
 
-  <!-- Main layout container -->
   <div class="layout" style="padding-top: 60px;">
     <main class="content-wrapper">
       <div class="content">
@@ -599,12 +606,10 @@
     </main>
   </div>
 
-  <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
     <img src="" alt="Tooltip GIF" style="max-width: none; height: auto;">
   </div>
 
-  <!-- Dropdown share menu -->
   <div id="share-dropdown" class="dropdown-content" style="display: none;">
     <a href="javascript:void(0)" onclick="copyPageLink()" style="color: #2c3e50; text-decoration: none;">🔗Copy Link</a>
     <a href="javascript:void(0)" onclick="emailCurrentPage(event)" style="color: #2c3e50; text-decoration: none;">📧Email this page</a>

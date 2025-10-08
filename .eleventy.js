@@ -1,7 +1,10 @@
 module.exports = function(eleventyConfig) {
+  // ─── Force Eleventy to ignore .js files ───────────────
+  eleventyConfig.setTemplateFormats(["md", "11ty.md", "liquid", "html"]);
+
   // ─── Passthrough Copies ─────────────────────
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy({ "./js": "js" });
   eleventyConfig.addPassthroughCopy({ "assets/images/topbar": "assets/images/topbar" });
   eleventyConfig.addPassthroughCopy("assets");
 

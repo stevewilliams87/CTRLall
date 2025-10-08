@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+console.log("✅ main.js is loaded");
 
-// ─── Topbar Navbar Toggle ───────────────
-document.addEventListener("DOMContentLoaded", () => {
+
+  // ─── Topbar Navbar Toggle ───────────────
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -10,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
       navMenu.classList.toggle("active");
     });
   }
-});
-
 
   // ─── Share Menu Actions ─────────────────────
   function copyPageLink() {
@@ -108,30 +107,27 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-});
-
+  
   // ─── GIF Mobile orientation checker ─────────
-function checkOrientation() {
-  const overlay = document.getElementById("portrait-overlay");
-  if (window.innerHeight > window.innerWidth) {
-    overlay.style.display = "flex";
-  } else {
-    overlay.style.display = "none";
+  function checkOrientation() {
+    const overlay = document.getElementById("portrait-overlay");
+    if (window.innerHeight > window.innerWidth) {
+      overlay.style.display = "flex";
+    } else {
+      overlay.style.display = "none";
+    }
   }
-}
 
-window.addEventListener("resize", checkOrientation);
-window.addEventListener("load", checkOrientation);
-
-
+  window.addEventListener("resize", checkOrientation);
+  window.addEventListener("load", checkOrientation);
 
   // ─── GIF Mobile navbar toggle ─────────
-const sidebarToggle = document.getElementById("sidebar-toggle");
-const sidebar = document.querySelector(".sidebar");
+  const sidebarToggle = document.getElementById("sidebar-toggle");
+  const sidebar = document.querySelector(".sidebar");
 
-if (sidebarToggle && sidebar) {
-  sidebarToggle.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
-  });
-}
-
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+  }
+});
