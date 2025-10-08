@@ -173,15 +173,26 @@
     <img src="" alt="Tooltip GIF">
   </div>
 
-  <div id="share-dropdown" class="dropdown-content">
-    <a href="javascript:void(0)" onclick="copyPageLink()">🔗Copy Link</a>
-    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
-    <a id="linkedin-share" target="_blank"><img src="/assets/images/topbar/linkedin.png" alt="Linkedin"></a>
-    <a id="facebook-share" target="_blank"><img src="/assets/images/topbar/facebook.png" alt="Facebook"></a>
-    <a id="reddit-share" target="_blank"><img src="/assets/images/topbar/reddit.png" alt="Reddit"></a>
-    <a id="bluesky-share" target="_blank"><img src="/assets/images/topbar/bluesky.png" alt="Bluesky"></a>
-    <a id="threads-share" target="_blank"><img src="/assets/images/topbar/threads.png" alt="Threads"></a>
-  </div>
+<div id="share-dropdown" class="dropdown-content">
+  <a href="javascript:void(0)" onclick="copyPageLink()">🔗Copy Link</a>
+  <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+  <a id="linkedin-share" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A8080%2F">
+    <img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="width:20px; height:20px;">
+  </a>
+  <a id="facebook-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F">
+    <img src="/assets/images/topbar/facebook.png" alt="Facebook" style="width:20px; height:20px;">
+  </a>
+  <a id="reddit-share" target="_blank" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A8080%2F&amp;title=CTRL%20All">
+    <img src="/assets/images/topbar/reddit.png" alt="Reddit" style="width:20px; height:20px;">
+  </a>
+  <a id="bluesky-share" target="_blank" href="https://bsky.app/intent/compose?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+    <img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="width:20px; height:20px;">
+  </a>
+  <a id="threads-share" target="_blank" href="https://www.threads.net/intent/post?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+    <img src="/assets/images/topbar/threads.png" alt="Threads" style="width:20px; height:20px;">
+  </a>
+</div>
+
 
   <footer class="site-footer">
     © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
