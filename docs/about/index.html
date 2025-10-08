@@ -12,19 +12,22 @@
 </head>
 
 <body>
-<div id="portrait-overlay">
-  <div class="overlay-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <img src="/assets/images/Rotate%20screen.png" alt="Rotate device" width="80">
-    <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
+  <div id="portrait-overlay">
+    <div class="overlay-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <img src="/assets/images/Rotate%20screen.png" alt="Rotate device" width="80">
+      <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
+    </div>
   </div>
-</div>
 
-
-
-
+  <!-- Topbar with embedded sidebar toggle -->
   <header class="topbar">
-  <div class="logo">
-    <a href="/">CTRL All</a>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+    <header class="topbar">
+  <div class="topbar-left">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="logo">
+      <a href="/">CTRL All</a>
+    </div>
   </div>
   <div class="topbar-right">
     <nav class="topnav">
@@ -36,13 +39,14 @@
   </div>
 </header>
 
+  </header>
 
-<!-- Sidebar toggle button (always visible on mobile) -->
+  <!-- Sidebar navigation -->
+  <nav class="sidebar">
+      
+  <!-- Sidebar toggle button (always visible on mobile) -->
 <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
-
-<!-- Sidebar navigation -->
-<nav class="sidebar">
-    <ul class="nav-level-1">
+  <ul class="nav-level-1">
 
     <!-- Content Control Section -->
     <li>
@@ -126,13 +130,13 @@
   </ul>
 
 
-</nav>
+  </nav>
 
-<!-- Main layout container -->
-<div class="layout">
-  <main class="content-wrapper">
-    <div class="content">
-      <section class="section-light">
+  <!-- Main layout container -->
+  <div class="layout" style="padding-top: 60px;">
+    <main class="content-wrapper">
+      <div class="content">
+        <section class="section-light">
   <h2>Why CTRL All?</h2>
   <p>Because digital literacy isn’t just about knowing which buttons to press; it’s about understanding the application, navigating it with confidence, and helping others do the same. CTRL All is built by a union member, educator, and open-source advocate who believes in legacy, clarity, and community.</p>
 </section>
@@ -160,11 +164,9 @@
   <h2>©️ Why Creative Commons?</h2>
   <p>All content is shared under a <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 license</a> because knowledge should be free, remixable, and protected by ethics—not locked behind paywalls or proprietary gates. CTRL All is built on clarity, community, and legacy, so our content stays open, respectful, and reusable.</p>
 </section>
-    </div>
-  </main>
-</div>
-
-
+      </div>
+    </main>
+  </div>
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">

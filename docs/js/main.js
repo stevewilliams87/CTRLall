@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+// ─── Topbar Navbar Toggle ───────────────
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
+});
+
+
   // ─── Share Menu Actions ─────────────────────
   function copyPageLink() {
     navigator.clipboard.writeText(window.location.href).then(() => {

@@ -12,19 +12,22 @@
 </head>
 
 <body>
-<div id="portrait-overlay">
-  <div class="overlay-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <img src="/assets/images/Rotate%20screen.png" alt="Rotate device" width="80">
-    <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
+  <div id="portrait-overlay">
+    <div class="overlay-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <img src="/assets/images/Rotate%20screen.png" alt="Rotate device" width="80">
+      <div class="overlay-text" style="text-align: center;">This site is best experienced in landscape.</div>
+    </div>
   </div>
-</div>
 
-
-
-
+  <!-- Topbar with embedded sidebar toggle -->
   <header class="topbar">
-  <div class="logo">
-    <a href="/">CTRL All</a>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+    <header class="topbar">
+  <div class="topbar-left">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="logo">
+      <a href="/">CTRL All</a>
+    </div>
   </div>
   <div class="topbar-right">
     <nav class="topnav">
@@ -36,13 +39,14 @@
   </div>
 </header>
 
+  </header>
 
-<!-- Sidebar toggle button (always visible on mobile) -->
+  <!-- Sidebar navigation -->
+  <nav class="sidebar">
+      
+  <!-- Sidebar toggle button (always visible on mobile) -->
 <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
-
-<!-- Sidebar navigation -->
-<nav class="sidebar">
-    <ul class="nav-level-1">
+  <ul class="nav-level-1">
 
     <!-- Content Control Section -->
     <li>
@@ -126,13 +130,13 @@
   </ul>
 
 
-</nav>
+  </nav>
 
-<!-- Main layout container -->
-<div class="layout">
-  <main class="content-wrapper">
-    <div class="content">
-      <h1>Fixing number lists</h2>
+  <!-- Main layout container -->
+  <div class="layout" style="padding-top: 60px;">
+    <main class="content-wrapper">
+      <div class="content">
+        <h1>Fixing number lists</h2>
 <p>In large or complex documents number lists can sometimes be broken, especially when extending over different headings and other content. Here's how to fix them.</p>
 <p>In the example snip below we have a numbered lists extending over headings which we want to all be connected together. Note: Some are connected, some are not.</p>
 <img src="/assets/images/word/Lists fixing number lists/Number list issue example.png" alt="Number list issue example" width="450">
@@ -145,11 +149,9 @@
 <br>
 Once done you should see the numbered lists continuing on as appropriate (Note: the numbers below the last heading that were sequential will adapt accordingly):
 <img src="/assets/images/word/Lists fixing number lists/Number list issue example fixed.png" alt="Number list issue example fixed" width="450">
-    </div>
-  </main>
-</div>
-
-
+      </div>
+    </main>
+  </div>
 
   <!-- Floating GIF tooltip container -->
   <div id="gif-tooltip" style="position: absolute; display: none; z-index: 1000;">
