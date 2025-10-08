@@ -419,14 +419,35 @@ table td {
 }
 
 /* Main layout content adjust for mobile navbar expand */
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .content {
-    margin-left: 0; /* default when sidebar is collapsed */
+    margin-left: 30px; /* default when sidebar is collapsed */
     transition: margin-left 0.3s ease;
   }
 
   .sidebar.open ~ .layout .content {
     margin-left: 250px; /* shift when sidebar is expanded */
+  }
+}
+/* Mobile & tablet view — up to large tablets in landscape */
+@media (max-width: 1366px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
   }
 }
 
