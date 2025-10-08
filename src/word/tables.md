@@ -65,7 +65,7 @@ To create a table, select the <strong>Insert</strong> tab on the ribbon, then se
       <tr class="tooltip-row" data-gif="{{ '/assets/images/word/Tables/adjust%20row%20height%20example.gif' | url }}">
         <td>Adjust row height</td>
         <td>Hover over row border, then click and drag when the cursor icon changes.</td>
-        <td><img src="{{ '/assets/images/word/ables/adjust%20row%20height.png' | url }}" alt="Adjust row icon" style="display: block; margin: auto; width: 40px;"></td>
+        <td><img src="{{ '/assets/images/word/Tables/adjust%20row%20height.png' | url }}" alt="Adjust row icon" style="display: block; margin: auto; width: 40px;"></td>
       </tr>
     </tbody>
   </table>
