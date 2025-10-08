@@ -649,3 +649,22 @@ body:not(.sidebar-open) .content-wrapper {
   max-width: none;
   height: auto;
 }
+
+.copy-tooltip {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-tooltip.visible {
+  opacity: 1;
+}

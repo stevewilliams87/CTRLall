@@ -9,6 +9,32 @@
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .copy-tooltip {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      background: #333;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .copy-tooltip.visible {
+      opacity: 1;
+    }
+
+    #share-dropdown img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +70,6 @@
 
   </header>
 
-  <!-- ✅ Sidebar + Content Layout -->
   <div class="layout-wrapper">
     <nav class="sidebar-wrapper">
       <div id="navbar-content" class="navbar-collapse collapse">
@@ -173,31 +198,58 @@
     <img src="" alt="Tooltip GIF">
   </div>
 
-<div id="share-dropdown" class="dropdown-content">
-  <a href="javascript:void(0)" onclick="copyPageLink()">🔗Copy Link</a>
-  <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
-  <a id="linkedin-share" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A8080%2F">
-    <img src="/assets/images/topbar/linkedin.png" alt="Linkedin" style="width:20px; height:20px;">
-  </a>
-  <a id="facebook-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F">
-    <img src="/assets/images/topbar/facebook.png" alt="Facebook" style="width:20px; height:20px;">
-  </a>
-  <a id="reddit-share" target="_blank" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A8080%2F&amp;title=CTRL%20All">
-    <img src="/assets/images/topbar/reddit.png" alt="Reddit" style="width:20px; height:20px;">
-  </a>
-  <a id="bluesky-share" target="_blank" href="https://bsky.app/intent/compose?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
-    <img src="/assets/images/topbar/bluesky.png" alt="Bluesky" style="width:20px; height:20px;">
-  </a>
-  <a id="threads-share" target="_blank" href="https://www.threads.net/intent/post?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
-    <img src="/assets/images/topbar/threads.png" alt="Threads" style="width:20px; height:20px;">
-  </a>
-</div>
+  <div id="share-dropdown" class="dropdown-content">
+    <a href="javascript:void(0)" onclick="copyPageLink(this)" style="position:relative;">
+      🔗Copy Link
+      <span class="copy-tooltip">Copied!</span>
+    </a>
 
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+
+    <a id="linkedin-share" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/linkedin.png" alt="Linkedin">
+    </a>
+    <a id="facebook-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/facebook.png" alt="Facebook">
+    </a>
+    <a id="reddit-share" target="_blank" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A8080%2F&amp;title=CTRL%20All">
+      <img src="/assets/images/topbar/reddit.png" alt="Reddit">
+    </a>
+    <a id="bluesky-share" target="_blank" href="https://bsky.app/intent/compose?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/bluesky.png" alt="Bluesky">
+    </a>
+    <a id="threads-share" target="_blank" href="https://www.threads.net/intent/post?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/threads.png" alt="Threads">
+    </a>
+  </div>
 
   <footer class="site-footer">
     © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
   </footer>
 
   <script src="/js/main.js"></script>
+  <script>
+    function copyPageLink(el) {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => {
+          const tooltip = el.querySelector(".copy-tooltip");
+          tooltip.classList.add("visible");
+          setTimeout(() => {
+            tooltip.classList.remove("visible");
+          }, 1500);
+        })
+        .catch(err => console.error("Copy failed:", err));
+    }
+
+    function emailCurrentPage(event) {
+      event.preventDefault();
+      const subject = "Check out this page";
+      const body = "Here's a link I wanted to share with you:\n\n" + window.location.href;
+      const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
 </body>
 </html>

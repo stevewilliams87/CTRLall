@@ -11,10 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ─── Share Menu Actions ─────────────────────
   function copyPageLink() {
-    navigator.clipboard.writeText(window.location.href).then(() => {
-      alert("Page link copied to clipboard!");
-    });
-  }
+  const url = window.location.href;
+  navigator.clipboard.writeText(url)
+    .then(() => {
+      const tooltip = document.getElementById("copy-tooltip");
+      tooltip.style.visibility = "visible";
+      setTimeout(() => {
+        tooltip.style.visibility = "hidden";
+      }, 1500); // Hide after 1.5 seconds
+    })
+    .catch(err => console.error("Copy failed:", err));
+}
+
 
   function emailCurrentPage(event) {
     event.preventDefault();
