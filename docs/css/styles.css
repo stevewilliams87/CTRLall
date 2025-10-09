@@ -789,3 +789,30 @@ table td {
   }
 }
 
+/* ─── 404 Error Page ────────────────────────── */
+
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.error-container {
+  padding: 2em;
+}
+
+.error-container h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+.error-container p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
