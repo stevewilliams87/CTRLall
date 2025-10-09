@@ -169,6 +169,20 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.style.display = "none";
   });
 
+  // ─── Portrait Mode Warning ──────────────────────
+function checkOrientation() {
+  const warning = document.getElementById('portrait-warning');
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    warning.style.display = 'flex';
+  } else {
+    warning.style.display = 'none';
+  }
+}
+
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
+document.addEventListener('DOMContentLoaded', checkOrientation);
+
   // ─── Contact Form Subject Line ───────────────
   const category = document.getElementById("category");
   const subjectLine = document.getElementById("subjectLine");
