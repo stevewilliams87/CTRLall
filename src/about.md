@@ -1,12 +1,14 @@
 ---
 title: About CTRL All
-description: Anout us.
+description: About us.
 layout: layout.liquid
 active: about
 permalink: /about/
 ---
 
 <section class="section-light">
+  <h1>About us</h1>
+
   <h2>Why CTRL All?</h2>
   <p>Because digital literacy isn’t just about knowing which buttons to press; it’s about understanding the application, navigating it with confidence, and helping others do the same. CTRL All is built by a union member, educator, and open-source advocate who believes in legacy, clarity, and community.</p>
 </section>
@@ -29,8 +31,8 @@ permalink: /about/
   <div class="button-row">
   <ul>
   <li>Browse Tutorials on the left menu</li>
-    <li><a href="/request/" class="action-button">Request a Topic</a></li>
-    <li><a href="/tips/" class="action-button">Got a Tip?</a> Share what you know.</li>
+    <li><a href="/contact/" class="action-button">Request a Topic</a></li>
+    <li><a href="/contact/" class="action-button">Got a Tip?</a> Share what you know.</li>
   </div> 
   </section>
 

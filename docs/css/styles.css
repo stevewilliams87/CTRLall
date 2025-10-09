@@ -22,11 +22,6 @@
   background-color: #2c3e50;
 }
 
-.topnav a.active {
-  color: #452c50;
-  font-weight: 600;
-}
-
 /* ─── Topbar Right Container ──────────────────── */
 .topbar-right {
   display: flex;
@@ -568,29 +563,6 @@ table td {
   min-height: calc(100vh - 60px); /* Adjust for topbar height */
 }
 
-.content-wrapper {
-  flex-grow: 1;
-  padding: 20px;
-  padding-top: 60px;
-  margin-left: 250px;
-  transition: margin-left 0.3s ease;
-}
-
-/* ─── Sidebar Collapse Behavior ──────────────────── */
-body.sidebar-collapsed .content-wrapper,
-.sidebar-wrapper.collapsed + .content-wrapper {
-  margin-left: 0;
-}
-
-.sidebar-wrapper.collapsed {
-  width: 0;
-}
-
-.sidebar-wrapper.collapsed .navbar-collapse {
-  display: none;
-}
-
-/* ─── Sidebar Container ──────────────────────────── */
 .sidebar-wrapper {
   position: fixed;
   top: 60px;
@@ -600,30 +572,35 @@ body.sidebar-collapsed .content-wrapper,
   background-color: #f9f9f9;
   border-right: 1px solid #ddd;
   overflow-y: auto;
-  transform: translateX(0);
-  transition: transform 0.3s ease, width 0.3s ease;
+  transition: width 0.3s ease;
   z-index: 999;
 }
 
-/* ─── Sidebar Toggle Behavior ────────────────────── */
-.sidebar-wrapper.open {
-  transform: translateX(0);
+.content-wrapper {
+  flex-grow: 1;
+  padding: 20px;
+  padding-top: 60px;
+  margin-left: 280px; /* Match sidebar width */
+  transition: margin-left 0.3s ease;
 }
 
-body.sidebar-open .content-wrapper {
-  margin-left: 250px;
+/* ─── Sidebar Collapse Behavior ──────────────────── */
+.sidebar-wrapper.collapsed {
+  width: 0;
 }
 
-body:not(.sidebar-open) .sidebar-wrapper {
-  transform: translateX(-250px);
+.sidebar-wrapper.collapsed .navbar-collapse {
+  display: none;
 }
 
-body:not(.sidebar-open) .content-wrapper {
+/* Use layout-wrapper context to reset margin */
+.layout-wrapper .sidebar-wrapper.collapsed ~ .content-wrapper {
   margin-left: 0;
 }
 
 /* ─── Sidebar Toggle Button ──────────────────────── */
-.sidebar-toggle {
+.sidebar-toggle,
+#navbar-toggle {
   position: fixed;
   top: 0.6rem;
   left: 0.5rem;
@@ -669,6 +646,7 @@ body:not(.sidebar-open) .content-wrapper {
   opacity: 1;
 }
 
+/* ─── Modal Image Preview ────────────────────────── */
 .thumbnail {
   max-width: 100%;
   height: auto;
@@ -692,7 +670,7 @@ body:not(.sidebar-open) .content-wrapper {
 
 .modal-content {
   display: block;
-  margin: 80px auto 5% auto; /* Push down from top */
+  margin: 80px auto 5% auto;
   max-width: 90vw;
   max-height: 80vh;
   width: auto;
@@ -703,12 +681,84 @@ body:not(.sidebar-open) .content-wrapper {
 
 .close {
   position: absolute;
-  top: 80px; /* Adjust this value to sit below your top bar */
+  top: 80px;
   right: 35px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1000;
+}
+
+/* ─── Contact Form ─────────────────────────── */
+#contactForm {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Inter", sans-serif;
+}
+
+#contactForm label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#contactForm button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #374f66;
+}
+
+#formSuccess {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #2c3e50;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  z-index: 1000;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 

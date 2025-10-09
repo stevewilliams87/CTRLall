@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tables: Fixing tables extending offscreen</title>
-  <meta name="description" content="Empowering learners with open-source tools and ethical guidance.">
+  <title>Contact us</title>
+  <meta name="description" content="Contact us.">
   <meta name="author" content="Steve – CTRL All">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="robots" content="index, follow">
@@ -61,7 +61,7 @@
   <div class="topbar-right">
     <nav class="topnav">
       <a href="/about/" class="">About</a>
-      <a href="/contact/" class="">Contact</a>
+      <a href="/contact/" class="active">Contact</a>
       <a href="#" class="dropbtn">Share</a>
     </nav>
   </div>
@@ -88,10 +88,10 @@
 
   <!-- Word Section -->
   <li>
-    <button class="nav-toggle active expanded" data-section="word" aria-expanded="true" aria-controls="nav-word">
+    <button class="nav-toggle " data-section="word" aria-expanded="false" aria-controls="nav-word">
       Word <span class="arrow"></span>
     </button>
-    <ul id="nav-word" class="nav-level-2 show">
+    <ul id="nav-word" class="nav-level-2 ">
       <li><a href="/word/" class="">Getting started with Word</a></li>
       <li><a href="/word/pages-and-views/" class="">Pages and views</a></li>
       <li><a href="/word/saving-and-save-as/" class="">Saving and Save As</a></li>
@@ -100,7 +100,7 @@
       <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
       <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
       <li><a href="/word/tables/" class="">Tables</a></li>
-      <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="active">Tables: Fixing tables extending offscreen</a></li>
+      <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
       <li><a href="/content-control/keyboard-shortcuts/#word-keyboard-shortcuts" class="">Word Keyboard Shortcuts</a></li>
     </ul>
   </li>
@@ -160,22 +160,29 @@
 
     <main class="content-wrapper">
       <div class="content">
-        <h1>Fixing tables extending offscreen</h1>
-<section class="section-light">
-<p>Got a table with columns extending beyond the margin offscreen? It’s a bit annoying. Typically this can happen when adding or pasting a new column onto a table that’s likely had it’s column widths altered previously. It might look something like this:</p>
-<img class="border" src="/assets/images/word/Tables fixing tables extending offscreen/Example table extending offscreen.png" alt="Table extending offscreen example" width="600">
-<p>There is a quick tool we can use to bring it back in line.</p>
-<p>First, select the whole table (hover over table and click the little box top left corner):</p>
-<img class="border" src="/assets/images/word/Tables fixing tables extending offscreen/Example table extending offscreen selected.png" alt="Table extending offscreen example selected" width="550" style="margin-bottom: 10px;">
-<p>Then under Table Layout > Autofit select <strong>AutoFit Window</strong>:</p>
-<img src="/assets/images/word/Tables fixing tables extending offscreen/Table Layout Autofit.png" alt="Autofit window" width="300" style="margin-bottom: 20px;">
-<p>This autofits the whole table to fit the page again.</p>
-<img class="border" src="/assets/images/word/Tables fixing tables extending offscreen/Example table autofit to window.png" alt="Table autofit to window" width="550" style="margin-bottom: 20px;">
-<p>It may need some cleaning up in terms of column width; <strong>Distribute Columns</strong> under Table Layout is a good tool for dealing with this as it makes all of your table’s column widths equal:</p>
-<img src="/assets/images/word/Tables fixing tables extending offscreen/Table Layout Distribute Column.png" alt="Distribute Column" width="150">
-<img class="border" src="/assets/images/word/Tables fixing tables extending offscreen/Example table distributed columns.png" alt="Table with columns evenly distributed" width="550">
+        <section class="section-light">
+<h1>Contact us</h1>
+<p>If you're stuck on a problem, have a query or something else, feel free to drop us a message.</p>
+<form action="https://formspree.io/f/mblzanjy" method="POST" id="contactForm">
+  <label for="email">Your Email</label>
+  <input type="email" name="email" id="email" required>
+  <select name="category" id="category" required>
+    <option value="#">Select</option>
+    <option value="Individual">Individual</option>
+    <option value="Educator">Educator</option>
+    <option value="Education provider">Education provider</option>
+    <option value="Library">Library</option>
+    <option value="Community organisation">Community organisation</option>
+    <option value="Union">Union</option>
+    <option value="Other">Other</option>
+  </select>
+  <label for="message">Message</label>
+  <textarea name="message" id="message" rows="6" required></textarea>
+  <input type="hidden" name="_subject" id="subjectLine" value="New Inquiry">
+  <button type="submit">Send</button>
+</form>
+<div id="formSuccess" style="display:none; margin-top:1rem; color:white;">Thanks! Message sent.</div>
 </section>
-
       </div>
     </main>
   </div>

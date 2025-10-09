@@ -11,18 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ─── Share Menu Actions ─────────────────────
   function copyPageLink() {
-  const url = window.location.href;
-  navigator.clipboard.writeText(url)
-    .then(() => {
-      const tooltip = document.getElementById("copy-tooltip");
-      tooltip.style.visibility = "visible";
-      setTimeout(() => {
-        tooltip.style.visibility = "hidden";
-      }, 1500); // Hide after 1.5 seconds
-    })
-    .catch(err => console.error("Copy failed:", err));
-}
-
+    const url = window.location.href;
+    navigator.clipboard.writeText(url)
+      .then(() => {
+        const tooltip = document.getElementById("copy-tooltip");
+        tooltip.style.visibility = "visible";
+        setTimeout(() => {
+          tooltip.style.visibility = "hidden";
+        }, 1500);
+      })
+      .catch(err => console.error("Copy failed:", err));
+  }
 
   function emailCurrentPage(event) {
     event.preventDefault();
@@ -35,17 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageUrl = encodeURIComponent(window.location.href);
   const pageTitle = encodeURIComponent(document.title);
 
-  const linkedin = document.getElementById("linkedin-share");
-  const facebook = document.getElementById("facebook-share");
-  const reddit = document.getElementById("reddit-share");
-  const bluesky = document.getElementById("bluesky-share");
-  const threads = document.getElementById("threads-share");
+  const socialLinks = {
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`,
+    reddit: `https://www.reddit.com/submit?url=${pageUrl}&title=${pageTitle}`,
+    bluesky: `https://bsky.app/intent/compose?text=${pageTitle}%20${pageUrl}`,
+    threads: `https://www.threads.net/intent/post?text=${pageTitle}%20${pageUrl}`
+  };
 
-  if (linkedin) linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
-  if (facebook) facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-  if (reddit) reddit.href = `https://www.reddit.com/submit?url=${pageUrl}&title=${pageTitle}`;
-  if (bluesky) bluesky.href = `https://bsky.app/intent/compose?text=${pageTitle}%20${pageUrl}`;
-  if (threads) threads.href = `https://www.threads.net/intent/post?text=${pageTitle}%20${pageUrl}`;
+  Object.entries(socialLinks).forEach(([id, url]) => {
+    const el = document.getElementById(`${id}-share`);
+    if (el) el.href = url;
+  });
 
   // ─── Share Dropdown Behavior ────────────────
   const dropbtn = document.querySelector(".dropbtn");
@@ -88,10 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const sidebarWrapper = document.querySelector(".sidebar-wrapper");
 
   if (toggleBtn && sidebarWrapper) {
-    const savedState = localStorage.getItem("sidebarCollapsed") === "true";
-    if (savedState) {
+    const wasCollapsed = localStorage.getItem("sidebarCollapsed") === "true";
+    if (wasCollapsed) {
       sidebarWrapper.classList.add("collapsed");
       toggleBtn.setAttribute("aria-expanded", "false");
+    } else {
+      sidebarWrapper.classList.remove("collapsed");
+      toggleBtn.setAttribute("aria-expanded", "true");
     }
 
     toggleBtn.addEventListener("click", () => {
@@ -99,19 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleBtn.setAttribute("aria-expanded", !isCollapsed);
       localStorage.setItem("sidebarCollapsed", isCollapsed);
     });
-  }
-
-  // ─── Mobile Sidebar Toggle (Unified) ────────
-  const sidebarToggle = document.getElementById("sidebar-toggle");
-
-  if (sidebarToggle && sidebarWrapper) {
-    sidebarToggle.addEventListener("click", () => {
-      const isOpen = sidebarWrapper.classList.toggle("open");
-      document.body.classList.toggle("sidebar-open", isOpen);
-      console.log("Mobile sidebar toggled:", isOpen);
-    });
-  } else {
-    console.warn("Mobile sidebar toggle failed: missing #sidebar-toggle or .sidebar-wrapper");
   }
 
   // ─── Footer Fade-In on Scroll ───────────────
@@ -148,19 +138,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // ─── Mobile Orientation Overlay ─────────────
   function checkOrientation() {
     const overlay = document.getElementById("portrait-overlay");
-    if (window.innerHeight > window.innerWidth) {
-      overlay.style.display = "flex";
-    } else {
-      overlay.style.display = "none";
+    if (overlay) {
+      overlay.style.display = window.innerHeight > window.innerWidth ? "flex" : "none";
     }
   }
 
   window.addEventListener("resize", checkOrientation);
   window.addEventListener("load", checkOrientation);
-});
 
- // ─── Modal Image Preview ─────────────────────
-document.addEventListener("DOMContentLoaded", () => {
+  // ─── Modal Image Preview ─────────────────────
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
 
@@ -172,11 +158,57 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelector(".close").addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+  const closeBtn = document.querySelector(".close");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  }
 
   modal.addEventListener("click", () => {
     modal.style.display = "none";
   });
+
+  // ─── Contact Form Subject Line ───────────────
+  const category = document.getElementById("category");
+  const subjectLine = document.getElementById("subjectLine");
+
+  if (category && subjectLine) {
+    category.addEventListener("change", () => {
+      const selected = category.value;
+      subjectLine.value = selected && selected !== "#" ? `Inquiry from ${selected}` : "New Inquiry";
+    });
+  }
+
+  // ─── Contact Form Confirmation ───────────────
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("formSuccess");
+
+  if (form && successMessage) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (response.ok) {
+          form.reset();
+          successMessage.style.display = "block";
+        } else {
+          alert("Oops! Something went wrong. Please try again.");
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+        alert("Network error. Please try again later.");
+      }
+    });
+  }
 });
