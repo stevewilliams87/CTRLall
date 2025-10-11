@@ -60,7 +60,7 @@ active: glossary
     </tr>
     <tr>
       <td id="copy and paste">Copy and paste / Copying and pasting</td>
-      <td>Duplicating content from one location to another. See this article for examples: <a href="/word/cut-copy-and-paste/">Cut, Copy and Paste</a></td>
+      <td>Duplicating content from one location to another. See this article for examples: <a href="/content-control/copying-content/">Copying content</a></td>
     </tr>
         <tr>
       <td id="clipboard">Clipboard</td>
@@ -70,7 +70,7 @@ active: glossary
         <li>Office clipboard: this clipboard works within MS Office apps only, storing up to 24 items which means you can copy multiple content (up to 24 at once) to paste them later. The Office clipboard keeps this information until you close the app.</li>
       </ul>
         Press the bottom right corner of Home > Clipboard in an MS Office application to see and select on the clipboard to paste.
-        <img class="border" src="/assets/images/glossary/Office Clipboard.png" alt="Cursor keys" style="width: 8%;"></td>
+        <img class="border" src="{{ '/assets/images/glossary/Office Clipboard.png' | url }}" alt="Cursor keys" style="width: 12%;"></td>
     </tr>
     <tr>
       <td id="colour palette">Colour palette</td>
@@ -83,12 +83,12 @@ active: glossary
     <tr>
       <td id="cursor">Cursor / Pointer</td>
       <td>The cursor, also known as the pointer, is the arrow or symbol where your mouse or mousepad is currently pointing. It is used to select system files, menus, buttons, objects and content. In applications the cursor icon can change for different actions.
-      <img src="/assets/images/glossary/Cursor arrow icon.png" alt="Cursor keys" style="width: 3%; margin-left: 1rem;"></td>
+      <img src="{{ '/assets/images/glossary/Cursor arrow icon.png' | url }}" alt="Cursor keys" style="width: 3%; margin-left: 1rem;"></td>
     </tr>
     <tr>
       <td id="cursor keys">Cursor keys</td>
       <td>The up, down, left and right buttons on your keyboard.
-      <img class="border" src="/assets/images/keyboard shortcuts/Cursor keys.png" alt="Cursor keys" style="width: 20%;">
+      <img class="border" src="{{ '/assets/images/keyboard shortcuts/Cursor keys.png' | url }}" alt="Cursor keys" style="width: 20%;">
       </td>
     </tr>
     <tr>
@@ -97,7 +97,7 @@ active: glossary
     </tr>
     <tr>
       <td id="cut and paste">Cut and paste / Cutting and pasting</td>
-      <td>Removing content from one location and duplicating it in another. See this article for examples: <a href="/word/cut-copy-and-paste/">Cut, Copy and Paste</a></td>
+      <td>Removing content from one location and duplicating it in another. See this article for examples: <a href="/content-control/moving-content/">Moving content</a></td>
     </tr>
     <tr>
       <td id="drag">Drag / Click and drag / Clicking and dragging</td>
@@ -107,6 +107,14 @@ active: glossary
       <td id="drag and drop">Drag and drop / dragging and dropping</td>
       <td>With content like text, a shape or image already selected, you left click and hold on that selected content then drag the <a href="#cursor">cursor</a> to a new location which moves the content there. Sometimes <a href="#cut and paste">cutting and pasting</a> can be easier, especially with large images or large amounts of text.</td>
     </tr>
+    <tr>
+      <td id="filename-extension">Filename extension</td>
+      <td>Shows the file type as a suffix at the end of the filename after a full stop/period. E.g. a Word document will have the extension <strong>.docx</strong> while a Excel workbook will have <strong>.xlsx</strong>
+      <img src="{{ '/assets/images/glossary/File extension.png' | url }}"  alt="File extension" style="height:75%; width:75%; vertical-align:middle">
+      </td>
+    </tr>
+      <td id="filetype">Filetype</td>
+      <td>Literally the type of file a file is. When viewing files in the details view the filetypes are shown in a <strong>Type</strong> column.</td>
     <tr>
       <td id="first-line indent">First-line indent</td>
       <td>Where the first line of a paragraph is <a href="#indent">indented</a>.</td>
@@ -156,8 +164,8 @@ active: glossary
       <td>
         A flashing vertical line in an editable area that indicates where you are about to type or edit on the page. You can move this by clicking elsewhere with the <a href="#cursor">cursor</a> or moving it with <a href="#cursor keys">cursor keys</a> on your keyboard.<br>
         <div style="display: flex; gap: 1em; align-items: flex-start;">
-          <img class="border" src="/assets/images/glossary/Insertion point example 1.gif" alt="Insertion point example" style="width: 15%;">
-          <img class="border" src="/assets/images/glossary/Insertion point example 2.gif" alt="Insertion point in a text box example" style="width: 15%;">
+          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 1.gif' | url }}" alt="Insertion point example" style="width: 15%;">
+          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 2.gif' | url }}" alt="Insertion point in a text box example" style="width: 15%;">
         </div>
       </td>
     </tr>
@@ -212,11 +220,11 @@ active: glossary
     <tr>
       <td id="paragraph marks">Paragraph marks / Show/Hide ¶</td>
       <td>Paragraph marks (also called Show/Hide ¶) is a visibility toggle showing hidden layout and formatting markers in the document e.g., <a href="#page breaks">page breaks</a> and <a href="#section breaks">section breaks</a>. This can be useful to troubleshoot layout issues. The Paragraph marks tool can be found under Home > Paragraph.
-      <img class="border" src="/assets/images/glossary/Paragraph marks.png" alt="Cursor keys" style="width: 25%;"></td>
+      <img class="border" src="{{ '/assets/images/glossary/Paragraph marks.png' | url }}" alt="Cursor keys" style="width: 25%;"></td>
     </tr>
     <tr>
       <td id="paste">Paste / Pasting</td>
-      <td>Duplicates information from the <a href="#clipboard">clipboard</a>. See this article for examples: <a href="/word/cut-copy-and-paste/">Cut, Copy and Paste</a></td>
+      <td>Duplicates information from the <a href="#clipboard">clipboard</a>. See these articles for examples of pasting in action: <a href="/content-control/moving-content/">Moving content</a> / <a href="/content-control/copying-content/">Copying content</a></td>
     </tr>
     <tr>
       <td id="point font">Point (font)</td>
@@ -233,7 +241,7 @@ active: glossary
     <tr>
       <td id="quick styles">Quick Styles</td>
       <td>Styles available in a visual gallery under Home > Styles that you can access and apply to text easily and quickly for frequent use. You can customise the gallery to include other styles as needed.
-      <img class="border" src="/assets/images/glossary/Quick styles.png" alt="Cursor keys" style="width: 25%;"></td>
+      <img class="border" src="{{ '/assets/images/glossary/Quick styles.png' | url }}" alt="Cursor keys" style="width: 25%;"></td>
     </tr>
     <tr>
       <td id="ribbon">Ribbon</td>
@@ -298,7 +306,7 @@ active: glossary
     <tr>
       <td id="toggle">Toggle</td>
       <td>A button that lets you switch between one of two options with a single click. For example <a href="#autosave">Autosave</a> in MS Office apps:
-      <img src="/assets/images/glossary/Toggle example.png" alt="Select cell arrow" style="display: block; margin-left: 0; width: 10%;">
+      <img src="{{ '/assets/images/glossary/Toggle example.png' | url }}" alt="Select cell arrow" style="display: block; margin-left: 0; width: 10%;">
       </td>
     </tr>
     <tr>

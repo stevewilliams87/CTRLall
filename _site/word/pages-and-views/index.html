@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pages and Views</title>
+  <meta name="description" content="Empowering learners with open-source tools and ethical guidance.">
+  <meta name="author" content="Steve – CTRL All">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .copy-tooltip {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      background: #333;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .copy-tooltip.visible {
+      opacity: 1;
+    }
+
+    #share-dropdown img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="portrait-warning">
+  This website is better experienced in landscape mode.
+</div>
+
+  <noscript>
+    <div class="noscript-warning">
+      JavaScript is required for full site functionality.
+    </div>
+  </noscript>
+
+  <div id="portrait-overlay">
+    <div class="overlay-text">This site is best experienced in landscape.</div>
+  </div>
+
+  <header class="topbar">
+    <button id="navbar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+    <header class="topbar">
+  <div class="topbar-left">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="logo">
+      <a href="/">CTRL All</a>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <nav class="topnav">
+      <a href="/about/" class="">About</a>
+      <a href="/contact/" class="">Contact</a>
+      <a href="#" class="dropbtn">Share</a>
+    </nav>
+  </div>
+</header>
+
+  </header>
+
+  <div class="layout-wrapper">
+    <nav class="sidebar-wrapper">
+      <div id="navbar-content" class="navbar-collapse">
+        <ul class="nav-level-1">
+
+  <!-- Content Control Section -->
+  <li>
+    <button class="nav-toggle " data-section="content-control" aria-expanded="false" aria-controls="nav-content-control">
+      Content control <span class="arrow"></span>
+    </button>
+    <ul id="nav-content-control" class="nav-level-2 ">
+      <li><a href="/content-control/moving-content/" class="">Moving content</a></li>
+      <li><a href="/content-control/copying-content/" class="">Copying content</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Word Section -->
+  <li>
+    <button class="nav-toggle active expanded" data-section="word" aria-expanded="true" aria-controls="nav-word">
+      Word <span class="arrow"></span>
+    </button>
+    <ul id="nav-word" class="nav-level-2 show">
+      <li><a href="/word/" class="">Getting started with Word</a></li>
+      <li><a href="/word/pages-and-views/" class="active">Pages and views</a></li>
+      <li><a href="/word/documents-vs-templates/" class="">Documents vs Templates</a></li>
+      <li><a href="/word/saving-and-save-as/" class="">Saving and Save As</a></li>
+      <li><a href="/word/selecting-text/" class="">Selecting text</a></li>
+      <li><a href="/word/formatting-text/" class="">Formatting text</a></li>
+      <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
+      <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
+      <li><a href="/word/tables/" class="">Tables</a></li>
+      <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#word-keyboard-shortcuts" class="">Word Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Excel Section -->
+  <li>
+    <button class="nav-toggle " data-section="excel" aria-expanded="false" aria-controls="nav-excel">
+      Excel <span class="arrow"></span>
+    </button>
+    <ul id="nav-excel" class="nav-level-2 ">
+      <li><a href="/excel/" class="">Getting started with Excel</a></li>
+      <li><a href="/excel/selecting-cells-and-values/" class="">Selecting cells and values</a></li>
+      <li><a href="/excel/understanding-formulas/" class="">Understanding formulas</a></li>
+      <li><a href="/excel/conditional-formatting/" class="">Conditional formatting</a></li>
+      <li><a href="/excel/data-validation/" class="">Data validation</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#excel-keyboard-shortcuts" class="">Excel Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- PowerPoint Section -->
+  <li>
+    <button class="nav-toggle " data-section="powerpoint" aria-expanded="false" aria-controls="nav-powerpoint">
+      PowerPoint <span class="arrow"></span>
+    </button>
+    <ul id="nav-powerpoint" class="nav-level-2 ">
+      <li><a href="/powerpoint/" class="">Getting started with PowerPoint</a></li>
+      <li><a href="/powerpoint/editing-slides/" class="">Editing slides</a></li>
+      <li><a href="/powerpoint/animations/" class="">Animations</a></li>
+      <li><a href="/powerpoint/fade-list-effect/" class="">Fade list effect</a></li>
+      <li><a href="/powerpoint/presenter-view/" class="">Presenter view</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#powerpoint-keyboard-shortcuts" class="">PowerPoint Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Outlook Section -->
+  <li>
+    <button class="nav-toggle " data-section="outlook" aria-expanded="false" aria-controls="nav-outlook">
+      Outlook <span class="arrow"></span>
+    </button>
+    <ul id="nav-outlook" class="nav-level-2 ">
+      <li><a href="/outlook/" class="">Outlook signatures</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#outlook-keyboard-shortcuts" class="">Outlook Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Glossary Section -->
+  <li>
+    <button class="nav-toggle " onclick="location.href='/glossary/'">
+      Glossary
+    </button>
+  </li>
+
+</ul>
+
+      </div>
+    </nav>
+
+    <main class="content-wrapper">
+      <div class="content">
+        <h1>Pages and Views</h1>
+<section class="section-light">
+This article explains the basics of altering pages and views in Microsoft Word. 
+<h2>View tab</h2>
+<p>Under the View tab you have several options to zoom and have choose where one or more pages are shown on screen.</p>
+<p><img src="/assets/images/word/Pages and Views/1 Zoom on Ribbon.png"  alt="Zoom on Ribbon" style="height:20%; width:20%; vertical-align:middle"></p>
+<br>
+<strong>Zoom keyboard shortcuts:</strong>
+<ul>
+    <li><strong><span class="text-tooltip">Ctrl and +<img src="/assets/images/keyboard shortcuts/Ctrl++.png" class="text-tooltip-img" alt="Ctrl and +"></span></strong> to zoom in / <strong><span class="text-tooltip">Ctrl and -<img src="/assets/images/keyboard shortcuts/Ctrl+-.png" class="text-tooltip-img" alt="Ctrl and -"></span></strong> to zoom out</li>
+    <li>If you're using a mouse a much faster way to zoom is to hold down <strong>Ctrl + mouse wheel up</strong> to zoom in and <strong>Ctrl + mouse wheel down</strong> to zoom out. Some laptop mousepads offer this function down one side as well.</li>
+    <li><strong><span class="text-tooltip">Ctrl + 0 (zero)<img src="/assets/images/keyboard shortcuts/Ctrl+0.png" class="text-tooltip-img" alt="Ctrl + 0"></span></strong> will reset zoom level to 100%</li>
+</ul>
+<br>
+<strong>Page views</strong>
+<p>One page view:</p>
+<p><img src="/assets/images/word/Pages and Views/2 One Page.png"  alt="One page view" style="height:50%; width:50%; vertical-align:middle"></p>
+<p>Multiple pages view:</p>
+<p><img src="/assets/images/word/Pages and Views/3 Multiple Pages.png"  alt="Mulitple pages view" style="height:50%; width:50%; vertical-align:middle"></p>
+<br>
+<h2>Layout tab</h2>
+<p>Under <strong>Layout</strong> you can change the size and orientation of a page. You can also alter margins, columns and apply other tools which are a little more advanced.</p>
+<p><img src="/assets/images/word/Pages and Views/4 Layout Page Setup.png"  alt="Layout Page Setup options" style="height:30%; width:30%; vertical-align:middle"></p>
+<p><strong>Size</strong> and <strong>Orientation</strong> are the most common tools used here:</p>
+<p><img src="/assets/images/word/Pages and Views/5 Orientation and Size.png"  alt="Orientation and Size options" style="height:30%; width:30%; vertical-align:middle"></p>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Tooltip & Share Dropdown -->
+  <div id="gif-tooltip" class="gif-tooltip">
+    <img src="" alt="Tooltip GIF">
+  </div>
+
+  <div id="share-dropdown" class="dropdown-content">
+    <a href="javascript:void(0)" onclick="copyPageLink(this)" style="position:relative;">
+      🔗Copy Link
+      <span class="copy-tooltip">Copied!</span>
+    </a>
+
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+
+    <a id="linkedin-share" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/linkedin.png" alt="Linkedin">
+    </a>
+    <a id="facebook-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/facebook.png" alt="Facebook">
+    </a>
+    <a id="reddit-share" target="_blank" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A8080%2F&amp;title=CTRL%20All">
+      <img src="/assets/images/topbar/reddit.png" alt="Reddit">
+    </a>
+    <a id="bluesky-share" target="_blank" href="https://bsky.app/intent/compose?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/bluesky.png" alt="Bluesky">
+    </a>
+    <a id="threads-share" target="_blank" href="https://www.threads.net/intent/post?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/threads.png" alt="Threads">
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    © Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    function copyPageLink(el) {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => {
+          const tooltip = el.querySelector(".copy-tooltip");
+          tooltip.classList.add("visible");
+          setTimeout(() => {
+            tooltip.classList.remove("visible");
+          }, 1500);
+        })
+        .catch(err => console.error("Copy failed:", err));
+    }
+
+    function emailCurrentPage(event) {
+      event.preventDefault();
+      const subject = "Check out this page";
+      const body = "Here's a link I wanted to share with you:\n\n" + window.location.href;
+      const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</body>
+</html>

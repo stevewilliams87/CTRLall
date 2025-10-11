@@ -22,7 +22,6 @@ module.exports = function(eleventyConfig) {
       includes: "../_includes",
       output: "docs"
     },
-    pathPrefix: "/",
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
     templateFormats: ["md", "11ty.md", "liquid", "html"]
