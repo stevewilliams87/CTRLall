@@ -9,5 +9,6 @@ active: content-control
 
 <h2>Copy and paste</h2> 
 Copying content attaches its information temporarily to the computer's <a href="/glossary/#clipboard">clipboard</a>. This allows you to then <a href="/glossary/#paste">paste</a> it elsewhere.  
- <!-- GIF of copy and pasting sentence above a paragraph -->
- <!-- GIF of copy and pasting file in folder -->
+<img class="thumbnail" src="{{ '/assets/images/content control/Copy and paste text.gif' | url }}"  alt="Dragging text" style="height:70%; width:70%; vertical-align:middle"> 
+
+<!-- GIF of copy and pasting file in folder -->

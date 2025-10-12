@@ -12,7 +12,7 @@ There are different ways to move content in Windows and Microsoft Office apps. T
 
 <h2>Dragging</h2> 
 Dragging, also referred to as 'drag and drop' or 'click and drag', is where you select a file or content holding down left click and move the mouse/mousepad to another location. 
- <!-- GIF of drag and drop sentence above a paragraph -->
+<img class="thumbnail" src="{{ '/assets/images/content control/Drag text.gif' | url }}"  alt="Dragging text" style="height:70%; width:70%; vertical-align:middle">
  <!-- GIF of drag and drop excel cell value to another cell -->
  <!-- GIF of drag and drop file into folder -->
 
@@ -21,6 +21,6 @@ Dragging, also referred to as 'drag and drop' or 'click and drag', is where you 
 
 <p>For content in applications, the content is removed when cut.</p>
 <p>For files, they are removed from their original location once pasted into the new location.</p>
- <!-- GIF of cut and pasted sentence above a paragraph -->
+<img class="thumbnail" src="{{ '/assets/images/content control/Cut and paste text.gif' | url }}"  alt="Cut and paste text" style="height:70%; width:70%; vertical-align:middle">
  <!-- GIF of cut and pasted excel cell value to another cell -->
  <!-- GIF of cut and pasted file into folder -->
