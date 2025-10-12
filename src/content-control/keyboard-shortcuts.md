@@ -9,7 +9,7 @@ active: content-control
 
 <section class="section-light">
 
-<h2 id="windows keyboard shortcuts">Windows shortcuts</h2>
+<h2 id="windows-keyboard-shortcuts">Windows shortcuts</h2>
 <p>Note: Some Windows shortcuts use the <strong>Windows</strong> key which looks like this:</p>
 <p><img src="{{ '/assets/images/keyboard shortcuts/Windows key on keyboard.png' | url }}"  alt="Windows key on keyboard" style="height:33%; width:33%; vertical-align:middle"></p>
 
@@ -41,7 +41,7 @@ active: content-control
 </table>
 
 
-<h2 id="word keyboard shortcuts">Microsoft Word shortcuts</h2>
+<h2 id="word-keyboard-shortcuts">Microsoft Word shortcuts</h2>
 <br>
 <table class="shortcut-tables-cursor-icons hover-table">
   <colgroup>

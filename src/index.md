@@ -9,10 +9,9 @@ permalink: /
   <h1>CTRL All</h1>
   <p style="color: #452c50;"><strong>Digital literacy with soul, clarity, and control.</strong></p>
   <br>
-  <p>
-    Welcome to CTRL All — a space built for learners, creators, educators and troubleshooters who believe digital skills should be empowering, ethical, and open to everyone. Content is freely shared under the
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 license.</a>
-  </p>
+  <p>Welcome to CTRL All — a space built for learners, creators, educators and troubleshooters who believe digital skills should be empowering, ethical, and open to everyone.</p> 
+  <br>
+    <p>© 2025 Ctrl All. All rights reserved.</p>
 </section>
 
 <section class="section-light">
