@@ -6,7 +6,7 @@ active: glossary
 ---
 
 <h1>Glossary</h1>
-<table>
+<table class="hover-table">
     <colgroup>
       <col style="width: 20%;">
       <col style="width: 80%;">

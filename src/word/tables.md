@@ -18,7 +18,7 @@ To create a table, select the <strong>Insert</strong> tab on the ribbon, then se
     <p><strong>Hover over a row to see that function in action.</strong></p>
   </div>
 
-  <table class="word-tables-cursor-icons table-row-hover">
+  <table class="word-tables-cursor-icons hover-table">
     <colgroup>
       <col style="width: 17%;">
       <col style="width: 63%;">

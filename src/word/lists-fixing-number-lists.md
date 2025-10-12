@@ -11,18 +11,18 @@ active: word
 
 <p>In the example snip below we have a numbered lists extending over headings which we want to all be connected together. Note: Some are connected, some are not.</p>
 
-<img src="/assets/images/word/Lists fixing number lists/Number list issue example.png" alt="Number list issue example" width="450">
+<img class="thumbnail" src="{{ '/assets/images/word/Lists fixing number lists/Number list issue example.png' | url }}" alt="Number list issue example" width="450">
 
 To have all these numbers run sequentially together, right click the number that is not following on from the last and select <strong>Continue Numbering</strong> from the menu.
 
-<img class="border" src="/assets/images/word/Lists fixing number lists/Right click menu Continue Numbering.png" alt="Right click menu Continue Numbering" width="250">
+<img class="thumbnail border" src="{{ '/assets/images/word/Lists fixing number lists/Right click menu Continue Numbering.png' | url }}" alt="Right click menu Continue Numbering" width="250">
 
 You can also set a custom number for a numbered list to start on via <strong>Set Numbering value</strong> which brings up this window:
 
-<img class="border" src="/assets/images/word/Lists fixing number lists/Right click menu Set Number Value.png" alt="Right click menu Set Number Value" width="250">
+<img class="thumbnail border" src="{{ '/assets/images/word/Lists fixing number lists/Right click menu Set Number Value.png' | url }}" alt="Right click menu Set Number Value" width="250">
 <br>
-<img src="/assets/images/word/Lists fixing number lists/Set Number Value options.png" alt="Set Number Value options" width="225">
+<img class="thumbnail" src="{{ '/assets/images/word/Lists fixing number lists/Set Number Value options.png' | url }}" alt="Set Number Value options" width="225">
 <br>
 Once done you should see the numbered lists continuing on as appropriate (Note: the numbers below the last heading that were sequential will adapt accordingly):
 
-<img src="/assets/images/word/Lists fixing number lists/Number list issue example fixed.png" alt="Number list issue example fixed" width="450">
+<img class="thumbnail" src="{{ '/assets/images/word/Lists fixing number lists/Number list issue example fixed.png' | url }}" alt="Number list issue example fixed" width="450">

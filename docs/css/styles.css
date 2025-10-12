@@ -381,11 +381,27 @@ table td {
 
 
 
-/* Table row hover highlight for special tables only */
-.table-row-hover tbody tr:hover {
+/* Table row hover highlight style */
+.hover-table tbody tr:hover {
   background-color: #f0f0f0;
   cursor: default;
 }
+
+/* Table style with no visible borders */
+.no-border {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.no-border th,
+.no-border td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
 
 /* Centered Intro Block */
 .center-text {

@@ -21,11 +21,11 @@ active: word
 
 <p>Here's an example of a list with an extra warning on step 6. We've italicised it but it still doesn't really stand out very well.</p>
 
-<img src="/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example.png" alt="Soft-Hard return in list example" width="550">
+<img class="thumbnail" src="{{ '/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example.png' | url }}" alt="Soft-Hard return in list example" width="550">
 
 <p>Let's apply a hard and soft return just before the 'Warning' to see the difference:</p>
 
-<img src="/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example edit.png" alt="Soft-Hard return in list example edit" width="550">
+<img class="thumbnail" src="{{ '/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example edit.png' | url }}" alt="Soft-Hard return in list example edit" width="550">
 
 <table>
   <colgroup>
@@ -40,8 +40,8 @@ active: word
   </thead>
   <tbody>
     <tr>
-      <td><img src="/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example - Hard return.png" alt="Hard return example" width="450"></td>
-      <td><img src="/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example - Soft return.png" alt="Soft return example" width="450"></td>
+      <td><img class="thumbnail" src="{{ '/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example - Hard return.png' | url }}" alt="Hard return example" width="450"></td>
+      <td><img class="thumbnail" src="{{ '/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example - Soft return.png' | url }}" alt="Soft return example" width="450"></td>
     </tr>
 </tbody>
 </table>
