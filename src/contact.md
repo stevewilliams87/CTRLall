@@ -20,6 +20,8 @@ permalink: /contact/
     <option value="Library">Library</option>
     <option value="Community organisation">Community organisation</option>
     <option value="Union">Union</option>
+    <option value="Government">Government</option>
+    <option value="Corporate">Corporate</option>
     <option value="Other">Other</option>
   </select>
   <label for="message">Message</label>

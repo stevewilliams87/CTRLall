@@ -101,7 +101,7 @@ active: glossary
     </tr>
     <tr>
       <td id="drag">Drag / Click and drag / Clicking and dragging</td>
-      <td>Holding down left click on your mouse or mousepad and moving the <a href="#cursor">cursor</a> across multiple items, normally to select them together. Release the left click when you’ve got everything you need selected.</td>
+      <td>Holding down left click on your mouse or mousepad and moving the <a href="#cursor">cursor</a> across multiple items, normally to select them together. Release the left click when you’ve got everything you need selected. See examples here: <a href="/content-control/moving-content/">Moving content</a></td>
     </tr>
     <tr>
       <td id="drag and drop">Drag and drop / dragging and dropping</td>

@@ -67,7 +67,6 @@
   height: 16px;
   display: block;
   margin: 0;
-  vertical-align: middle;
 }
 
 #share-dropdown a span {
@@ -566,9 +565,8 @@ table td {
 .site-footer a {
   text-decoration: none;
   color: #d0d0d0;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 4px 6px;
+  font-weight: 600;
+  font-size: inherit;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
