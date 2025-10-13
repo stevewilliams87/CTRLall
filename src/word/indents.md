@@ -22,7 +22,7 @@ active: word
 
 <h2 id="pargraphs-and-indents">Paragraphs and indents</h2>
 
-With the <a href="insertion-point">insertion point</a> on the paragraph, on the ruler above the page you'll see the indent markers aligned together like this:
+With the <a href="/glossary/#insertion-point">insertion point</a> on the paragraph, on the <a href="/glossary/#ruler">ruler</a> above the page you'll see the indent markers aligned together like this:
 <p><img class="border" src="{{ '/assets/images/word/Indents/Paragraph%20indent%20markers%20on%20ruler.png' | url }}" alt="Paragraph and indent markers" style="display: inline; margin: auto; height:100%; width: 100%;"></p>
 
 <p>Here's what each of the indent markers do when working with paragraphs:</p>
