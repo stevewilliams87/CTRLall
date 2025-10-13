@@ -57,19 +57,24 @@
     {% include "topbar.liquid" %}
   </header>
 
-  <div class="layout-wrapper">
-    <nav class="sidebar-wrapper">
-      <div id="navbar-content" class="navbar-collapse">
-        {% include "navbar.liquid", page: page %}
-      </div>
-    </nav>
+<div class="layout-wrapper">
+  <nav class="sidebar-wrapper">
+    <div id="navbar-content" class="navbar-collapse">
+      {% include "navbar.liquid", page: page %}
+    </div>
+  </nav>
 
-    <main class="content-wrapper">
-      <div class="content">
-        {{ content }}
-      </div>
-    </main>
-  </div>
+  <main class="content-wrapper">
+    <div class="content">
+      {{ content }}
+    </div>
+  </main>
+
+  <aside class="adsbar-wrapper">
+    {% include "adsbar.liquid" %}
+  </aside>
+</div>
+
 
   <!-- Tooltip & Share Dropdown -->
   <div id="gif-tooltip" class="gif-tooltip">
@@ -135,7 +140,11 @@
     }
   </script>
 
-
+<!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
 </body>
 </html>
