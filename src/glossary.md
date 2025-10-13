@@ -70,7 +70,7 @@ active: glossary
         <li>Office clipboard: this clipboard works within MS Office apps only, storing up to 24 items which means you can copy multiple content (up to 24 at once) to paste them later. The Office clipboard keeps this information until you close the app.</li>
       </ul>
         Press the bottom right corner of Home > Clipboard in an MS Office application to see and select on the clipboard to paste.
-        <img class="border" src="{{ '/assets/images/glossary/Office Clipboard.png' | url }}" alt="Cursor keys" style="width: 12%;"></td>
+        <img class="border" src="{{ '/assets/images/glossary/Office Clipboard.png' | url }}" alt="Cursor keys" style="width: 15%;"></td>
     </tr>
     <tr>
       <td id="colour palette">Colour palette</td>
@@ -88,7 +88,7 @@ active: glossary
     <tr>
       <td id="cursor keys">Cursor keys</td>
       <td>The up, down, left and right buttons on your keyboard.
-      <img class="border" src="{{ '/assets/images/keyboard shortcuts/Cursor keys.png' | url }}" alt="Cursor keys" style="width: 20%;">
+      <img class="border" src="{{ '/assets/images/keyboard shortcuts/Cursor keys.png' | url }}" alt="Cursor keys" style="width: 30%;">
       </td>
     </tr>
     <tr>
@@ -110,14 +110,14 @@ active: glossary
     <tr>
       <td id="filename-extension">Filename extension</td>
       <td>Shows the file type as a suffix at the end of the filename after a full stop/period. E.g. a Word document will have the extension <strong>.docx</strong> while a Excel workbook will have <strong>.xlsx</strong>
-      <img src="{{ '/assets/images/glossary/File extension.png' | url }}"  alt="File extension" style="height:75%; width:75%; vertical-align:middle">
+      <img src="{{ '/assets/images/glossary/File extension.png' | url }}"  alt="File extension" style="height:75%; width:100%; vertical-align:middle">
       </td>
     </tr>
       <td id="filetype">Filetype</td>
       <td>Literally the type of file a file is. When viewing files in the details view the filetypes are shown in a <strong>Type</strong> column.</td>
     <tr>
       <td id="first-line indent">First-line indent</td>
-      <td>Where the first line of a paragraph is <a href="#indent">indented</a>.</td>
+      <td>An <a href="#indent">indent</a> marker found on the horizontal <a href="#ruler">ruler</a> that controls either where the first line of a paragraph starts or a bullet/number starts in a list. See examples in this article: <a href="/word/indents">Indents</a></td>
     </tr>
     <tr>
       <td id="footer">Footer</td>
@@ -141,7 +141,7 @@ active: glossary
     </tr>
     <tr>
       <td id="hanging indent">Hanging indent</td>
-      <td>This <a href="#indent">indents</a> all lines except for the first line.</td>
+      <td>An <a href="#indent">indent</a> marker found on the horizontal <a href="#ruler">ruler</a> that controls the position of all lines in a paragraph except for the first line. See examples in this article: <a href="/word/indents">Indents</a></td>
     </tr>
     <tr>
       <td id="hard-return">Hard return</td>
@@ -161,21 +161,21 @@ active: glossary
     </tr>
     <tr>
       <td id="indent">Indent</td>
-      <td>Space between a line of content and the <a href="#margin">margin</a>. You can increase indents by pressing <strong>Tab</strong> or increase and decrease indents under Home > Paragraph. Indents can also be controlled via dragging on the <a href="#ruler">ruler</a>; it’s possible to drag the left margin or right margin beyond the margin of a page, known as a negative margin.</td>
+      <td>Space between a line of content and the <a href="#margin">margin</a>. You can add indents by pressing <strong>Tab</strong> or increase and decrease them via <strong>Home > Paragraph > Increase/Decrease Indent</strong>. The finer details of indents can be controlled by dragging indent markers on the horizontal <a href="#ruler">ruler</a>, see examples in this article: <a href="/word/indents">Indents</a>. It is also possible to drag the left margin or right margin beyond the margin of a page, known as a negative margin.</td>
     </tr>
     <tr>
       <td id="insertion point">Insertion point</td>
       <td>
         A flashing vertical line in an editable area that indicates where you are about to type or edit on the page. You can move this by clicking elsewhere with the <a href="#cursor">cursor</a> or moving it with <a href="#cursor keys">cursor keys</a> on your keyboard.<br>
         <div style="display: flex; gap: 1em; align-items: flex-start;">
-          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 1.gif' | url }}" alt="Insertion point example" style="width: 15%;">
-          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 2.gif' | url }}" alt="Insertion point in a text box example" style="width: 15%;">
+          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 1.gif' | url }}" alt="Insertion point example" style="width: 25%;">
+          <img class="border" src="{{ '/assets/images/glossary/Insertion point example 2.gif' | url }}" alt="Insertion point in a text box example" style="width: 25%;">
         </div>
       </td>
     </tr>
     <tr>
       <td id="left indent">Left indent</td>
-      <td>The left <a href="#indent">indent</a> on the horizontal <a href="#ruler">ruler</a> controls how far the content starts from the left <a href="#margin">margin</a> of the page. It shifts the content e.g. an entire paragraph inward on the page from the left, increase or decreasing the space between the left margin and the content.</td>
+      <td>An <a href="#indent">indent</a> marker found on the horizontal <a href="#ruler">ruler</a> that controls where a paragraph starts, or, in a list where both the bullet/number and content after starts. See examples in this article: <a href="/word/indents">Indents</a></td>
     </tr>
     <tr>
       <td id="margin">Margin (MS Word)</td>
@@ -224,7 +224,7 @@ active: glossary
     <tr>
       <td id="paragraph marks">Paragraph marks / Show/Hide ¶</td>
       <td>Paragraph marks (also called Show/Hide ¶) is a visibility toggle showing hidden layout and formatting markers in the document e.g., <a href="#page breaks">page breaks</a> and <a href="#section breaks">section breaks</a>. This can be useful to troubleshoot layout issues. The Paragraph marks tool can be found under Home > Paragraph.
-      <img class="border" src="{{ '/assets/images/glossary/Paragraph marks.png' | url }}" alt="Cursor keys" style="width: 25%;"></td>
+      <img class="border" src="{{ '/assets/images/glossary/Paragraph marks.png' | url }}" alt="Cursor keys" style="width: 45%;"></td>
     </tr>
     <tr>
       <td id="paste">Paste / Pasting</td>
@@ -245,7 +245,7 @@ active: glossary
     <tr>
       <td id="quick styles">Quick Styles</td>
       <td>Styles available in a visual gallery under Home > Styles that you can access and apply to text easily and quickly for frequent use. You can customise the gallery to include other styles as needed.
-      <img class="border" src="{{ '/assets/images/glossary/Quick styles.png' | url }}" alt="Cursor keys" style="width: 25%;"></td>
+      <img class="border" src="{{ '/assets/images/glossary/Quick styles.png' | url }}" alt="Cursor keys" style="width: 35%;"></td>
     </tr>
     <tr>
       <td id="ribbon">Ribbon</td>
@@ -257,7 +257,7 @@ active: glossary
     </tr>
     <tr>
       <td id="ruler">Ruler</td>
-      <td>The horizontal and vertical rulers measure the physical size of the digitally presented page. It also allows you to alter the left <a href="#margin">margin</a>, right margin and <a href="#indent">indents, and add tabs. The ruler is turned on via a checkbox under View > Show.</td>
+      <td>The horizontal and vertical rulers measure the physical size of the digitally presented page. It also allows you to alter the left <a href="#margin">margin</a>, right margin, <a href="#indent">indent</a> markers, and add tabs. The ruler is turned on via a checkbox under <strong>View > Show</strong>.</td>
     </tr>
     <tr>
       <td id="section">Section</td>
@@ -269,11 +269,11 @@ active: glossary
     </tr>
     <tr>
       <td id="select">Select / Selecting / Selection</td>
-      <td>Choosing text, objects or images by clicking, <a href="#drag">dragging, or using keyboard shortcuts so that they become active for editing or manipulation. When text is selected, the selected text is <a href="#highight selected content">highlighted</a>. See this article for different ways to select and examples: <a href="/word/selecting-text/">Selecting text</a></td>
+      <td>Choosing text, objects or images by clicking, <a href="#drag">dragging</a>, or using keyboard shortcuts so that they become active for editing or manipulation. When text is selected, the selected text is <a href="#highight selected content">highlighted</a>. See this article for different ways to select and examples: <a href="/word/selecting-text/">Selecting text</a></td>
     </tr>
     <tr>
       <td id="soft-return">Soft return</td>
-      <td>When typing pressing <strong>Shift + Enter</strong> will create a soft return that starts a new line which is still connected to the same paragraph before. In lists, a shoft return will create a new line for the existing bullet/list number, see <a href="/word/lists-soft-hard-returns/">Lists: Soft and hard returns</a> for examples. Another type of return is a <a href="#hard-return">hard return</a>.</td>
+      <td>When typing pressing <strong>Shift + Enter</strong> will create a soft return that starts a new line which is still connected to the same paragraph before. In lists, a soft return will create a new line for the existing bullet/list number, see this article for examples: <a href="/word/lists-soft-hard-returns/">Lists: Soft and hard returns</a>. Another type of return is a <a href="#hard-return">hard return</a>.</td>
     </tr>
     <tr>
       <td id="sort">Sort</td>
@@ -314,7 +314,7 @@ active: glossary
     <tr>
       <td id="toggle">Toggle</td>
       <td>A button that lets you switch between one of two options with a single click. For example <a href="#autosave">Autosave</a> in MS Office apps:
-      <img src="{{ '/assets/images/glossary/Toggle example.png' | url }}" alt="Select cell arrow" style="display: block; margin-left: 0; width: 10%;">
+      <img src="{{ '/assets/images/glossary/Toggle example.png' | url }}" alt="Select cell arrow" style="display: block; margin-left: 0; width: 20%;">
       </td>
     </tr>
     <tr>

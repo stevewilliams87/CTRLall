@@ -13,7 +13,6 @@ permalink: /
   <br>
     <p>© 2025 Ctrl All. All rights reserved.</p>
 </section>
-
 <section class="section-light">
   <h2>What's new?</h2>
   <ul>

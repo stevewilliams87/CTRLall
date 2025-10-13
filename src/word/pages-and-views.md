@@ -18,9 +18,10 @@ This article explains the basics of altering pages and views in Microsoft Word.
 <br>
 <strong>Zoom keyboard shortcuts:</strong>
 <ul>
-    <li><strong><span class="text-tooltip">Ctrl and +<img class="thumbnail" src="{{ '/assets/images/keyboard shortcuts/Ctrl++.png' | url }}" class="text-tooltip-img" alt="Ctrl and +"></span></strong> to zoom in / <strong><span class="text-tooltip">Ctrl and -<img class="thumbnail" src="{{ '/assets/images/keyboard shortcuts/Ctrl+-.png' | url }}" class="text-tooltip-img" alt="Ctrl and -"></span></strong> to zoom out</li>
+    <li><strong>Ctrl and +</strong> to zoom in <img src="{{ '/assets/images/keyboard shortcuts/Ctrl++.png' | url }}" alt="Ctrl and +"></li>
+    <li><strong>Ctrl and -</strong> to zoom out<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+-.png' | url }}" alt="Ctrl and -"></li>
     <li>If you're using a mouse a much faster way to zoom is to hold down <strong>Ctrl + mouse wheel up</strong> to zoom in and <strong>Ctrl + mouse wheel down</strong> to zoom out. Some laptop mousepads offer this function down one side as well.</li>
-    <li><strong><span class="text-tooltip">Ctrl + 0 (zero)<img class="thumbnail" src="{{ '/assets/images/keyboard shortcuts/Ctrl+0.png' | url }}" class="text-tooltip-img" alt="Ctrl + 0"></span></strong> will reset zoom level to 100%</li>
+    <li><strong>Ctrl + 0 (zero)</strong> will reset zoom level to 100%<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+0.png' | url }}" alt="Ctrl + 0"></li>
 </ul>
 <br>
 <strong>Page views</strong>
@@ -41,5 +42,5 @@ This article explains the basics of altering pages and views in Microsoft Word.
 
 <p><strong>Size</strong> and <strong>Orientation</strong> are the most common tools used here:</p>
 
-<p><img class="thumbnail" src="{{ '/assets/images/word/Pages and Views/5 Orientation and Size.png' | url }}"  alt="Orientation and Size options" style="height:40%; width:40%; vertical-align:middle"></p>
+<p><img class="thumbnail" src="{{ '/assets/images/word/Pages and Views/5 Orientation and Size.png' | url }}"  alt="Orientation and Size options" style="height:50%; width:50%; vertical-align:middle"></p>
 

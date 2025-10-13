@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indents</title>
+  <meta name="description" content="Empowering learners with open-source tools and ethical guidance.">
+  <meta name="author" content="Steve – CTRL All">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-6596712504858429">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+    .copy-tooltip {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      background: #333;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .copy-tooltip.visible {
+      opacity: 1;
+    }
+
+    #share-dropdown img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="portrait-warning">
+  This website is better experienced in landscape mode.
+</div>
+
+  <noscript>
+    <div class="noscript-warning">
+      JavaScript is required for full site functionality.
+    </div>
+  </noscript>
+
+  <div id="portrait-overlay">
+    <div class="overlay-text">This site is best experienced in landscape.</div>
+  </div>
+
+  <header class="topbar">
+    <button id="navbar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+    <header class="topbar">
+  <div class="topbar-left">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="logo">
+      <a href="/">CTRL All</a>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <nav class="topnav">
+      <a href="/about/" class="">About</a>
+      <a href="/contact/" class="">Contact</a>
+      <a href="#" class="dropbtn">Share</a>
+    </nav>
+  </div>
+</header>
+
+  </header>
+
+<div class="layout-wrapper">
+  <nav class="sidebar-wrapper">
+    <div id="navbar-content" class="navbar-collapse">
+      <ul class="nav-level-1">
+
+  <!-- Content Control Section -->
+  <li>
+    <button class="nav-toggle " data-section="content-control" aria-expanded="false" aria-controls="nav-content-control">
+      Content control <span class="arrow"></span>
+    </button>
+    <ul id="nav-content-control" class="nav-level-2 ">
+      <li><a href="/content-control/moving-content/" class="">Moving content</a></li>
+      <li><a href="/content-control/copying-content/" class="">Copying content</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/" class="">Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Word Section -->
+  <li>
+    <button class="nav-toggle active expanded" data-section="word" aria-expanded="true" aria-controls="nav-word">
+      Word <span class="arrow"></span>
+    </button>
+    <ul id="nav-word" class="nav-level-2 show">
+      <li><a href="/word/" class="">Getting started with Word</a></li>
+      <li><a href="/word/documents-vs-templates/" class="">Documents vs Templates</a></li>
+      <li><a href="/word/pages-and-views/" class="">Pages and views</a></li>
+      <li><a href="/word/saving-and-save-as/" class="">Saving and Save As</a></li>
+      <li><a href="/word/selecting-text/" class="">Selecting text</a></li>
+      <li><a href="/word/formatting-text/" class="">Formatting text</a></li>
+      <li><a href="/word/indents/" class="active">Indents</a></li>  
+      <li><a href="/word/lists-fixing-number-lists/" class="">Lists: Fixing number lists</a></li>
+      <li><a href="/word/lists-soft-hard-returns/" class="">Lists: Soft & hard returns</a></li>
+      <li><a href="/word/tables/" class="">Tables</a></li>
+      <li><a href="/word/tables-formatting/" class="">Tables: Formatting</a></li>
+      <li><a href="/word/tables-fixing-tables-extending-offscreen/" class="">Tables: Fixing tables extending offscreen</a></li>
+      <li><a href="/word/tables-fixing-tables-over-pages/" class="">Tables: Fixing tables over pages</a></li>
+      <li><a href="/word/images/" class="">Images</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#word-keyboard-shortcuts" class="">Word Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Excel Section -->
+  <li>
+    <button class="nav-toggle " data-section="excel" aria-expanded="false" aria-controls="nav-excel">
+      Excel <span class="arrow"></span>
+    </button>
+    <ul id="nav-excel" class="nav-level-2 ">
+      <li><a href="/excel/" class="">Getting started with Excel</a></li>
+      <li><a href="/excel/selecting-cells-and-values/" class="">Selecting cells and values</a></li>
+      <li><a href="/excel/understanding-formulas/" class="">Understanding formulas</a></li>
+      <li><a href="/excel/conditional-formatting/" class="">Conditional formatting</a></li>
+      <li><a href="/excel/data-validation/" class="">Data validation</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#excel-keyboard-shortcuts" class="">Excel Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- PowerPoint Section -->
+  <li>
+    <button class="nav-toggle " data-section="powerpoint" aria-expanded="false" aria-controls="nav-powerpoint">
+      PowerPoint <span class="arrow"></span>
+    </button>
+    <ul id="nav-powerpoint" class="nav-level-2 ">
+      <li><a href="/powerpoint/" class="">Getting started with PowerPoint</a></li>
+      <li><a href="/powerpoint/editing-slides/" class="">Editing slides</a></li>
+      <li><a href="/powerpoint/animations/" class="">Animations</a></li>
+      <li><a href="/powerpoint/fade-list-effect/" class="">Fading list effect</a></li>
+      <li><a href="/powerpoint/presenter-view/" class="">Presenter view</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#powerpoint-keyboard-shortcuts" class="">PowerPoint Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Outlook Section -->
+  <li>
+    <button class="nav-toggle " data-section="outlook" aria-expanded="false" aria-controls="nav-outlook">
+      Outlook <span class="arrow"></span>
+    </button>
+    <ul id="nav-outlook" class="nav-level-2 ">
+      <li><a href="/outlook/" class="">Outlook signatures</a></li>
+      <li><a href="/content-control/keyboard-shortcuts/#outlook-keyboard-shortcuts" class="">Outlook Keyboard Shortcuts</a></li>
+    </ul>
+  </li>
+
+  <!-- Glossary Section -->
+  <li>
+    <button class="nav-toggle " onclick="location.href='/glossary/'">
+      Glossary
+    </button>
+  </li>
+
+</ul>
+
+    </div>
+  </nav>
+
+  <main class="content-wrapper">
+    <div class="content">
+      <h1>Indents</h1>
+<section class="section-light">
+<p>Indents are spaces between content and the margin.</p>
+<p>You can create indents pressing the <strong>Tab</strong> key and remove them by deleting them with <strong>backspace</strong>.</p>
+<p><img class="border" src="/assets/images/word/Indents/Indent%20example.png" alt="Example of an indented paragraph" style="display: inline; margin: auto; height:80%; width: 80%;"></p>
+<p>You can also adjust indents with indent markers on the <strong><a href="/glossary/#ruler">ruler</a></strong> tool. To enable to the ruler go to <strong>View > Show</strong> and check <strong>Ruler</strong>. Below we'll look at different uses</p>
+<p><img src="/assets/images/word/Indents/ruler.png" alt="Ruler tool" style="display: inline; margin: auto; height:20%; width: 20%;"></p>
+<h2 id="pargraphs-and-indents">Paragraphs and indents</h2>
+<p>With the <a href="insertion-point">insertion point</a> on the paragraph, on the ruler above the page you'll see the indent markers aligned together like this:</p>
+<p><img class="border" src="/assets/images/word/Indents/Paragraph%20indent%20markers%20on%20ruler.png" alt="Paragraph and indent markers" style="display: inline; margin: auto; height:100%; width: 100%;"></p>
+<p>Here's what each of the indent markers do when working with paragraphs:</p>
+<table class="no-border">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/word/Indents/First%20line%20indent.png" alt="Fire line indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>First line indent</strong> - Controls where the first line of the pargraph begins.</td>
+      </tr>
+      <tr>
+        <td><img src="/assets/images/word/Indents/Hanging%20Indent.png" alt="Hanging indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Hanging Indent</strong> - Controls where all lines except the first line begin.
+      <tr>
+        <td><img src="/assets/images/word/Indents/Left%20Indent.png" alt="Left indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Left Indent</strong> - Moves both the above indents together, shifting the entire paragraph left or right.
+      </tr>
+</table>
+<p><img class="border" src="/assets/images/word/Indents/Paragraph%20indent%20marker%20adjust%20example.gif" alt="Paragraph and indent markers" style="display: inline; margin: auto; height:100%; width: 100%;"></p>
+<h2 id="lists-and-indents">Lists and indents</h2>
+<p>When it comes to bullet and number lists, the indent markers work slightly differently. They're not aligned like in paragraphs and this is to do with the different functions they have for lists.</p>
+<p><img class="border" src="/assets/images/word/Indents/List%20indent%20markers%20on%20ruler.png" alt="Lists and indent markers" style="display: inline; margin: auto; height:50%; width: 50%;"></p>
+<table class="no-border">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/word/Indents/First%20line%20indent.png" alt="First line indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>First line indent</strong> - Controls where bullet/number begins.</td>
+      </tr>
+      <tr>
+        <td><img src="/assets/images/word/Indents/Hanging%20Indent.png" alt="Hanging indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Hanging Indent</strong> - Controls where the text begins after the bullet.
+      <tr>
+        <td><img src="/assets/images/word/Indents/Left%20Indent.png" alt="Left indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Left Indent</strong> - Moves both the above indents together, shifting both the bullet/number and line/paragraph left or right.
+      </tr>
+</table>
+<p>Here's a simple example adjusting the bullet and spacing on a single sub-bullet. Typically you'd  adjust all the sub-bullets together, in which case you'd select them all first then drag the indent markers as needed.</p>
+<p><img class="border" src="/assets/images/word/Indents/List%20indent%20marker%20adjust%20example.gif" alt="List indent marker adjust example" style="display: inline; margin: auto; height:50%; width: 50%;"></p>
+<h2 id="table-lists-and-indents">Table lists and indents</h2>
+<p>If you apply a bullet/number list in a table it'll look something like this below. Word's default spacing jutting out from the column border like that isn't exactly useful when you're typically limited for space in columns, but you can fix this up using the indent markers:</p>
+<img src="/assets/images/word/Indents/Table%20list%20default%20indent.png" alt="Table list default indent" style="display: inline; margin: auto; height:80%; width: 80%;">
+<p>Since it's a list the indent markers will work based on that, but ebcause we're inside a table there's another marker called a <strong>Column boundary marker</strong> to be aware of too:</p>
+<table class="no-border">
+    <colgroup>
+      <col style="width: 20%;">
+      <col style="width: 80%;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/word/Indents/First%20line%20indent.png" alt="First line indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>First line indent</strong> - Controls where bullet/number begins.</td>
+      </tr>
+      <tr>
+        <td><img src="/assets/images/word/Indents/Hanging%20Indent.png" alt="Hanging indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Hanging Indent</strong> - Controls where the text begins after the bullet/number.
+      <tr>
+        <td><img src="/assets/images/word/Indents/Left%20Indent.png" alt="Left indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Left Indent</strong> - Moves both the above indents together, shifting both the bullet/number and line/paragraph left or right.
+      </tr>
+      <tr>
+        <td><img src="/assets/images/word/Indents/Column%20boundary%20marker.png" alt="Column boundary marker" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><strong>Column boundary marker</strong> - Marks the position of a column border in a multi-column table, you can also drag this to adjust the column width. </td>
+      </tr>
+</table>
+<p>Here's a trick to neaten up bullets/numbers in lists:</p> 
+<p>Adjust the <strong>First line indent</strong> dragging it right to reduce the space between the bullet/number and the content, then drag the <strong>Left indent</strong> to the left to bring everything closer to the column border. Take a look:</p>
+<p><img class="border" src="/assets/images/word/Indents/Table%20list%20indent%20marker%20adjust%20example.gif" alt="Table list indent marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
+<p>The <strong>column boundary marker</strong> can be dragged to adjust the column border as well:</p>
+<p><img class="border" src="/assets/images/word/Indents/Column%20boundary%20marker%20adjust%20example.gif" alt="Column boundary marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
+</section>
+    </div>
+  </main>
+
+  <aside class="adsbar-wrapper">
+    <div class="adsbar-content">
+  <!-- Example ad slot or widget -->
+  Sponsored
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6596712504858429"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</div>
+
+  </aside>
+</div>
+
+<!-- Tooltip & Share Dropdown -->
+  <div id="gif-tooltip" class="gif-tooltip">
+    <img src="" alt="Tooltip GIF">
+  </div>
+
+  <div id="share-dropdown" class="dropdown-content">
+    <a href="javascript:void(0)" onclick="copyPageLink(this)" style="position:relative;">
+      🔗Copy Link
+      <span class="copy-tooltip">Copied!</span>
+    </a>
+
+    <a href="javascript:void(0)" onclick="emailCurrentPage(event)">📧Email this page</a>
+
+    <a id="linkedin-share" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/linkedin.png" alt="Linkedin">
+    </a>
+    <a id="facebook-share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/facebook.png" alt="Facebook">
+    </a>
+    <a id="reddit-share" target="_blank" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A8080%2F&amp;title=CTRL%20All">
+      <img src="/assets/images/topbar/reddit.png" alt="Reddit">
+    </a>
+    <a id="bluesky-share" target="_blank" href="https://bsky.app/intent/compose?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/bluesky.png" alt="Bluesky">
+    </a>
+    <a id="threads-share" target="_blank" href="https://www.threads.net/intent/post?text=CTRL%20All%20http%3A%2F%2Flocalhost%3A8080%2F">
+      <img src="/assets/images/topbar/threads.png" alt="Threads">
+    </a>
+  </div>
+
+  <!-- Global Modal Container -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+  © 2025 Ctrl All. All rights reserved. For reuse or licensing inquiries, please <a href="/contact/">contact us</a>.
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    function copyPageLink(el) {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url)
+        .then(() => {
+          const tooltip = el.querySelector(".copy-tooltip");
+          tooltip.classList.add("visible");
+          setTimeout(() => {
+            tooltip.classList.remove("visible");
+          }, 1500);
+        })
+        .catch(err => console.error("Copy failed:", err));
+    }
+
+    function emailCurrentPage(event) {
+      event.preventDefault();
+      const subject = "Check out this page";
+      const body = "Here's a link I wanted to share with you:\n\n" + window.location.href;
+      const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+<!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</body>
+</html>

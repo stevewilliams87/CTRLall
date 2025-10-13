@@ -15,6 +15,7 @@ active: word
     <li><a href="#table-borders">Table borders</a></li>
     <li><a href="#table-shading">Table shading</a></li>
     <li><a href="#remove-paragraph-spacing-from-table">Remove paragraph spacing in a table</a></li>
+    <li><a href="#lists-in-tables">Bullet/Number lists in tables</a></li>
 </ul>
 
 <h2 id="table-cell-alignment">Table cell alignment</h2> 
@@ -42,7 +43,11 @@ active: word
 <img src="{{ '/assets/images/word/Tables formatting/Header row shading.png' | url }}"  alt="Header row shading" style="height:6%; width:65%; vertical-align:middle">
 
 <h2 id="remove-paragraph-spacing-from-table">Remove paragraph spacing in a table</h2> 
-<p>If you're coping a table from other document sometimes it can come across with unwanted paragraph spacing. To remove this go to the <strong>Home > Paragraph options (bottom right corner button)</strong> and remove spacing points as needed. Typically it's spacing after that needs reducing. Take a look:</p> 
+<p>If you're coping a table from other Word document, Excel or a web browser it can come across with unwanted paragraph spacing. To remove this go to the <strong>Home > Paragraph options (bottom right corner button)</strong> and remove spacing 'points' as needed. Typically it's spacing after that needs reducing. Take a look:</p> 
 <img src="{{ '/assets/images/word/Tables formatting/Remove paragraph spacing from table.gif' | url }}"  alt="Remove paragraph spacing from table" style="height:70%; width:70%; vertical-align:middle">
 
+<h2 id="lists-in-tables">Bullet/Number lists in tables</h2> 
+<p>You might find when applying a bullet list or number list to a table that the default indent Word applies isn't ideal in such a contrained space, see a quick fix here involving indent markers on the horizontal ruler: <a href="/word/indents/#table-lists-and-indents">Table lists and indents</a>.</p>
+
+<img src="{{ '/assets/images/word/Indents/Table list default indent.png' | url }}"  alt="Table list default indent" style="height:70%; width:70%; vertical-align:middle">
 </section>
