@@ -80,11 +80,11 @@ s
 
 <p>In some cases you might want subheading rows to repeat with the header row on other pages the table extends to.</p>
 
-<img class="thumbnail" src="{{ '/assets/images/word/Tables fixing tables over pages/Header row and subheading row.png' | url }}"  alt="Header row and subheading row" style="height:50%; width:50%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/word/Tables fixing tables over pages/Header row and subheading row.png' | url }}"  alt="Header row and subheading row" style="height:50%; width:50%; vertical-align:middle">
 
 <p>To do this simply select the header row and extra rows you want to include, then do the same as shown above; <strong>right click</strong>, go to <strong>Table properties</strong> then on the <strong>Row</strong> tab check <strong>Repeat as header row at the top of each page</strong>, then click <strong>OK</strong>.</p> 
 
-<img class="thumbnail" src="{{ '/assets/images/word/Tables fixing tables over pages/Header row and subheading row selected.png' | url }}"  alt="Header row and subheading row selected" style="height:50%; width:50%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/word/Tables fixing tables over pages/Header row and subheading row selected.png' | url }}"  alt="Header row and subheading row selected" style="height:50%; width:50%; vertical-align:middle">
 
 <img class="thumbnail" src="{{ '/assets/images/word/Tables fixing tables over pages/Header row and subheading row over multiple pages.png' | url }}"  alt="Header row and subheading row repeated over multiple pages" style="height:85%; width:85%; vertical-align:middle">
 

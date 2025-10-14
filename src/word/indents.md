@@ -84,7 +84,7 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
 
 <h2 id="table-lists-and-indents">Table lists and indents</h2>
 <p>If you apply a bullet/number list in a table it'll look something like this below. Word's default spacing jutting out from the column border like that isn't exactly useful when you're typically limited for space in columns, but you can fix this up using the indent markers:</p>
-<img src="{{ '/assets/images/word/Indents/Table%20list%20default%20indent.png' | url }}" alt="Table list default indent" style="display: inline; margin: auto; height:80%; width: 80%;">
+<img class="thumbnail border" src="{{ '/assets/images/word/Indents/Table%20list%20default%20indent.png' | url }}" alt="Table list default indent" style="display: inline; margin: auto; height:80%; width: 80%;">
 
 <p>Since it's a list the indent markers will work based on that, but ebcause we're inside a table there's another marker called a <strong>Column boundary marker</strong> to be aware of too:</p>
 
@@ -95,18 +95,18 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
     </colgroup>
     <tbody>
       <tr>
-        <td><img src="{{ '/assets/images/word/Indents/First%20line%20indent.png' | url }}" alt="First line indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><img class="thumbnail" src="{{ '/assets/images/word/Indents/First%20line%20indent.png' | url }}" alt="First line indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
         <td><strong>First line indent</strong> - Controls where bullet/number begins.</td>
       </tr>
       <tr>
-        <td><img src="{{ '/assets/images/word/Indents/Hanging%20Indent.png' | url }}" alt="Hanging indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><img class="thumbnail" src="{{ '/assets/images/word/Indents/Hanging%20Indent.png' | url }}" alt="Hanging indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
         <td><strong>Hanging Indent</strong> - Controls where the text begins after the bullet/number.
       <tr>
-        <td><img src="{{ '/assets/images/word/Indents/Left%20Indent.png' | url }}" alt="Left indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><img class="thumbnail" src="{{ '/assets/images/word/Indents/Left%20Indent.png' | url }}" alt="Left indent" style="display: block; margin: auto; height:50%; width: 50%;"></td>
         <td><strong>Left Indent</strong> - Moves both the above indents together, shifting both the bullet/number and line/paragraph left or right.
       </tr>
       <tr>
-        <td><img src="{{ '/assets/images/word/Indents/Column%20boundary%20marker.png' | url }}" alt="Column boundary marker" style="display: block; margin: auto; height:50%; width: 50%;"></td>
+        <td><img class="thumbnail" src="{{ '/assets/images/word/Indents/Column%20boundary%20marker.png' | url }}" alt="Column boundary marker" style="display: block; margin: auto; height:50%; width: 50%;"></td>
         <td><strong>Column boundary marker</strong> - Marks the position of a column border in a multi-column table, you can also drag this to adjust the column width. </td>
       </tr>
 </table>
@@ -114,10 +114,10 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
 <p>Here's a trick to neaten up bullets/numbers in lists:</p> 
 <p>Adjust the <strong>First line indent</strong> dragging it right to reduce the space between the bullet/number and the content, then drag the <strong>Left indent</strong> to the left to bring everything closer to the column border. Take a look:</p>
 
-<p><img class="border" src="{{ '/assets/images/word/Indents/Table%20list%20indent%20marker%20adjust%20example.gif' | url }}" alt="Table list indent marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
+<p><img class="thumbnail border" src="{{ '/assets/images/word/Indents/Table%20list%20indent%20marker%20adjust%20example.gif' | url }}" alt="Table list indent marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
 
 <p>The <strong>column boundary marker</strong> can be dragged to adjust the column border as well:</p>
 
-<p><img class="border" src="{{ '/assets/images/word/Indents/Column%20boundary%20marker%20adjust%20example.gif' | url }}" alt="Column boundary marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
+<p><img class="thumbnail border" src="{{ '/assets/images/word/Indents/Column%20boundary%20marker%20adjust%20example.gif' | url }}" alt="Column boundary marker adjust example" style="display: inline; margin: auto; height:75%; width: 75%;"></p>
 
 </section>

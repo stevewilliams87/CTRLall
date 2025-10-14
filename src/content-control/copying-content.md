@@ -19,8 +19,8 @@ then
 
 
 
-<img class="thumbnail" src="{{ '/assets/images/content control/Copy and paste text.gif' | url }}"  alt="Dragging text" style="height:70%; width:70%; vertical-align:middle"> 
+<img class="thumbnail border" src="{{ '/assets/images/content control/Copy and paste text.gif' | url }}"  alt="Dragging text" style="height:70%; width:70%; vertical-align:middle"> 
 
-<img class="thumbnail" src="{{ '/assets/images/content control/Copy and paste cell value.gif' | url }}"  alt="Copy and paste cell value" style="height:30%; width:30%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/content control/Copy and paste cell value.gif' | url }}"  alt="Copy and paste cell value" style="height:30%; width:30%; vertical-align:middle">
 
-<img class="thumbnail" src="{{ '/assets/images/content control/Copy and paste file.gif' | url }}"  alt="Copy and paste file" style="height:100%; width:100%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/content control/Copy and paste file.gif' | url }}"  alt="Copy and paste file" style="height:100%; width:100%; vertical-align:middle">

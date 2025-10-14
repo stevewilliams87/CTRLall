@@ -23,7 +23,7 @@ active: word
 
 <p>For example, take a look at these two files:</p>
 
-<img class="thumbnail" src="{{ '/assets/images/word/Documents vs Templates/Example files.png' | url }}"  alt="Home tab on ribbon" style="heigh:75%; width:75%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/word/Documents vs Templates/Example files.png' | url }}"  alt="Home tab on ribbon" style="heigh:75%; width:75%; vertical-align:middle">
 
 <p>The top file reads ‘Report Template' but is actually a document, not a template. You can tell whether a Word file is a template or a document in two ways:</p>
 
@@ -32,7 +32,7 @@ active: word
     <li>Look at the <strong>Type</strong> column</li>
 </ol>
 
-<img class="thumbnail" src="{{ '/assets/images/word/Documents vs Templates/Example files highlighted.png' | url }}"  alt="Home tab on ribbon" style="heigh:75%; width:75%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/word/Documents vs Templates/Example files highlighted.png' | url }}"  alt="Home tab on ribbon" style="heigh:75%; width:75%; vertical-align:middle">
 
 <br>
 <h2>Microsoft Word Filename extensions:</h2>
@@ -72,10 +72,10 @@ active: word
 <h2>How do you edit a template?</h2>
 There's more than one way to open a template. When opening a template file normally with a double click or selecting it and pressing Enter, Word will provide you with a document based on the template. But if you <strong>right click</strong> on a template file then select <strong>Open</strong> from the drop down menu, Word will open it as a template.
 
-<img class="thumbnail" src="{{ '/assets/images/word/Documents vs Templates/Open template as a template.png' | url }}"  alt="Open template as a template" style="height:45%; width:45%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/word/Documents vs Templates/Open template as a template.png' | url }}"  alt="Open template as a template" style="height:50%; width:50%; vertical-align:middle">
 
 <p>You can tell it has opened as a template by the file extension at the top:</p>
-<img class="thumbnail" src="{{ '/assets/images/word/Documents vs Templates/Template opened as template.png' | url }}"  alt="Opening a template as a template" style="height:55%; width:55%; vertical-align:middle">
+<img class="thumbnail" src="{{ '/assets/images/word/Documents vs Templates/Template opened as template.png' | url }}"  alt="Opening a template as a template" style="height:65%; width:65%; vertical-align:middle">
 
 <p>Once edited as needed, save the template.</p> 
 
