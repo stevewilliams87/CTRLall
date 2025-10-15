@@ -127,7 +127,7 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
 <p><img class="border" src="{{ '/assets/images/word/Indents/List%20indent%20marker%20adjust%20example.gif' | url }}" alt="List indent marker adjust example" style="display: inline; margin: auto; height:50%; width: 50%;"></p>
 
 <section class="indent-demo" style="background-color: #EBFFFF; padding: 40px;">
-  <h3>Try it out</h3>
+  <h3>Have a go</h3>
  <p>Adjust the sliders to see how the different indent markers interact with bullet/number lists.</p>
 
   <div class="indent-controls">
@@ -191,7 +191,7 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
 <p>If you apply a bullet/number list in a table it'll look something like this below. Word's default spacing jutting out from the column border like that isn't exactly useful when you're typically limited for space in columns, but you can fix this up using the indent markers:</p>
 <img class="thumbnail border" src="{{ '/assets/images/word/Indents/Table%20list%20default%20indent.png' | url }}" alt="Table list default indent" style="display: inline; margin: auto; height:80%; width: 80%;">
 
-<p>Since it's a list the indent markers will work based on that, but ebcause we're inside a table there's another marker called a <strong>Column boundary marker</strong> to be aware of too:</p>
+<p>Since it's a list the indent markers will work based on that, but because we're inside a table there's another marker called a <strong>Column boundary marker</strong> to be aware of too:</p>
 
 <table class="no-border">
     <colgroup>
