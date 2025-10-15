@@ -49,6 +49,54 @@ With the <a href="/glossary/#insertion-point">insertion point</a> on the paragra
 <p><img class="border" src="{{ '/assets/images/word/Indents/Paragraph%20indent%20marker%20adjust%20example.gif' | url }}" alt="Paragraph and indent markers" style="display: inline; margin: auto; height:100%; width: 100%;"></p>
 
 
+<section class="indent-demo" style="background-color: #EBFFFF; padding: 40px;">
+  <h3> Try it out</h3>
+  <p>Adjust the sliders to see how the different indent markers interact with a paragraph of text.</p>
+
+  <div class="indent-controls" style="margin-bottom: 1em;">
+
+
+    <label for="firstLineIndent"><img src="{{ '/assets/images/word/Indents/First%20line%20indent.png' | url }}" alt="First line indent" style="display: inline; margin: auto; padding-top: 0.5em;padding-right: 0.5em;height:5%; width: 5%;"> <strong>First line indent</strong> (Move first line of text):</label>
+    <input type="range" id="firstLineIndent" min="0" max="5" step="0.25" value="0" oninput="updateIndent()">
+    <span id="firstLineVal">0.00</span> cm
+
+    <label for="hangingIndent"><img src="{{ '/assets/images/word/Indents/Hanging%20indent.png' | url }}" alt="Hanging indent" style="display: inline; margin: auto; padding-right: 0.5em; height:5%; width: 5%;"> <strong>Hanging indent</strong> (Move all text except first line):</label>
+    <input type="range" id="hangingIndent" min="0" max="5" step="0.25" value="0" oninput="updateIndent()">
+    <span id="hangingVal">0.00</span> cm
+
+    <label for="leftIndent"><img src="{{ '/assets/images/word/Indents/Left%20indent.png' | url }}" alt="Left indent" style="display: inline; margin: auto; padding-top: 0.5em; padding-right: 0.5em; height:5%; width: 5%;"> <strong>Left indent</strong> (Move all pargraph text together):</label>
+    <input type="range" id="leftIndent" min="0" max="5" step="0.25" value="1.27" oninput="updateIndent()">
+    <span id="leftVal">1.27</span> cm 
+
+  </div>
+
+  <p id="demoText" style="max-width: 100%;">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+  </p>
+
+  <script>
+    function updateIndent() {
+      const left = parseFloat(document.getElementById('leftIndent').value);
+      const first = parseFloat(document.getElementById('firstLineIndent').value);
+      const hanging = parseFloat(document.getElementById('hangingIndent').value);
+
+      document.getElementById('leftVal').textContent = left.toFixed(2);
+      document.getElementById('firstLineVal').textContent = first.toFixed(2);
+      document.getElementById('hangingVal').textContent = hanging.toFixed(2);
+
+      const text = document.getElementById('demoText');
+
+      // Base indent for the whole paragraph
+      text.style.paddingLeft = (left + hanging) + 'cm';
+
+      // Pull first line back to simulate fixed position
+      text.style.textIndent = (first - hanging) + 'cm';
+    }
+  </script>
+</section>
+
+<div style="margin-top: 100px;"></div>
+
 <h2 id="lists-and-indents">Lists and indents</h2>
 
 When it comes to bullet and number lists, the indent markers work slightly differently. They're not aligned like in paragraphs and this is to do with the different functions they have for lists.
@@ -78,8 +126,65 @@ When it comes to bullet and number lists, the indent markers work slightly diffe
 
 <p><img class="border" src="{{ '/assets/images/word/Indents/List%20indent%20marker%20adjust%20example.gif' | url }}" alt="List indent marker adjust example" style="display: inline; margin: auto; height:50%; width: 50%;"></p>
 
+<section class="indent-demo" style="background-color: #EBFFFF; padding: 40px;">
+  <h3>Try it out</h3>
+ <p>Adjust the sliders to see how the different indent markers interact with bullet/number lists.</p>
+
+  <div class="indent-controls">
+    <label for="svgFirstLineIndent"><strong>First line indent</strong> (moves bullet):</label>
+    <input type="range" id="svgFirstLineIndent" min="0" max="5" step="0.25" value="0" oninput="updateSvgIndent()">
+    <span id="svgFirstLineVal">0.00</span> cm
+
+    <label for="svgHangingIndent"><strong>Hanging indent</strong> (moves text):</label>
+    <input type="range" id="svgHangingIndent" min="0" max="5" step="0.25" value="0" oninput="updateSvgIndent()">
+    <span id="svgHangingVal">0.00</span> cm
+
+    <label for="svgLeftIndent"><strong>Left indent</strong> (moves both together):</label>
+    <input type="range" id="svgLeftIndent" min="0" max="5" step="0.25" value="0" oninput="updateSvgIndent()">
+    <span id="svgLeftVal">0.00</span> cm
+  </div>
+
+ <svg id="indentSVG" width="800" height="100" xmlns="http://www.w3.org/2000/svg">
+  <text id="bullet" x="50" y="40"
+        font-size="14px"
+        font-family="Inter, system-ui, sans-serif"
+        fill="#333">•</text>
+  <text id="text" x="70" y="40"
+        font-size="14px"
+        font-family="Inter, system-ui, sans-serif"
+        fill="#333">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</text>
+</svg>
 
 
+  <script>
+    function updateSvgIndent() {
+      const cmToPx = 37.8;
+
+      const leftIndent = parseFloat(document.getElementById("svgLeftIndent").value);
+      const firstLineIndent = parseFloat(document.getElementById("svgFirstLineIndent").value);
+      const hangingIndent = parseFloat(document.getElementById("svgHangingIndent").value);
+
+      document.getElementById("svgLeftVal").textContent = leftIndent.toFixed(2);
+      document.getElementById("svgFirstLineVal").textContent = firstLineIndent.toFixed(2);
+      document.getElementById("svgHangingVal").textContent = hangingIndent.toFixed(2);
+
+      const baseX = 50 + leftIndent * cmToPx;
+      const bulletX = baseX + firstLineIndent * cmToPx;
+      let textX = baseX + hangingIndent * cmToPx;
+
+      const gap = textX - bulletX;
+      if (gap < 0.7 * cmToPx) {
+        const overlapSteps = Math.ceil((0.7 * cmToPx - gap) / (0.7 * cmToPx));
+        textX += overlapSteps * 0.7 * cmToPx;
+      }
+
+      document.getElementById("bullet").setAttribute("x", bulletX);
+      document.getElementById("text").setAttribute("x", textX);
+    }
+
+    window.onload = updateSvgIndent;
+  </script>
+</section>
 
 
 <h2 id="table-lists-and-indents">Table lists and indents</h2>
