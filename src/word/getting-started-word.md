@@ -48,7 +48,7 @@ The first thing to do is to find the application to open it. The blue Word appli
 If you have Word document or template file to work from you don't need to open the Word app first. Simply <strong>double click</strong> on the file icon (or <strong>left click</strong> it to select it and press <strong>Enter</strong>) and it will open in Word.
 
 A word document icon looks like this depending on where you're viewing it:
-<p><img class="thumbnail" src="{{ '/assets/images/word/Getting started with Word/Doc icon 1.png' | url }}"  alt="Word doc icon" style="height:100%; width:15%; vertical-align:middle"></p>
+<p><img class="thumbnail" src="{{ '/assets/images/word/Getting started with Word/Doc icon 1.png' | url }}"  alt="Word doc icon" style="height:12%; width:12%; vertical-align:middle"></p>
 <p><img class="thumbnail border" src="{{ '/assets/images/word/Getting started with Word/Doc icon 2.png' | url }}"  alt="Word doc icon" style="height:100%; width:20%; vertical-align:middle"></p>
 
 

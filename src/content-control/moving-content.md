@@ -28,9 +28,9 @@ Dragging, also referred to as 'drag and drop' or 'click and drag', is where you 
 
 <p>You can use the keyboard shortcut:</p>
 <ol>
-    <li><strong>Ctrl + X</strong> to cut<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+X.png' | url }}" alt="Ctrl and X"></li>
+    <li><strong>Ctrl + X</strong> to cut<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+X.png' | url }}" alt="Ctrl and X"  style="height:25%; width:25%; vertical-align:middle"></li>
 then
-    <li><strong>Ctrl + V</strong> to paste<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+V.png' | url }}" alt="Ctrl and V"></li>
+    <li><strong>Ctrl + V</strong> to paste<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+V.png' | url }}" alt="Ctrl and V"  style="height:25%; width:25%; vertical-align:middle"></li>
 </ol>
 
 <img class="thumbnail border" src="{{ '/assets/images/content control/Cut and paste text.gif' | url }}"  alt="Cut and paste text" style="height:70%; width:70%; vertical-align:middle">

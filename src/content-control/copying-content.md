@@ -12,9 +12,9 @@ active: content-control
 
 <p>You can use the keyboard shortcut:</p>
 <ol>
-    <li><strong>Ctrl + C</strong> to copy<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+C.png' | url }}" alt="Ctrl and C"></li>
+    <li><strong>Ctrl + C</strong> to copy<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+C.png' | url }}" alt="Ctrl and C" style="height:25%; width:25%; vertical-align:middle"></li>
 then
-    <li><strong>Ctrl + V</strong> to paste<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+V.png' | url }}" alt="Ctrl and V"></li>
+    <li><strong>Ctrl + V</strong> to paste<img src="{{ '/assets/images/keyboard shortcuts/Ctrl+V.png' | url }}" alt="Ctrl and V" style="height:25%; width:25%; vertical-align:middle"></li>
 </ol>
 
 
