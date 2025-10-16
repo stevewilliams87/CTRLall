@@ -75,6 +75,12 @@
   display: inline-block;
 }
 
+.logo-link svg {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
 
 /* ─── glossary ──────────────── */
 :target {
@@ -294,6 +300,7 @@ img.border {
   max-width: 700px;
   margin: 0 auto;
 }
+
 
 /* Section Light */
 .section-light {

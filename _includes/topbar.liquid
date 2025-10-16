@@ -1,10 +1,10 @@
 <header class="topbar">
   <div class="topbar-left">
     <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-    <div class="logo">
-      <a href="/">CTRL All</a>
-    </div>
-  </div>
+     <a href="/" class="logo-link" style="display: inline-block;">
+  {% include "ctrl-all-logo.svg" %}
+</a>
+ </div>
   <div class="topbar-right">
     <nav class="topnav">
       <a href="/about/" class="{% if active == 'about' %}active{% endif %}">About</a>

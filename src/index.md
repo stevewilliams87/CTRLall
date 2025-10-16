@@ -6,12 +6,14 @@ permalink: /
 ---
 
 <section class="hero">
-  <h1>CTRL All</h1>
-  <p style="color: #452c50;"><strong>Digital literacy with soul, clarity, and control.</strong></p>
-  <br>
+    <div style="display: block; margin: 0 auto; width: fit-content;">
+  <img src="/assets/images/Ctrl All logo purple.svg" alt="CTRL All logo" width="300" height="auto">
+</div>
+    <p style="color: #2c3e50;"><strong>Digital literacy with soul, clarity, and control.</strong></p>
+     <br>
   <p>Welcome to CTRL All — a space built for learners, creators, educators and troubleshooters who believe digital skills should be empowering, ethical, and open to everyone.</p> 
   <br>
-    <p>© 2025 Ctrl All. All rights reserved.</p>
+  <p>© 2025 Ctrl All. All rights reserved.</p>
 </section>
 <section class="section-light">
   <h2>What's new?</h2>
