@@ -126,12 +126,12 @@ active: word
         <td><p>Shapes may have a yellow circle called an adjustment handle. Hover over it and when the cursor icon changes to a different arrow you can click and drag to alter the internal dimensions of the shape like the angle, curve, width, tail length or custom geometry tweaks.</p></td>
         <td><img class="thumbnail" src="{{ '/assets/images/word/Images/Adjustment%20handle%20cursor%20arrow.png' | url }}" alt="Move arrow" style="display: block; margin: auto; width: 50%;"></td>
       </tr>
-      <tr class="thumbnail" class="tooltip-row" data-gif="{{ '/assets/images/word/Images/Rotate%203D%20model%20example.gif' | url }}">
+      <tr class="tooltip-row" data-gif="{{ '/assets/images/word/Images/Rotate%203D%20model%20example.gif' | url }}">
         <td>(3D Models only) Hover over the central rotate handle<p><img class="thumbnail" src="{{ '/assets/images/word/Images/Rotate%203D%20model%20handle.png' | url }}" alt="Move arrow" style="display: block; margin: auto; width: 20%;"></p></td>
         <td><p>Hover over and when the cursor icon changes to rotate icon you can click and drag to rotate the model around anyway.</p></td>
         <td><img class="thumbnail" src="{{ '/assets/images/word/Images/Rotate%20arrow.png' | url }}" alt="Move arrow" style="display: block; margin: auto; width: 100%;"></td>
       </tr>
-    </tbody>
+    </tbody>s
     </table>
     <h3>Layout options</h3>
     <p>When the image/shape is selected you'll also see a small box top right, click this to see the layout options available:</p>

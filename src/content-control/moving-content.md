@@ -14,7 +14,7 @@ There are different ways to move content in Windows and Microsoft Office apps. T
 Dragging, also referred to as 'drag and drop' or 'click and drag', is where you select a file or content holding down left click and move the mouse/mousepad to another location, then let go to 'drop'. 
 <img class="thumbnail border" src="{{ '/assets/images/content control/Drag text.gif' | url }}"  alt="Dragging text" style="height:70%; width:70%; vertical-align:middle">
  
-<img class="thumbnail border" src="{{ '/assets/images/content control/Drag and drop cell value.gif' | url }}"  alt="Drag and drop cell value" style="height:30%; width:30%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/content control/Drag and drop cell value.gif' | url }}"  alt="Drag and drop cell value" style="height:25%; width:25%; vertical-align:middle">
 
 <img class="thumbnail border" src="{{ '/assets/images/content control/Drag and drop file.gif' | url }}"  alt="Drag and drop file" style="height:50%; width:50%; vertical-align:middle">
 
@@ -35,6 +35,6 @@ then
 
 <img class="thumbnail border" src="{{ '/assets/images/content control/Cut and paste text.gif' | url }}"  alt="Cut and paste text" style="height:70%; width:70%; vertical-align:middle">
 
-<img class="thumbnail border" src="{{ '/assets/images/content control/Cut and paste cell value.gif' | url }}"  alt="Cut and paste cell value" style="height:30%; width:30%; vertical-align:middle">
+<img class="thumbnail border" src="{{ '/assets/images/content control/Cut and paste cell value.gif' | url }}"  alt="Cut and paste cell value" style="height:25%; width:25%; vertical-align:middle">
 
 <img class="thumbnail border" src="{{ '/assets/images/content control/Cut and paste file.gif' | url }}"  alt="Cut and paste file" style="height:100%; width:100%; vertical-align:middle">
