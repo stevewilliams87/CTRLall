@@ -768,14 +768,6 @@ table td {
   justify-content: center;
 }
 
-@media screen and (orientation: portrait) {
-  #portrait-warning {
-    display: flex;
-  }
-}
-
-
-
 /* ─── Contact Form ─────────────────────────── */
 #contactForm {
   max-width: 600px;
