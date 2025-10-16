@@ -23,6 +23,10 @@ active: glossary
       <td>Where the text sits in the editable area. Four alignment options are available: Left, centre, right and justified. Justified is when the text is aligned to both the right and left <a href="#margin">margins</a>, creating spaces between words so the paragraph takes up all the space between the margins. You may have seen this in some physical newspapers which justify text in their columns.</td>
     </tr>
     <tr>
+      <td id="anchor">Anchor</td>
+      <td class="tooltip-row" data-gif="{{ '/assets/images/word/Images/Anchor%20icon.png' | url }}"><a href="#floating-image">Floating images</a> are associated with (or 'anchored' to) a certain paragraph indicated by a small blue anchor in the left margin. If the image is moved far enough up/down the page Word reassigns the anchor to another paragraph. If the paragraph it is anchored to is moved then the image will move with it. It is also possible to <a href="#locked-anchor">lock an anchor</a> to a paragraph. See more here: <a href="/word/images/#anchoring">Anchoring</a>. </td>
+    </tr>
+    <tr>
       <td id="application">Application / App</td>
       <td>Known colloquially as an ‘app’, an application is software that helps user to perform particular tasks. For example <a href="#microsoft word">Microsoft Word</a> is a <a href="#word processing">word processing</a> app, Adobe Photoshop is an image editing app, Google Chrome and Microsoft Edge are web browser apps. You are currently using a web browser application to view this website.</td>
     </tr>
@@ -129,6 +133,10 @@ active: glossary
       <td>An <a href="#indent">indent</a> marker found on the horizontal <a href="#ruler">ruler</a> that controls either where the first line of a paragraph starts or a bullet/number starts in a list. See examples in this article: <a href="/word/indents">Indents</a></td>
     </tr>
     <tr>
+      <td id="floating-image">Floating image</td>
+      <td>A floating image is one that is able to move freely on the page independent of the text on it. This is set by layout options and wrapping. Floating images have an <a href="#anchor">anchor</a> which links them to a particular paragraph. See the different types of wrap options to make an image float here: <a href="/word/images/#layout-options">Layout options</a></td>
+    </tr>
+    <tr>
       <td id="footer">Footer</td>
       <td>Content placed at the bottom of each page. Typically a page number exists in a footer. To access the footer space either double click in the <a href="#margin">margin</a> at the bottom of the page or go to Insert > Header & Footer > Footer.</td>
     </tr>
@@ -185,6 +193,10 @@ active: glossary
     <tr>
       <td id="left-indent">Left indent</td>
       <td>An <a href="#indent">indent</a> marker found on the horizontal <a href="#ruler">ruler</a> that controls where a paragraph starts, or, in a list where both the bullet/number and content after starts. See examples in this article: <a href="/word/indents">Indents</a></td>
+    </tr>
+    <tr class="tooltip-row" data-gif="{{ '/assets/images/word/Images/Locked%20anchor%20icon.png' | url }}">
+      <td id="locked-anchor">Locked anchor</td>
+      <td>When a <a href="#floating-image">floating image</a> is moved far enough up and down a page its <a href="#anchor">anchor</a> will eventually be reassigned to another paragraph. However anchors can be locked to one particular paragraph regardess of where the image is moved to afterwards. This option is in the image's layout options, see an example here: <a href="/word/images/#locked-anchor">Locked anchor</a></td>
     </tr>
     <tr>
       <td id="margin">Margin (MS Word)</td>

@@ -289,7 +289,7 @@
       </tr>
       <tr class="tooltip-row" data-gif="/assets/images/word/Images/Move%20image.gif">
         <td>Hover anywhere over the image/shape</td>
-        <td><p>Hover over the image/shape, then when the cursor icon changes to a four-way arrow you can click and drag to move it.</p> <p><u>Note</u>: images are <a href="/glossary/#anchor">anchored</a> to text by default (i.e. line by line) so this will determine how/where you can move it. To move it around freely you can change its <strong>layout options</strong> so it 'floats' above or behind text, see below.</p></td>
+        <td><p>Hover over the image/shape, then when the cursor icon changes to a four-way arrow you can click and drag to move it.</p> <p><u>Note</u>: by default images fit within the text sharing a line with it which will restrict how and where you move it. To move images more freely you can change its <strong>layout options</strong> so it 'floats' above or behind text, see below.</p></td>
         <td><img class="thumbnail" src="/assets/images/word/Images/Move%20arrow%20grey%20background.png" alt="Move arrow" style="display: block; margin: auto; width: 100%;"></td>
       </tr>
       <tr class="tooltip-row" data-gif="/assets/images/word/Images/Adjustment%20handle%20example.gif">
@@ -373,9 +373,25 @@
       </tr>
     </tbody>
 </table>
-<h3>Anchoring</h3>
-<p>We previously touched on how an image/shape set to be <strong>In Line with Text</strong> 'anchors' it to the same line as the surrounding text. For other wrap types a blue anchor symbol will appear in the left margin to indicate which paragraph it is attached to. This is helpful if you have the default option <strong>Move with text</strong> enabled, as you can use it to predict whether your image/shape will shift if that paragraph or one before it moves.</p>
-<img class="thumbnail" src="/assets/images/word/Images/Anchor%20with%20square%20wrap.png" alt="Anchor with square wrap" style="display: block; margin: auto; width: 85%;">
+<h3 id="anchoring">Anchoring</h3>
+<p>An image/shape set to be <strong>In Line with Text</strong> behaves like a text character on a line of text. It doesn't have a visible anchor icon because it's part of the text layer itself.</p>
+<p>By contrast, images set to other wrapping styles (like Square, Tight>, or Behind Text) are known as <strong>floating images</strong>. You can position these anywhere independent of text, but they are also 'anchored' to a specific paragraph. This is indicted by a small blue anchor in the left margin when selected.</p>
+<p>The anchor is helpful if you have the default option <strong>Move with text</strong> enabled, as you can use it to predict whether your image/shape will shift if that paragraph — or one before it — moves.</p>
+<img class="thumbnail border" src="/assets/images/word/Images/Anchor%20with%20square%20wrap.png" alt="Anchor with square wrap" style="display: block; margin: auto; width: 85%;">
+<h4 id="locked-anchor">Locked Anchor</h4>
+<p>With floating images if you drag the image/shape far enough up or down the page, Word  reassigns its anchor to a different paragraph. To prevent this, you can 'lock' the anchor.</p>
+<p>Locking the anchor means that the image/shape will stay associated or 'anchored' with its original paragraph, even if you move it elsewhere on the page. The image/shape can move but its anchor — and thereby its association to that paragraph — stays fixed.</p>
+<p>Why does this matter? Because if the anchored paragraph is moved (drag and dropped or cut and pasted elsewhere, for example), then the image will move with it, maintaining the same relative position from the pargraph as you've chosen to position it.</p>
+<p>To lock an anchor <strong>right click</strong> the image, then from the menu:</p>
+<ul>
+  <li>For images, icons and 3D models select <strong>Size and Position</strong></li>
+  <li>For shapes select <strong>More Layout Options</strong></li>
+</ul>
+<img class="thumbnail border" src="/assets/images/word/Images/Lock%20anchor%20options.png" alt="Lock Anchor menu options" style="display: inline; margin: auto; width: 50%;">
+<p>On the window that pops up select the <strong>Position</strong> tab and then check <strong>Lock Anchor</strong>.</p>
+<img class="thumbnail" src="/assets/images/word/Images/Lock%20anchor.png" alt="Lock Anchor" style="display: inline; margin: auto; width: 50%;">
+<p>The anchor turns black and gains a little yellow padlock symbol indicating it's now locked as shown in the example below. Note that the image is far below the paragraph its anchored to. Unless the image is moved it will keep that position and distance from the paragraph wherever it is.</p>
+<img class="thumbnail border" src="/assets/images/word/Images/Lock%20anchor%20example.png" alt="Lock Anchor" style="display: inline; margin: auto; width: 50%;">
 </section>
 
     </div>
