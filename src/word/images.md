@@ -133,7 +133,7 @@ active: word
       </tr>
     </tbody>s
     </table>
-    <h3>Layout options</h3>
+    <h3 id="layout-options">Layout options</h3>
     <p>When the image/shape is selected you'll also see a small box top right, click this to see the layout options available:</p>
     <img class="thumbnail" src="{{ '/assets/images/word/Images/Layout%20options.png' | url }}" alt="Layout options" style="display: inline; margin: auto; width: 50%;">
     <p>Hover over the rows below to see how text acts around the image/shape each option:</p>
@@ -210,7 +210,7 @@ active: word
 
 <p>An image/shape set to be <strong>In Line with Text</strong> behaves like a text character on a line of text. It doesn't have a visible anchor icon because it's part of the text layer itself.</p>
 
-<p>By contrast, images set to other wrapping styles (like Square, Tight>, or Behind Text) are known as <strong>floating images</strong>. You can position these anywhere independent of text, but they are also 'anchored' to a specific paragraph. This is indicted by a small blue anchor in the left margin when selected.</p>
+<p>By contrast, images set to other wrapping styles (like Square, Tight>, or Behind Text) are known as <strong>floating images</strong>. You can position these anywhere independent of text, but they are also 'anchored' to a specific paragraph. This is indicated by a small blue anchor in the left margin when selected.</p>
 
 <p>The anchor is helpful if you have the default option <strong>Move with text</strong> enabled, as you can use it to predict whether your image/shape will shift if that paragraph — or one before it — moves.</p>
 
