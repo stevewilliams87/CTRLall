@@ -70,6 +70,8 @@ quiz: styles-quiz
     <li>Global updates — change the style once, and every instance updates.</li>
 </ul>
 
+<p>A lot of beginners fall into the trap of formatting every heading with the same attributes like a larger font size and emboldened over and over throughout the document. Styles take the work out of this for you. It's not just about headings looking the same either; Styles are recognised by Word with a hierarchy structure which determine automated <a href="/word/table-of-contents/">table of contents</a>.</p>
+
 <h2 id="styles-gallery">Styles gallery</h2>
 <p>Click <strong>Styles</strong> and a drop down menu appears with a Styles gallery (formerly known as the Quick Styles gallery in older versions of Word). The default styles in the gallery are:</p>
 <ul>
