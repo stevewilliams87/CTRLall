@@ -75,19 +75,14 @@
       </a>
     </li>
 
-    <li>
-      <a href="{{ '/word/formatting-text/' | url }}"
-         class="{% if page.url == '/word/formatting-text/' %}active{% endif %}">
-        Formatting text
-      </a>
-    </li>
-
 
     <!-- TEXT & PARAGRAPH FORMATTING -->
     <li>
       <button 
         class="nav-toggle level-3-toggle
-          {% if page.url == '/word/hard-and-soft-returns/' 
+          {% if page.url == '/word/formatting-text/' 
+             or page.url == '/word/styles/'
+             or page.url == '/word/hard-and-soft-returns/' 
              or page.url == '/word/tab-stops/'
              or page.url == '/word/indents/' 
              or page.url == '/word/fixing-irregular-spacing/' 
@@ -95,7 +90,9 @@
              or page.url == '/word/paragraph-options/' %}
             expanded
           {% endif %}"
-        aria-expanded="{% if page.url == '/word/hard-and-soft-returns/' 
+        aria-expanded="{% if page.url == '/word/formatting-text/' 
+             or page.url == '/word/styles/'
+             or page.url == '/word/hard-and-soft-returns/'
              or page.url == '/word/tab-stops/'
              or page.url == '/word/indents/' 
              or page.url == '/word/fixing-irregular-spacing/' 
@@ -118,6 +115,8 @@
             show
           {% endif %}">
 
+        <li><a href="{{ '/word/formatting-text/' | url }}" class="{% if page.url == '/word/formatting-text/' %}active{% endif %}">Formatting text</a></li>
+        <li><a href="{{ '/word/styles/' | url }}" class="{% if page.url == '/word/styles/' %}active{% endif %}">Styles</a></li>
         <li><a href="{{ '/word/hard-and-soft-returns/' | url }}" class="{% if page.url == '/word/hard-and-soft-returns/' %}active{% endif %}">Hard & soft returns</a></li>
         <li><a href="{{ '/word/tab-stops/' | url }}" class="{% if page.url == '/word/tab-stops/' %}active{% endif %}">Tab stops</a></li>
         <li><a href="{{ '/word/indents/' | url }}" class="{% if page.url == '/word/indents/' %}active{% endif %}">Indents</a></li>
@@ -133,14 +132,12 @@
     <li>
       <button 
         class="nav-toggle level-3-toggle
-          {% if page.url == '/word/styles/' 
-             or page.url == '/word/page-breaks/' 
+          {% if page.url == '/word/page-breaks/'
              or page.url == '/word/section-breaks/' 
              or page.url == '/word/headers-and-footers/' %}
             expanded
           {% endif %}"
-        aria-expanded="{% if page.url == '/word/styles/' 
-             or page.url == '/word/page-breaks/' 
+        aria-expanded="{% if page.url == '/word/page-breaks/' 
              or page.url == '/word/section-breaks/' 
              or page.url == '/word/headers-and-footers/' %}
             true
@@ -151,14 +148,12 @@
       </button>
 
       <ul class="nav-level-3
-          {% if page.url == '/word/styles/' 
-             or page.url == '/word/page-breaks/' 
+          {% if page.url == '/word/page-breaks/' 
              or page.url == '/word/section-breaks/' 
              or page.url == '/word/headers-and-footers/' %}
             show
           {% endif %}">
 
-        <li><a href="{{ '/word/styles/' | url }}" class="{% if page.url == '/word/styles/' %}active{% endif %}">Styles</a></li>
         <li><a href="{{ '/word/page-breaks/' | url }}" class="{% if page.url == '/word/page-breaks/' %}active{% endif %}">Page breaks</a></li>
         <li><a href="{{ '/word/section-breaks/' | url }}" class="{% if page.url == '/word/section-breaks/' %}active{% endif %}">Section breaks</a></li>
         <li><a href="{{ '/word/headers-and-footers/' | url }}" class="{% if page.url == '/word/headers-and-footers/' %}active{% endif %}">Headers and Footers</a></li>
@@ -332,13 +327,46 @@
             show
           {% endif %}">
 
-        <li><a href="{{ '/word/find/' | url }}" class="{% if page.url == '/word/find/' %}active{% endif %}">Find</a></li>
+        <li><a href="{{ '/word/find/' | url }}" class="{% if page.url == '/word/find/' %}active{% endif %}">Find & Find and Replace</a></li>
         <li><a href="{{ '/word/table-of-contents/' | url }}" class="{% if page.url == '/word/table-of-contents/' %}active{% endif %}">Table of contents</a></li>
         <li><a href="{{ '/word/table-of-contents-custom/' | url }}" class="{% if page.url == '/word/table-of-contents-custom/' %}active{% endif %}">Custom table of contents</a></li>
 
       </ul>
     </li>
 
+
+    <!-- REVIEW & COLLABORATION -->
+    <li>
+      <button 
+        class="nav-toggle level-3-toggle
+          {% if page.url == '/word/comments/' 
+            or page.url == '/word/track-changes/' 
+            or page.url == '/word/spelling-grammar/' %}
+            expanded
+          {% endif %}"
+        aria-expanded="{% if page.url == '/word/comments/' 
+            or page.url == '/word/track-changes/' 
+            or page.url == '/word/spelling-grammar/' %}
+            true
+          {% else %}
+            false
+          {% endif %}">
+        Review & Collaboration <span class="arrow"></span>
+      </button>
+
+      <ul class="nav-level-3
+          {% if page.url == '/word/comments/' 
+            or page.url == '/word/track-changes/' 
+            or page.url == '/word/spelling-grammar/' %}
+            show
+          {% endif %}">
+
+        <li><a href="{{ '/word/comments/' | url }}" class="{% if page.url == '/word/comments/' %}active{% endif %}">Comments</a></li>
+        <li><a href="{{ '/word/track-changes/' | url }}" class="{% if page.url == '/word/track-changes/' %}active{% endif %}">Track Changes</a></li>
+        <li><a href="{{ '/word/spelling-grammar/' | url }}" class="{% if page.url == '/word/spelling-grammar/' %}active{% endif %}">Spelling & Grammar (Editor)</a></li>
+
+      </ul>
+    </li>
 
     <!-- PAGE SETUP -->
     <li>
