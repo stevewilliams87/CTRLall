@@ -35,10 +35,12 @@ tags:
   - select a line
   - select line
 relatedArticles:
-  - url: /word/copying-content/
+  - url: /content-control/copying-content/
     label: "Copying content"
-  - url: /word/moving-content/
+  - url: /content-control/moving-content/
     label: "Moving content"
+  - url: /word/find/
+    label: "Finding content"
 active: word
 ---
 
@@ -57,6 +59,9 @@ active: word
 <h2>Select text by double-clicking</h2>
 <p>You can select a whole word by <strong>double clicking</strong> on a word with your left mouse button or mousepad:</p>
 <p><img class="thumbnail border" src="{{ '/assets/images/word/Selecting text/Selecting text word double click.gif' | url }}" alt="Selecting text word by double clicking in Word" style="max-width:650px; width:100%; height:auto; vertical-align:middle"></p>
+<h3>Ctrl + click to select a sentence</h3>
+<p>Hold <strong>Ctrl</strong> on the keyboard then <strong>left click</strong> on a sentence and it will be selected. If the sentence is in the middle of a paragraph it will just select that sentence not the whole paragraph.</p>
+<p><img class="thumbnail border" src="{{ '/assets/images/word/Selecting text/Select sentence.gif' | url }}" alt="Selecting sentence in a paragraph via ctrl and click in Word" style="max-width:650px; width:100%; height:auto; vertical-align:middle"></p>
 <p>To select a whole paragraph you can <strong>triple click</strong> on a word in it:</p>
 <p><img class="thumbnail border" src="{{ '/assets/images/word/Selecting text/Selecting text paragraph triple click.gif' | url }}" alt="Selecting text paragraph by triple clicking in Word" style="max-width:650px; width:100%; height:auto; vertical-align:middle"></p>
 <h2>Selecting punctuation</h2>
@@ -78,6 +83,9 @@ active: word
 
   <h2>Selecting text in Word</h2>
   <p>You probably already know how to select a word by double clicking on it or dragging over it but here's a few others in case you didn't know them:</p>
+
+  <h3>Ctrl + click to select a sentence</h3>
+  <p><img class="thumbnail border" src="{{ '/assets/images/word/Selecting text/Select sentence.gif' | url }}" alt="Selecting sentence in a paragraph via ctrl and click in Word" style="max-width:650px; width:100%; height:auto; vertical-align:middle"></p>
 
   <h3>Triple click to select a paragraph</h3>
   <p><img class="thumbnail border" src="{{ '/assets/images/word/Selecting text/Selecting text paragraph triple click.gif' | url }}" alt="Selecting text paragraph by triple clicking in Word" style="max-width:650px; width:100%; height:auto; vertical-align:middle"></p>
