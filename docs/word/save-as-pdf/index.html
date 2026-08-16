@@ -212,12 +212,6 @@
       </a>
     </li>
 
-    <li>
-      <a href="/word/formatting-text/" class="">
-        Formatting text
-      </a>
-    </li>
-
 
     <!-- TEXT & PARAGRAPH FORMATTING -->
     <li>
@@ -231,6 +225,8 @@
       <ul class="nav-level-3
           ">
 
+        <li><a href="/word/formatting-text/" class="">Formatting text</a></li>
+        <li><a href="/word/styles/" class="">Styles</a></li>
         <li><a href="/word/hard-and-soft-returns/" class="">Hard &amp; soft returns</a></li>
         <li><a href="/word/tab-stops/" class="">Tab stops</a></li>
         <li><a href="/word/indents/" class="">Indents</a></li>
@@ -254,7 +250,6 @@
       <ul class="nav-level-3
           ">
 
-        <li><a href="/word/styles/" class="">Styles</a></li>
         <li><a href="/word/page-breaks/" class="">Page breaks</a></li>
         <li><a href="/word/section-breaks/" class="">Section breaks</a></li>
         <li><a href="/word/headers-and-footers/" class="">Headers and Footers</a></li>
@@ -354,13 +349,32 @@
       <ul class="nav-level-3
           ">
 
-        <li><a href="/word/find/" class="">Find</a></li>
+        <li><a href="/word/find/" class="">Find &amp; Find and Replace</a></li>
         <li><a href="/word/table-of-contents/" class="">Table of contents</a></li>
         <li><a href="/word/table-of-contents-custom/" class="">Custom table of contents</a></li>
 
       </ul>
     </li>
 
+
+    <!-- REVIEW & COLLABORATION -->
+    <li>
+      <button class="nav-toggle level-3-toggle
+          " aria-expanded="
+            false
+          ">
+        Review &amp; Collaboration <span class="arrow"></span>
+      </button>
+
+      <ul class="nav-level-3
+          ">
+
+        <li><a href="/word/comments/" class="">Comments</a></li>
+        <li><a href="/word/track-changes/" class="">Track Changes</a></li>
+        <li><a href="/word/spelling-grammar/" class="">Spelling &amp; Grammar (Editor)</a></li>
+
+      </ul>
+    </li>
 
     <!-- PAGE SETUP -->
     <li>
@@ -488,6 +502,8 @@
   <img class="thumbnail left" src="/assets/images/word/Save as PDF/Save As browse window PDF.png" alt="Save As browse window selecting PDF in Word" style="max-width:600px; width:100%; height:auto; vertical-align:middle">
   <p>After you've selected it to be saved as a PDF, browse for the location you need. There are bookmarked locations like the Desktop on the left side which you may need to find by scrolling.</p>
   <p>Once you've chosen the location to save, hit <strong>Save</strong> (bottom right) and you're done.</p>
+  <h2>Comments and track changes in PDFs</h2>
+  <p>If your document includes track changes or comments these normally end up visible in the PDF by default. To stop that happening see <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a> in the intermediate version of this article.</p>
   </section>
 </div>
 <!-- Intermediate version -->
@@ -504,18 +520,28 @@
   <p>It's as simple as that.</p>
   <p><u>Note</u>: If you have Adobe Acrobat installed you'll see an extra button <strong>Save as Adobe PDF</strong> in the File menu. This option uses Adobe’s PDF engine instead of Word’s built‑in one. If you have just Adobe Reader then you won't see this option.</p>
   <img class="thumbnail left" src="/assets/images/word/Save as PDF/Save as Adobe PDF.png" alt="File Save as Adobe PDF in Word" style="max-width:200px; width:100%; height:auto; vertical-align:middle">
-  <h2>What to be aware of when converting to PDF</h2>
-  <h4>Comments</h4>
-  <p>Something that normally catches people out is if you have comments in your Word doc visible then these will show up in the PDF. You need to switch them off first. Here's an example of comments visible at the time of saving in Word:</p>
-  <img class="thumbnail border" src="/assets/images/word/Save as PDF/Comments 1.png" alt="word document with comments" style="max-width:1000px; width:100%; height:auto; vertical-align:middle">
-  <p>This is how it ends up looking in the PDF:</p>
-  <img class="thumbnail border" src="/assets/images/word/Save as PDF/Comments 2.png" alt="Adobe PDF showing comments from Word" style="max-width:900px; width:100%; height:auto; vertical-align:middle">
-  <p>You need to turn comments off via the <strong>Review</strong> tab.</p>
-  <p><u>Note</u>: Clicking <strong>Show Comments</strong> to hide the comments in Word won't do the trick here; they'll still appear in the PDF. Instead you need to select the drop down menu under <strong>Markup</strong> which will typically show <strong>All Markup</strong>. Change this to <strong>No Markup</strong>.</p>
-  <img class="thumbnail border left" src="/assets/images/word/Save as PDF/Review No Markup.png" alt="Review No Markup option in Word" style="max-width:550px; width:100%; height:auto; vertical-align:middle">
-  <p>Then save the document as a PDF.</p>
-  <p>Now the comments won't appear in the PDF:</p>
-  <img class="thumbnail border" src="/assets/images/word/Save as PDF/Comments 3.png" alt="Adobe PDF without comments" style="max-width:775px; width:100%; height:auto; vertical-align:middle">
+  <h2 id="pdf-comments-track-changes">Comments/track changes showing in the PDF</h2>
+  <p>If your Word document had comments or track changes, the markup is included by default when you save as a PDF. You may not want this in which case there are settings that need changing.</p>
+  <p><em>Comments in a PDF:</em></p>
+  <img class="thumbnail border" src="/assets/images/word/Save as PDF/PDF with comments example.png" alt="PDF with comments" style="max-width:789px; width:100%; height:auto; vertical-align:middle">
+  <em>Track changes in a PDF:</em>
+  <img class="thumbnail border" src="/assets/images/word/Save as PDF/Example track changes in PDF.png" alt="PDF with comments" style="max-width:792px; width:100%; height:auto; vertical-align:middle">
+  <h4>The quick way</h4>
+  <p>Now a lot of guides online will tell you this can be solved by hiding comments and track changes in Word via the <strong>Review</strong> tab. This usually works but not always.</p>
+  <ul>
+    <li><u>Note</u>: For comments, pressing <strong>Show Comments</strong> again to hide existing comments in Word won't do the trick here; they'll still appear in the PDF.</li>
+    <li>To hide markup like track changes and comments you need to select the drop down menu under <strong>Review &gt; Markup</strong> which will typically show <strong>All Markup</strong>. Change this to <strong>No Markup</strong>. This will hide all markup on the document displaying the content as if the proposed changes have been accepted.<p></p>
+      <img class="thumbnail border left" src="/assets/images/word/Save as PDF/Review No Markup.png" alt="Review No Markup option in Word" style="max-width:550px; width:100%; height:auto; vertical-align:middle">
+    </li>
+  </ul>
+  <p>For the most part this will prevent comments and track changes appearing when you save as a PDF, but not always. A surefire way to disable them is in the save settings...</p>
+  <h4>The fullproof way</h4>
+  <p>When saving in the <em>Save As</em> dialog, select PDF as the file type and you'll see an <strong>Options</strong> button appears at the bottom, click this:</p>
+  <img class="thumbnail border left" src="/assets/images/word/Save as PDF/Save PDF dialog.png" alt="Save dialog in Word" style="max-width:669px; width:100%; height:auto; vertical-align:middle">
+  An <em>Options</em> dialog will appear.<p></p>
+  <p>Under <em>Publish what</em> change <strong>Document showing markup</strong> to  <strong>Document</strong>, then <strong>OK</strong> and continue to save as a PDF.
+  <img class="thumbnail border left" src="/assets/images/word/Save as PDF/Save PDF options.png" alt="Save options dialog in Word" style="max-width:281px; width:100%; height:auto; vertical-align:middle">
+  </p><p>The PDF will no longer show the markup.</p>
   </section>
 </div>
 </article>
@@ -555,6 +581,14 @@
       <li><a href="/word/saving-and-save-as/">Saving and Save As</a></li>
       
     
+      
+      <li><a href="/word/comments/">Comments</a></li>
+      
+    
+      
+      <li><a href="/word/track-changes/">Track changes</a></li>
+      
+    
   </ul>
 </section>
 
@@ -564,6 +598,14 @@
     
       
       <li><a href="/word/saving-and-save-as/">Saving and Save As</a></li>
+      
+    
+      
+      <li><a href="/word/comments/">Comments</a></li>
+      
+    
+      
+      <li><a href="/word/track-changes/">Track changes</a></li>
       
     
   </ul>

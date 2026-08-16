@@ -78,9 +78,47 @@ tags:
   - documents
   - pdfs
   - .pdf
+  - track changes pdf
+  - pdf track changes
+  - comments pdf
+  - pdf comments
+  - stop track changes in pdf
+  - stop comments in pdf
+  - stop edits in pdf
+  - stop track changes showing in pdf
+  - stop comments showing in pdf
+  - stop edits showing in pdf
+  - stop track changes appearing in pdf
+  - stop comments appearing in pdf
+  - stop edits appearing in pdf
+  - prevent track changes in pdf
+  - prevent comments in pdf
+  - prevent edits in pdf
+  - prevent track changes showing in pdf
+  - prevent comments showing in pdf
+  - prevent edits showing in pdf
+  - prevent track changes appearing in pdf
+  - prevent comments appearing in pdf
+  - prevent edits appearing in pdf
+  - disable track changes in pdf
+  - disable comments in pdf
+  - disable edits in pdf
+  - disable track changes showing in pdf
+  - disable comments showing in pdf
+  - disable edits showing in pdf
+  - disable track changes appearing in pdf
+  - disable comments appearing in pdf
+  - disable edits appearing in pdf
+  
 relatedArticles:
   - url: /word/saving-and-save-as/
     label: "Saving and Save As"
+  - url: /word/comments/
+    label: "Comments"
+  - url: /word/track-changes/
+    label: "Track changes"
+
+
 active: word
 ---
 <h1>Save a Word document as a PDF</h1>
@@ -115,6 +153,8 @@ active: word
   <p>After you've selected it to be saved as a PDF, browse for the location you need. There are bookmarked locations like the Desktop on the left side which you may need to find by scrolling.</p>
   <p>Once you've chosen the location to save, hit <strong>Save</strong> (bottom right) and you're done.</p>
 
+  <h2>Comments and track changes in PDFs</h2>
+  <p>If your document includes track changes or comments these normally end up visible in the PDF by default. To stop that happening see <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a> in the intermediate version of this article.</p>
   </section>
 
 </div>
@@ -146,21 +186,31 @@ active: word
 
   <img class="thumbnail left" src="{{ '/assets/images/word/Save as PDF/Save as Adobe PDF.png' | url }}"  alt="File Save as Adobe PDF in Word" style="max-width:200px; width:100%; height:auto; vertical-align:middle">
 
-  <h2>What to be aware of when converting to PDF</h2>
-  <h4>Comments</h4>
-  <p>Something that normally catches people out is if you have comments in your Word doc visible then these will show up in the PDF. You need to switch them off first. Here's an example of comments visible at the time of saving in Word:</p>
-  <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Comments 1.png' | url }}"  alt="word document with comments" style="max-width:1000px; width:100%; height:auto; vertical-align:middle">
-  <p>This is how it ends up looking in the PDF:</p>
-  <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Comments 2.png' | url }}"  alt="Adobe PDF showing comments from Word" style="max-width:900px; width:100%; height:auto; vertical-align:middle">
+  <h2 id="pdf-comments-track-changes">Comments/track changes showing in the PDF</h2>
+  <p>If your Word document had comments or track changes, the markup is included by default when you save as a PDF. You may not want this in which case there are settings that need changing.</p>
+  <p><em>Comments in a PDF:</em></p>
+  <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/PDF with comments example.png' | url }}" alt="PDF with comments" style="max-width:789px; width:100%; height:auto; vertical-align:middle">
+  <em>Track changes in a PDF:</em>
+  <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Example track changes in PDF.png' | url }}" alt="PDF with comments" style="max-width:792px; width:100%; height:auto; vertical-align:middle">
+  
+  <h4>The quick way</h4>
+  <p>Now a lot of guides online will tell you this can be solved by hiding comments and track changes in Word via the <strong>Review</strong> tab. This usually works but not always.</p>
+  <ul>
+    <li><u>Note</u>: For comments, pressing <strong>Show Comments</strong> again to hide existing comments in Word won't do the trick here; they'll still appear in the PDF.</li>
+    <li>To hide markup like track changes and comments you need to select the drop down menu under <strong>Review > Markup</strong> which will typically show <strong>All Markup</strong>. Change this to <strong>No Markup</strong>. This will hide all markup on the document displaying the content as if the proposed changes have been accepted.</p>
+      <img class="thumbnail border left" src="{{ '/assets/images/word/Save as PDF/Review No Markup.png' | url }}"  alt="Review No Markup option in Word" style="max-width:550px; width:100%; height:auto; vertical-align:middle">
+    </li>
+  </ul>
+  <p>For the most part this will prevent comments and track changes appearing when you save as a PDF, but not always. A surefire way to disable them is in the save settings...</p>
 
-  <p>You need to turn comments off via the <strong>Review</strong> tab.</p>
-  <p><u>Note</u>: Clicking <strong>Show Comments</strong> to hide the comments in Word won't do the trick here; they'll still appear in the PDF. Instead you need to select the drop down menu under <strong>Markup</strong> which will typically show <strong>All Markup</strong>. Change this to <strong>No Markup</strong>.</p>
-  <img class="thumbnail border left" src="{{ '/assets/images/word/Save as PDF/Review No Markup.png' | url }}"  alt="Review No Markup option in Word" style="max-width:550px; width:100%; height:auto; vertical-align:middle">
-
-  <p>Then save the document as a PDF.</p>
-  <p>Now the comments won't appear in the PDF:</p>
-  <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Comments 3.png' | url }}"  alt="Adobe PDF without comments" style="max-width:775px; width:100%; height:auto; vertical-align:middle">
-
+  <h4>The fullproof way</h4>
+  <p>When saving in the <em>Save As</em> dialog, select PDF as the file type and you'll see an <strong>Options</strong> button appears at the bottom, click this:</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Save as PDF/Save PDF dialog.png' | url }}" alt="Save dialog in Word" style="max-width:669px; width:100%; height:auto; vertical-align:middle">
+  An <em>Options</em> dialog will appear.</p>
+  <p>Under <em>Publish what</em> change <strong>Document showing markup</strong> to  <strong>Document</strong>, then <strong>OK</strong> and continue to save as a PDF.
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Save as PDF/Save PDF options.png' | url }}" alt="Save options dialog in Word" style="max-width:281px; width:100%; height:auto; vertical-align:middle">
+  <p>The PDF will no longer show the markup.</p>
+  
   </section>
 
 </div>

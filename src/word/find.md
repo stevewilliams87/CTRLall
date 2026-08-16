@@ -90,7 +90,9 @@ active: word
 <div class="difficulty beginner-version"  aria-label="Beginner introduction to Microsoft Word Find feature and navigation pane">
 
   <section class="section-light">
-  <h2>Find</h2>
+  <p>This beginner article looks at the <strong>Find</strong> tool in Word. If you're after <strong>Find & Replace</strong> this is explored in the <a href="?difficulty=intermediate">intermediate version</a> of this article.</p>
+
+  <h2>Find & the navigation pane</h2>
   <p>You can search for words or phrases in a document with the <strong>Find</strong> function which is found on the far right of Home tab on the <span class="glossary-hover" data-term="ribbon">ribbon</span>:</p>
   <img class="thumbnail border left" src="{{ '/assets/images/word/Find/Find on ribbon.png' | url }}" alt="Find option on ribbon in word" style="max-width:138px; width:100%; height:auto; vertical-align:middle">
   <p>Alternatively you can also use the keyboard shortcut <strong>Ctrl + F</strong>:</p>
@@ -119,6 +121,8 @@ active: word
 <div class="difficulty intermediate-version" aria-label="Intermediate article exploring advanced Find options in Word" style="display:none;">
 
   <section class="section-light">
+  <p>Note: If you're after <strong>Find & Replace</strong> this is explored <a href="#find-and-replace">further below</a>.</p>
+
   <h2>Find & the navigation pane</h2>
   <p>Pressing Ctrl + F will bring up the navigation pane on the left side of the app (which you can also move by dragging and dock to the right side if you prefer).</p>
   <p><img class="thumbnail left" src="{{ '/assets/images/keyboard shortcuts/Ctrl+F.png' | url }}" alt="Find function Keyboard shortcut Ctrl and F" style="max-width:200px; width:100%; height:auto; vertical-align:middle"></p>
