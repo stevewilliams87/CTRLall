@@ -23,19 +23,57 @@ tags:
   - leaving comments
   - leaving a comment
   - add a comment
-  - delete a comment
-  - approve a comment
-  - reply to a comment
+  - delete a comment thread
+  - approve a comment thread
+  - reply to a comment thread
   - add comments
   - delete comments
   - approve comments
   - reply to comments
+  - tagging in comments
+  - tag in comments
+  - tag in a comment thread
+  - tag someone in comments
+  - tag people in comments
+  - tag others in comments
+  - tagging someone in comments
+  - tagging people in comments
+  - tagging others in comments
+  - mention someone in comments
+  - mention people in comments
+  - mention others in comments
+  - mentioning someone in comments
+  - mentioning people in comments
+  - mentioning others in comments
+  - mention someone in comments
+  - mention people in comments
+  - tag someone in a comment thread
+  - tag people in a comment thread
+  - tag others in a comment thread
+  - tagging someone in a comment thread
+  - tagging people in a comment thread
+  - tagging others in a comment thread
+  - mention someone in a comment thread
+  - mention people in a comment thread
+  - mention others in a comment thread
+  - mentioning someone in a comment thread
+  - mentioning people in a comment thread
+  - mentioning others in a comment thread
+  - mention someone in a comment thread
+  - mention people in a comment thread
+  - mention others in a comment thread
+  - assign task in comments
+  - assign task in a comment thread
+  - assign a task in comments
+  - assign a task in a comment thread
+  - assigning tasks in comments
+  - assign to
 active: word
 relatedArticles:
-  - url: /word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes
-    label: "Comments/track changes showing in the PDF"
   - url: /word/track-changes/
     label: "Track changes"
+  - url: /word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes
+    label: "Comments/track changes showing in the PDF"
 ---
 <h1>Comments</h1>
 
@@ -78,8 +116,8 @@ relatedArticles:
     <li><a href="?difficulty=intermediate#reply">Replying to a comment</a></li>
     <li><a href="?difficulty=intermediate#resolve">'Resolving' a comment</a></li>
     <li><a href="?difficulty=intermediate#views">Different ways to view comments</a></li>
+    <li><a href="?difficulty=intermediate#tagging-and-assigning">Tagging and assigning in comments</a></li>  
     <li><a href="?difficulty=intermediate#pdf">Saving a document with comments as a PDF</a></li>
-    
   </ul>
 
   </section>
@@ -89,15 +127,15 @@ relatedArticles:
 <div class="difficulty intermediate-version" aria-label="Intermediate article exploring advanced comments options in Word" style="display:none;">
 
   <section class="section-light">
-
   <ul>
     <li><a href="#add">How to add a comment</a></li>
     <li><a href="#delete">How to delete a comment</a></li>
     <li><a href="#resolve">How to resolve a comment</a></li>
     <li><a href="#reply">Replying to a comment</a></li>
+    <li><a href="#tagging-and-assigning">Tagging and assigning in comments</a>
     <li><a href="#pdf">Saving as a PDF with comments</a></li>
   </ul>
-
+  <br>
   <p>Comments are a useful tool to attach notes, questions, or feedback to content without editing the document itself. Each comment has its author and timestamp displayed. Commenting is typically used in collaborative editing, reviews or approval workflows. They can be edited, replied to with threaded discussions, and marked as 'resolved'.</p>
   <img class="thumbnail border" src="{{ '/assets/images/word/comments/New comment 3.png' | url }}" alt="New comments option via right click context menu in Word" style="max-width:766px; width:100%; height:auto; vertical-align:middle">
 
@@ -144,47 +182,47 @@ relatedArticles:
   <p>In list view you can also filter comments by whether they're active or resolved or include tagging:</p>
   <img class="thumbnail border left" src="{{ '/assets/images/word/comments/List filter menu.png' | url }}" alt="Comments in list view in Word" style="max-width:320px; width:100%; height:auto; vertical-align:middle">
   
+  <h2 id="tagging-and-assigning">Tagging and assigning in comments</h2>
+  <p>If your Word document is stored on SharePoint or OneDrive, you can <strong>tag</strong> others in a comment. You can also choose to <strong>assign</strong> a comment to someone as a task to complete.</p>
+  <p><u>Note</u>: Both tagging and assigning features require the document to be stored on SharePoint or OneDrive or these features won’t appear. SharePoint/OneDrive is what powers the modern comments/co-authoring layer in Word, Excel, and PowerPoint.</p>
+  <h2 id="tagging">@mention (tagging)</h2>
+  <p>Tagging a user in a comment sends a notification (email or Teams, depending on setup) to let that person know they were mentioned in a comment with a link to the document. It’s useful to draw attention to content, ask for input and confer ideas, or ask advice. </p>
+  <p>There are several reasons you may want to tag someone in a comment thread related to a section of the document, for example:</p>
+  <ul>
+    <li>Pulling in a subject matter expert</li>
+    <li>Redirecting a question to the right owner/department</li>
+    <li>Chasing an overdue query or action in the comment thread</li>
+    <li>Looping in a manager/superior for sign off or approval</li>
+    <li>Highlighting or querying further editing required</li>
+    <li>Flagging gaps in content</li>
+  </ul>
+  <p>To tag someone in a comment, type <strong>@</strong> into the text box followed by the person’s name in the global address book associated with the SharePoint/OneDrive you’re connected to. A list of matched suggestions from that address book will pop up to choose from. Here I’ve typed 'Smith' and it’s bringing up a list of suggestions.</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 1.png' | url }}" alt="PDF with comments" style="max-width:400px; width:100%; height:auto; vertical-align:middle">
+  <p><u>Note</u>: Remember, this feature won’t appear unless the file is stored on SharePoint or OneDrive. If it is and you don’t get the feature appearing then you need to make sure you’re connected to SharePoint or OneDrive first.</p>
+  <p>Select the intended user from the list and they will appear as a link in the text box like this:</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 2.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
+  <p>Press the <strong>arrow</strong> and the tag will be placed with the message. The tagged person will now receive an automated email titled ‘<em>[X] mentioned you in “[document]”</em>’ with a link to the document.</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 3.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
+
+  <h2 id="assigning">Assigning tasks in a comment thread</h2>
+  <p>Once you’ve tagged someone, an <strong>Assign to</strong> checkbox appears below the text box where you can assign the comment as an actionable task for the tagged person to complete.</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 1.png' | url }}" alt="PDF with comments" style="max-width:428px; width:100%; height:auto; vertical-align:middle">
+  <p>When you check the box, a small ‘Assigned to [X]’ radio button appears at the top of the comment to show it's an actionable item rather than a note. Press the <strong>arrow</strong> to execute it and it will look like this:</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 2.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
+  <p>The assigned person will then receive an automated email titled ‘<em>[X] assigned you a task in “[document]”</em>’ with a link to the document.</p>
+  <p>When the assignee opens the document they will get a notification from the <strong>Catch up</strong> feature in the top right of the ribbon:</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 3a.png' | url }}" alt="PDF with comments" style="max-width:405px; width:100%; height:auto; vertical-align:middle">
+  <p>At the same time the comment itself will show the task’s radio button at the top as <strong>Assigned to you</strong>.</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 3b.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
+  <p>Once the task is complete the assignee checks the radio button and the task is marked as complete. The comment thread collapses and this ticked comment icon is left on the page:</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 4a.png' | url }}" alt="PDF with comments" style="max-width:102px; width:100%; height:auto; vertical-align:middle">
+  <p>Clicking on the ticked comment icon will show the comment thread in the list view marked <strong>&#10003; Task completed</strong> at the top, with a timestamp of when the assignee completed it in the thread.</p>
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 4b.png' | url }}" alt="PDF with comments" style="max-width:570px; width:100%; height:auto; vertical-align:middle">
+
   <h2 id="pdf">Saving as a PDF with comments</h2>
-  <p>When using comments there's a common trap most people fall into when saving as a PDF. By default Word will show markup like comments and track changes. If you don't want comments showing in your PDf then the markup needs to be turned off before saving as a PDF. If you don't switch this off the comments will appear on your PDF like this:</p>
+  <p>There's a common trap with comments most people fall into when saving as a PDF. By default Word will show markup like comments and track changes. If you don't want comments showing in your PDF then the markup needs to be turned off before saving as a PDF. If you don't switch this off the comments will appear on your PDF like this:</p>
   <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/PDF with comments example.png' | url }}" alt="PDF with comments" style="max-width:789px; width:100%; height:auto; vertical-align:middle">
   <p>See this article for how to prevent them appearing in PDFs: <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a>.</p>
-  
-  <h2>Tagging and assigning in comments</h2>
-<p>If your Word document is stored on SharePoint or OneDrive, you can <strong>tag</strong> others in a comment. You can also choose to <strong>assign</strong> a comment to someone as a task to complete.</p>
-<p><u>Note</u>: Both tagging and assigning features require the document to be stored on SharePoint or OneDrive or these features won’t appear. SharePoint/OneDrive is what powers the modern comments/co-authoring layer in Word, Excel, and PowerPoint.</p>
-<h2>@mention (tagging)</h2>
-<p>Tagging a user in a comment sends a notification (email or Teams, depending on setup) to let that person know they were mentioned in a comment with a link to the document. It’s useful to draw attention to content, ask for input and confer ideas, or ask advice. </p>
-<p>There are several reason you may want to tag someone in a comment thread related to a section of the document, for example:</p>
-<ul>
-  <li>Pulling in a subject matter expert</li>
-  <li>Redirecting a question to the right owner/department</li>
-  <li>Chasing an overdue query or action in the comment thread</li>
-  <li>Looping in a manager/superior for sign off or approval</li>
-  <li>Highlighting or querying further editing required</li>
-  <li>Flagging gaps in content</li>
-</ul>
-<p>To tag someone in a comment, type <strong>@</strong> into the text box followed by the person’s name in the global address book associated with the SharePoint/OneDrive you’re connected to. A list of matched suggestions from that address book will pop up to choose from. Here I’ve typed ‘Smith’ and it’s bringing up a list of suggestions.</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 1.png' | url }}" alt="PDF with comments" style="max-width:789px; width:100%; height:auto; vertical-align:middle">
-<p><u>Note</u>: Remember, this feature won’t appear unless the file is stored on SharePoint or OneDrive. If it is and you don’t get the feature appearing then you need to make sure you’re connected to SharePoint or OneDrive first.</p>
-<p>Select the intended user from the list and they will appear as a link in the text box like this:</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 2.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
-<p>Press the <strong>arrow</strong> and the tag will be placed with the message. The tagged person will now receive an automated email titled ‘<em>[X] mentioned you in “[document]”</em>’ with a link to the document.</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 3.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
-
-<h2>Assigning</h2>
-<p>Once you’ve tagged someone, an <strong>Assign to</strong> checkbox appears below the text box where you can assign the comment as an actionable task for the tagged person to complete.</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 1.png' | url }}" alt="PDF with comments" style="max-width:428px; width:100%; height:auto; vertical-align:middle">
-<p>When you check the box, a small ‘Assigned to [X]’ radio button appears at the top of the comment to show it's an actionable item rather than a note. Press the <strong>arrow</strong> to execute it and it will look like this:</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 2.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
-<p>The assigned person will then receive an automated email titled ‘<em>[X] assigned you a task in “[document]”</em>’ with a link to the document.</p>
-<p>When the assignee opens the document they will get a notification from the <strong>Catch up</strong> feature in the top right of the ribbon:</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 3a.png' | url }}" alt="PDF with comments" style="max-width:405px; width:100%; height:auto; vertical-align:middle">
-<p>At the same time the comment itself will show the task’s radio button at the top as <strong>Assigned to you</strong>.</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 3b.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
-<p>Once the task is complete the assignee checks the radio button and the task is marked as complete. The comment thread collapses and this ticked comment icon is left on the page:</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 4a.png' | url }}" alt="PDF with comments" style="max-width:102px; width:100%; height:auto; vertical-align:middle">
-<p>Clicking on the ticked comment icon will show the comment thread in the list view marked <strong>&#10003; Task completed</strong>at the top, with a timestamp of when the assignee completed it in the thread.</p>
-<img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 4b.png' | url }}" alt="PDF with comments" style="max-width:570px; width:100%; height:auto; vertical-align:middle">
 
   </section>
 </div>
