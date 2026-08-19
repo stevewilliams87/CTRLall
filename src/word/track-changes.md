@@ -172,24 +172,26 @@ relatedArticles:
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 5.png' | url }}" alt="Incorrect password message when attempting to unlock track changes in Word" style="max-width:369px; width:100%; height:auto; vertical-align:middle"></p>
     <h2 id="markup">Deciding what markup should appear</h2>
     <p>You can also decide what markup appears annd how.</p>
-    <p>On the ribbon click the <strong>Show Markup</strong> drop down menu and you'll be presented with several options including ones under <strong>Balloons</strong>. Balloons are the little margin boxes that show tracked changes in a pane off to the side of the page when they're entered.</p>
+    <p>On the ribbon click the <strong>Show Markup</strong> drop down menu and you'll be presented with several options including ones under <strong>Balloons</strong>. Balloons are the little margin boxes that show tracked changes in a pane off to the side of the page when they're enabled.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Balloons menu.png' | url }}" alt="Show markup Balloons menu for track changes viewing options in Word" style="max-width:514px; width:100%; height:auto; vertical-align:middle"></p>
-    <p>You can determine what appears here or whether the pane does at all.</p>
-    <ul>
-      <li><strong>Show Revisions in Balloons</strong>: Shows balloons in a side pane to the side of the page for all revisions made to the content.</li>
-      <li><strong>Show All Revisions Inline</strong>: Will not show a side pane against the page, essentially turning off the balloons feature.</li>
-      <li><strong>Show Only Formatting in Balloons</strong>: Will only show formatting balloons in the pane.</li>
-      <li><strong>Insertions and Deletions</strong>: Show insertions and deletions on the page, and insertion and deletion ballons to appear when balloon options are selected.</li>
-      <li><strong>Formatting</strong>: Show formatting balloons to appear when balloons options are selected.</li>
-    </ul>
-    <u>Note</u>: If you insert brand new content that doesn't replace any original content then this that edit won't create a balloon. It's only when you insert content in place of another that a balloon counts as an insertion.
-    <!--This needs to be a hotspot on the image above-->
+    <p>You can determine what appears here or whether the pane does at all. Hover over the red dots to see what each option does.</p>
+    <!-- Page setup Margins... tooltip overlay -->
+    <div class="overlay-container">
+      <img src="/assets/images/word/Track changes/Balloons menu.png" alt="Show markup Balloons menu for track changes viewing options in Word" class="base-image" data-width="514" data-height="237">
+      <div class="hotspot rich-tooltip-trigger" data-tooltip-id="Show-markup-options-tooltip-1" style="top:67px; left:237px;"></div>
+      <div class="hotspot rich-tooltip-trigger" data-tooltip-id="Show-markup-options-tooltip-2" style="top:90px; left:237px;"></div>
+      <div class="hotspot rich-tooltip-trigger" data-tooltip-id="Show-markup-options-tooltip-3" style="top:118px; left:480px ;"></div>
+      <div class="hotspot rich-tooltip-trigger" data-tooltip-id="Show-markup-options-tooltip-4" style="top:144px; left:480px;"></div>
+      <div class="hotspot rich-tooltip-trigger" data-tooltip-id="Show-markup-options-tooltip-5" style="top:169px; left:480px;"></div>
+    </div>
+    <p><u>Note</u>: Insertions always appear inline (underlined on the page) regardless of which balloons option is selected. There's no setting that shows inserted text in a balloon. Deletions and formatting changes are the only edit types that appear in the side pane; that's what <em>Show Revisions in Balloons</em> actually controls.</p>
     <p>On top of this you can decide who's edits appear too via <strong>Show Markup > Specific People</strong>:</p>
-    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Show markup users.png' | url }}" alt="Show markup Specific people menu for deciding whose track changes should appear in Word" style="max-width:485px; width:100%; height:auto; vertical-align:middle"></p>
+    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Show markup users.gif' | url }}" alt="Show markup Specific people menu for deciding whose track changes should appear in Word" style="max-width:450px; width:100%; height:auto; vertical-align:middle"></p>
     <h2 id="pdf">Saving as a PDF with track changes</h2>
     <p>When using track changes there's a trap most people fall into when saving the document as a PDF as the comments and track changes show up in the PDF by default.</p>
     <p>As you can see it's quite messy. Unless you have old school editors who insist on annotating on paper (a position that need to be challenged) you won't want this. To stop track changes and comments appearing PDFs you need to change settings before saving as a PDF. See this article for how to prevent this: <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a>.</p>
     <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Example track changes in PDF.png' | url }}" alt="PDF with comments" style="max-width:792px; width:100%; height:auto; vertical-align:middle">
+    
   
   <!-- Printing — track changes showing or hidden -->
   <!-- bubbles -->
@@ -202,3 +204,83 @@ relatedArticles:
 <div class="article-share">
 {% include "share-menu.liquid" %}
 </div>
+
+
+<!-- Global tooltip layer -->
+  <div id="tooltip-layer"></div>
+
+  <!-- Tooltip logic -->
+  <script>
+    const tooltips = {
+      "Show-markup-options-tooltip-1": `
+        <div class="rich-tooltip">
+          <p><strong>Insertions and Deletions</strong>: Shows balloons in a side pane to the side of the page for all revisions made to the content.</p>
+        </div>`,
+      "Show-markup-options-tooltip-2": `
+        <div class="rich-tooltip">
+          <p><strong>Formatting</strong>: Toggles whether formatting changes are shown at all, on the page and in any balloons.</p>
+        </div>`,
+      "Show-markup-options-tooltip-3": `
+        <div class="rich-tooltip">
+          <p><strong>Show Revisions in Balloons</strong>: Shows balloons in a side pane to the side of the page for all revisions made to the content.</p>
+        </div>`,
+      "Show-markup-options-tooltip-4": `
+        <div class="rich-tooltip">
+          <p><strong>Show All Revisions Inline</strong>: Will not show a side pane against the page, essentially turning off the balloons feature.</p>
+        </div>`,
+      "Show-markup-options-tooltip-5": `
+        <div class="rich-tooltip">
+          <p><strong>Show Only Formatting in Balloons</strong>: Will only show formatting balloons in the pane.</p>
+        </div>`
+    };
+
+document.querySelectorAll('.rich-tooltip-trigger').forEach(trigger => {
+  const id = trigger.dataset.tooltipId;
+  const layer = document.getElementById('tooltip-layer');
+
+  trigger.addEventListener('mouseenter', () => {
+    if (!tooltips[id]) return;
+
+    // clear previous
+    layer.innerHTML = '';
+
+    // build tooltip
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = tooltips[id];
+    const tooltip = wrapper.firstElementChild;
+
+    // position tooltip near hotspot
+    const rect = trigger.getBoundingClientRect();
+    tooltip.style.position = 'fixed';
+    tooltip.style.top = `${rect.top + (rect.height / 2)}px`;
+    tooltip.style.left = `${rect.right + 10}px`;
+    tooltip.style.display = 'block';
+
+    // rely on CSS for max-width and wrapping
+    tooltip.style.maxWidth = "400px";
+
+    // add to layer
+    layer.appendChild(tooltip);
+
+    // keep visible while hovering tooltip
+    tooltip.addEventListener('mouseenter', () => {
+      tooltip.classList.add('visible');
+    });
+    tooltip.addEventListener('mouseleave', () => {
+      tooltip.remove();
+    });
+  });
+
+  trigger.addEventListener('mouseleave', () => {
+    const tooltip = document.querySelector('#tooltip-layer .rich-tooltip');
+    if (tooltip) {
+      // delay so you can move into tooltip
+      setTimeout(() => {
+        if (!tooltip.matches(':hover')) {
+          tooltip.remove();
+        }
+      }, 150);
+    }
+  });
+});
+</script>
