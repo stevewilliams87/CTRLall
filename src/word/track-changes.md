@@ -108,8 +108,15 @@ relatedArticles:
 <div class="difficulty intermediate-version" aria-label="Intermediate article exploring advanced track changes options in Word" style="display:none;">
 
   <section class="section-light">
-
-  <h2>Views for track changes</h2>
+  <ul>
+  <li><a href="#views">Views for track changes</a></li>
+  <li><a href="#reviewing-pane">View track changes in the Reviewing pane</a></li>
+  <li><a href="#accept-reject">Accepting and rejecting track changes</a></li>
+  <li><a href="#lock-tracking">Lock tracking</a></li>
+  <li><a href="#markup">Deciding what markup should appear</a></li>
+  <li><a href="#pdf">Saving as a PDF with track changes</a></li>
+  </ul>
+  <h2 id="views">Views for track changes</h2>
     <p>Word gives you 4 view displays for review options which are found on the ribbon drop down under :
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Views.png' | url }}" alt="Review display view options drop down on ribbon in Word" style="max-width:277px; width:100%; height:auto; vertical-align:middle"></p>
     <ul>
@@ -118,8 +125,8 @@ relatedArticles:
       <li><strong>All Markup</strong> – Every change shown inline (underlines, strikethrough, moves) with full comment balloons.</li>
       <li><strong>Simple Markup</strong> – Final text with change bars in the margin; comments as icons only. Word's default view.</li>
     </ul>
-    <h2>View track changes in the Reviewing pane</h2>
-    <p>You can review all track changes with the <strong>Reviewing pane</strong> found on the ribbon under <strong>Review > Markup</strong> that will display track changes that appears on the left by default. You can dock this any side of the page if you prefer (left/right of the page, above/below the page).</p>
+    <h2 id="reviewing-pane">View track changes in the Reviewing pane</h2>
+    <p>You can review all track changes with the <strong>Reviewing pane</strong> found on the <span class="glossary-hover" data-term="ribbon">ribbon</span> under <strong>Review > Markup</strong> that will display track changes that appears on the left by default. You can dock this any side of the page if you prefer (left/right of the page, above/below the page).</p>
     <p>This will show you who has made what edits in the order they appear on the page. It's useful to see all the edits together than scrolling through a document, especially if it's a large document.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Reviewing pane on ribbon.png' | url }}" alt="Reviewing pane option on ribbon in Word" style="max-width:220px; width:100%; height:auto; vertical-align:middle"></p>
     <img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Reviewing pane.png' | url }}" alt="Reviewing pane showing track changes in Word" style="max-width:250px; width:100%; height:auto; vertical-align:middle">
@@ -147,18 +154,40 @@ relatedArticles:
       <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Accept options.png' | url }}" alt="Example track changes accept options in Word" style="max-width:345px; width:100%; height:auto; vertical-align:middle"></p>
       <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Reject options.png' | url }}" alt="Example track changes reject options in Word" style="max-width:386px; width:100%; height:auto; vertical-align:middle"></p>
     </div>
-    <h2>Lock tracking</h2>
-    <p>You can also lock track changes to avoid other users switching it off which would let them then make changes without approval.</p>
-    <!-- TO FINISH -->
-    <p>[Coming soon - still editing]</p>
+    <h2 id="lock-tracking">Lock tracking</h2>
+    <p>You can also lock track changes to stop other users turning it off which would let them then make changes without visiblity or approval.</p>
+    <p>To lock track changes go to <strong>Track Changes > Lock Tracking</strong>:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock Tracking.png' | url }}" alt="Lock tracking option in Word" style="max-width:245px; width:100%; height:auto; vertical-align:middle"></p>
+    <p>You'll then be prompted to set up a password, enter this in twice. There is a note to say it's not a security feature which is true, it doesn't stop any one accessing or editing the document. Then click <strong>OK</strong>.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 2.png' | url }}" alt="Lock tracking password prompt in Word" style="max-width:366px; width:100%; height:auto; vertical-align:middle"></p>
+    <p>The document will now have track changes locked. No one will be able to accept or reject changes and no one will be able to turn it off. You'll see the options on the Review tab greyed out.</p>
+    <h4>Unlock track changes</h4>
+    <p>To unlock track changes go to the same path: <strong>Track Changes > Lock Tracking</strong></p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 3.png' | url }}" alt="Locked track changes options greyed out in Word" style="max-width:161px; width:100%; height:auto; vertical-align:middle"></p>
+    <p>You'll be prompted for the password entered before, once entered press <strong>OK</strong> and track changes will be unlocked. You'll see the options on the <span class="glossary-hover" data-term="ribbon">ribbon</span> stop being greyed out.</p>
+    <p><u>Note</u>: Track changes will unlocked but will still be turned on.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 4.png' | url }}" alt="Unlock tracking password prompt in Word" style="max-width:286px; width:100%; height:auto; vertical-align:middle"></p>
+    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Track changes unlocked.png' | url }}" alt="Track changes options on ribbon active after unlocking in Word" style="max-width:248px; width:100%; height:auto; vertical-align:middle"></p>
+    <p><u>Note</u>: If a user enters the wrong password they will be met with this message and track changes will remain locked.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 5.png' | url }}" alt="Incorrect password message when attempting to unlock track changes in Word" style="max-width:369px; width:100%; height:auto; vertical-align:middle"></p>
-    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Track changes unlocked.png' | url }}" alt="Incorrect password message when attempting to unlock track changes in Word" style="max-width:248px; width:100%; height:auto; vertical-align:middle"></p>
+    <h2 id="markup">Deciding what markup should appear</h2>
+    <p>You can also decide what markup appears annd how.</p>
+    <p>On the ribbon click the <strong>Show Markup</strong> drop down menu and you'll be presented with several options including ones under <strong>Balloons</strong>. Balloons are the little margin boxes that show tracked changes in a pane off to the side of the page when they're entered.</p>
+    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Balloons menu.png' | url }}" alt="Show markup Balloons menu for track changes viewing options in Word" style="max-width:514px; width:100%; height:auto; vertical-align:middle"></p>
+    <p>You can determine what appears here or whether the pane does at all.</p>
+    <ul>
+      <li><strong>Show Revisions in Balloons</strong>: Shows balloons in a side pane to the side of the page for all revisions made to the content.</li>
+      <li><strong>Show All Revisions Inline</strong>: Will not show a side pane against the page, essentially turning off the balloons feature.</li>
+      <li><strong>Show Only Formatting in Balloons</strong>: Will only show formatting balloons in the pane.</li>
+      <li><strong>Insertions and Deletions</strong>: Show insertions and deletions on the page, and insertion and deletion ballons to appear when balloon options are selected.</li>
+      <li><strong>Formatting</strong>: Show formatting balloons to appear when balloons options are selected.</li>
+    </ul>
+    <u>Note</u>: If you insert brand new content that doesn't replace any original content then this that edit won't create a balloon. It's only when you insert content in place of another that a balloon counts as an insertion.
+    <!--This needs to be a hotspot on the image above-->
+    <p>On top of this you can decide who's edits appear too via <strong>Show Markup > Specific People</strong>:</p>
+    <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Show markup users.png' | url }}" alt="Show markup Specific people menu for deciding whose track changes should appear in Word" style="max-width:485px; width:100%; height:auto; vertical-align:middle"></p>
     <h2 id="pdf">Saving as a PDF with track changes</h2>
-    <p>When using track changes there' a trap most people fall into when saving the document as a PDF as comments and track changes show up in the PDF by default.</p>
+    <p>When using track changes there's a trap most people fall into when saving the document as a PDF as the comments and track changes show up in the PDF by default.</p>
     <p>As you can see it's quite messy. Unless you have old school editors who insist on annotating on paper (a position that need to be challenged) you won't want this. To stop track changes and comments appearing PDFs you need to change settings before saving as a PDF. See this article for how to prevent this: <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a>.</p>
     <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Example track changes in PDF.png' | url }}" alt="PDF with comments" style="max-width:792px; width:100%; height:auto; vertical-align:middle">
   
