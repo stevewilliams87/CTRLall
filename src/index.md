@@ -88,9 +88,11 @@ active: index
   <div class="get-started">
     <a href="/about/" class="start-button">Get started</a>
   </div>
-  <img class="thumbnail" src="/assets/images/be_connected_network_partner_logo_1200x200.png" 
+  <a href="https://beconnected.esafety.gov.au" target="_blank" rel="noopener">
+  <img src="/assets/images/be_connected_network_partner_logo_1200x200.png" 
     alt="Be Connected – Australian Government – Network Partner" 
     style="max-width: 400px; width: 100%; height:auto; vertical-align:middle">
+  </a>
 </section>
 
 
@@ -325,7 +327,7 @@ active: index
 
   <p>Ctrl All is a proud network partner of <a href="https://beconnected.esafety.gov.au" target="_blank" rel="noopener">Be Connected</a> — an Australian Government digital skills initiative.</p>
   <a href="https://beconnected.esafety.gov.au" target="_blank" rel="noopener">
-  <img class="thumbnail left" src="/assets/images/be_connected_network_partner_logo_1200x200.png" 
+  <img class="left" src="/assets/images/be_connected_network_partner_logo_1200x200.png" 
     alt="Be Connected – Australian Government – Network Partner" 
     style="max-width: 400px; width: 100%; height:auto; vertical-align:middle">
   </a>
