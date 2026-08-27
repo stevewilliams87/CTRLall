@@ -88,7 +88,12 @@ active: index
   <div class="get-started">
     <a href="/about/" class="start-button">Get started</a>
   </div>
+  <img class="thumbnail" src="/assets/images/be_connected_network_partner_logo_1200x200.png" 
+    alt="Be Connected – Australian Government – Network Partner" 
+    style="max-width: 400px; width: 100%; height:auto; vertical-align:middle">
 </section>
+
+
 
 <section class="most-viewed">
   <h2>Most viewed</h2>
