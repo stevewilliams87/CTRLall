@@ -338,11 +338,13 @@
       <button 
         class="nav-toggle level-3-toggle
           {% if page.url == '/word/comments/' 
-            or page.url == '/word/track-changes/' %}
+            or page.url == '/word/track-changes/'
+            or page.url == '/word/spelling-and-grammar-editor/' %}
             expanded
           {% endif %}"
         aria-expanded="{% if page.url == '/word/comments/' 
-            or page.url == '/word/track-changes/'  %}
+            or page.url == '/word/track-changes/'
+            or page.url == '/word/spelling-and-grammar-editor/' %}
             true
           {% else %}
             false
@@ -352,13 +354,14 @@
 
       <ul class="nav-level-3
           {% if page.url == '/word/comments/' 
-            or page.url == '/word/track-changes/'  %}
+            or page.url == '/word/track-changes/'
+            or page.url == '/word/spelling-and-grammar-editor/' %}
             show
           {% endif %}">
 
         <li><a href="{{ '/word/comments/' | url }}" class="{% if page.url == '/word/comments/' %}active{% endif %}">Comments</a></li>
         <li><a href="{{ '/word/track-changes/' | url }}" class="{% if page.url == '/word/track-changes/' %}active{% endif %}">Track Changes</a></li>
-
+        <li><a href="{{ '/word/spelling-and-grammar-editor/' | url }}" class="{% if page.url == '/word/spelling-and-grammar-editor/' %}active{% endif %}">Spelling & Grammar (Editor)</a></li>
       </ul>
     </li>
 
