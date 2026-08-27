@@ -203,6 +203,7 @@ active: glossary
       <td>
         <p>An editing tool that adds annotations alongside a Word document or PowerPoint presentation, separate from the document content itself. Useful for brainstorming, collaborating, reviewing, and proofreading.</p>
         <p>The Comments tool is found on the <strong>Review</strong> tab of the <a href="#ribbon">ribbon</a>.</p>
+        <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 3.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
         <p>Not to be confused with Word's <a href="#track-changes">Track Changes</a>, which records edits made directly to content rather than annotations added alongside it.</p>
         <p>Also not to be confused with PowerPoint's Notes, which are presenter-facing notes shown per slide during a presentation. Comments are visible while editing but not during a presentation.</p>
       </td>
@@ -608,6 +609,12 @@ active: glossary
       <td>A list format of text with its own level of indentation and numbering style. These can be customised as needed.</td>
     </tr>
     <tr>
+      <td id="navigation-pane">Navigation pane</td>
+      <td><p>The navigation pane appears when using the <a href="#find">Find</a> tool (<strong>Ctrl + F</strong>) to search for text in a document.</p>
+      <p>Matching entries are shown in the pane and are highlighted on the page throughout the document. The navigation pane can be moved by dragging it, you can also dock it to the right side of the screen.</p>
+      <p><img src="{{ '/assets/images/word/Find/Results search results.png' | url }}" alt="Navigation pane find search results under Results tab" style="max-width:300px; width:100%; height:auto; vertical-align:middle"></p></td>
+    </tr>
+    <tr>
       <td id="numbered-list">Numbered list</td>
       <td><p>A list format of text where each new line has a sequential number before it. Used primarily for an order of steps in a process. See <a href="/word/lists/">Lists</a>.</p>
       <p>Example bullet list:</p>
@@ -785,7 +792,7 @@ active: glossary
       <td id="snap">Snap</td>
       <td>
         <p>A built-in Windows feature that lets you automatically resize and arrange multiple <a href="#application">application</a> windows on your screen. It's an easier way to view windows side by side or in multi-window grids without manually resizing them. Drag a window to the edge or corner of the screen to snap it into position, or use <strong>Windows + Left/Right arrow</strong> keys.</p>
-        <p>Some panels within Microsoft Office applications, such as the Navigation Pane in Word, can also be docked to the left or right side of the app window in a similar way.</p>
+        <p>Some panels within Microsoft Office applications, such as the <a href="#navigation-pane">navigation pane</a> in Word, can also be docked to the left or right side of the app window in a similar way.</p>
       </td>
     </tr>
     <tr>
@@ -868,7 +875,8 @@ active: glossary
       <td id="track-changes">Track Changes</td>
       <td>
         <p>A collaboration tool that records any changes made by you or other users in a Word document or PowerPoint presentation. Changes are then reviewed and either accepted or rejected. It is useful for multi-stage editing processes and version control.</p>
-        <p>Track Changes is found on the <strong>Review</strong> tab of the <a href="#ribbon">ribbon</a>. Not to be confused with <a href="#comments">Comments</a>, which are annotations added alongside the document rather than edits to it.</p>
+          <p>Track Changes is found on the <strong>Review</strong> tab of the <a href="#ribbon">ribbon</a>. Not to be confused with <a href="#comments">Comments</a>, which are annotations added alongside the document rather than edits to it.</p>
+          <p><img class="thumbnail border" src="{{ '/assets/images/word/Track changes/Example deletion.png' | url }}" alt="Example track changes deletion in Word" style="max-width:742px; width:100%; height:auto; vertical-align:middle"></p>
       </td>
     </tr>
     <tr>
@@ -1082,6 +1090,7 @@ active: glossary
         <td>
           <p>An editing tool that adds annotations alongside a Word document or PowerPoint presentation, separate from the document content itself. Useful for brainstorming, collaborating, reviewing, and proofreading.</p>
           <p>The Comments tool is found on the <strong>Review</strong> tab of the <a href="#ribbon">ribbon</a>.</p>
+          <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 3.png' | url }}" alt="PDF with comments" style="max-width:390px; width:100%; height:auto; vertical-align:middle">
           <p>Not to be confused with Word's <a href="#track-changes">Track Changes</a>, which records edits made directly to content rather than annotations added alongside it.</p>
           <p>Also not to be confused with PowerPoint's Notes, which are presenter-facing notes shown per slide during a presentation. Comments are visible while editing but not during a presentation.</p>
         </td>
@@ -1459,6 +1468,12 @@ active: glossary
         <td>A list format of text with its own level of indentation and numbering style. These can be customised as needed.</td>
       </tr>
       <tr>
+        <td id="navigation-pane">Navigation pane</td>
+        <td><p>The navigation pane appears when using the <a href="#find">Find</a> tool (<strong>Ctrl + F</strong>) to search for text in a document.</p>
+        <p>Matching entries are shown in the pane and are highlighted on the page throughout the document. The navigation pane can be moved by dragging it, you can also dock it to the right side of the screen.</p>
+        <p><img src="{{ '/assets/images/word/Find/Results search results.png' | url }}" alt="Navigation pane find search results under Results tab" style="max-width:300px; width:100%; height:auto; vertical-align:middle"></p></td>
+    </tr>
+      <tr>
         <td id="numbered-list">Numbered list</td>
         <td><p>A list format of text where each new line has a sequential number before it. Used primarily for an order of steps in a process. See <a href="/word/lists/">Lists</a>.</p>
         <p>Example bullet list:</p>
@@ -1634,7 +1649,7 @@ active: glossary
         <td id="snap">Snap</td>
         <td>
           <p>A built-in Windows feature that lets you automatically resize and arrange multiple <a href="#application">application</a> windows on your screen. It's an easier way to view windows side by side or in multi-window grids without manually resizing them. Drag a window to the edge or corner of the screen to snap it into position, or use <strong>Windows + Left/Right arrow</strong> keys.</p>
-          <p>Some panels within Microsoft Office applications, such as the Navigation Pane in Word, can also be docked to the left or right side of the app window in a similar way.</p>
+          <p>Some panels within Microsoft Office applications, such as the <a href="#navigation-pane">navigation pane</a> in Word, can also be docked to the left or right side of the app window in a similar way.</p>
         </td>
       </tr>
       <tr>
@@ -1718,6 +1733,7 @@ active: glossary
         <td>
           <p>A collaboration tool that records any changes made by you or other users in a Word document or PowerPoint presentation. Changes are then reviewed and either accepted or rejected. It is useful for multi-stage editing processes and version control.</p>
           <p>Track Changes is found on the <strong>Review</strong> tab of the <a href="#ribbon">ribbon</a>. Not to be confused with <a href="#comments">Comments</a>, which are annotations added alongside the document rather than edits to it.</p>
+          <p><img class="thumbnail border" src="{{ '/assets/images/word/Track changes/Example deletion.png' | url }}" alt="Example track changes deletion in Word" style="max-width:742px; width:100%; height:auto; vertical-align:middle"></p>
         </td>
       </tr>
       <tr>
