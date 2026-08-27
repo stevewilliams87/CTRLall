@@ -96,11 +96,11 @@ active: about
 <section class="section-light">
   <h1>About us</h1>
 
-  <p>Digital literacy isn’t just knowing which buttons to press — it’s understanding the system, navigating it with confidence, and helping others do the same. Digital skills should be empowering, ethical, and open to everyone.</p>
+  <p>Digital literacy isn't just knowing which buttons to press. It's understanding the system, navigating it with confidence, and helping others do the same. Digital skills should be empowering, ethical, and open to everyone.</p>
 
-  <p>Where most help sites don't explain why, video tutorials are too long, and paid lessons are too expensive, this site aims to explain everything you need to know, no paywalls, no filler, no 'upgrade to unlock' traps. </p>
+  <p>Most help sites don't explain why, video tutorials are too long, and paid lessons are too expensive. This site explains everything you need to know: no paywalls, no filler, no 'upgrade to unlock' traps.</p>
 
-  <p>Ctrl All is built by an open-source advocate who believes in clarity, confidence, and control. This space empowers anyone — whether you're new to Microsoft Office or an experienced user — to get unstuck or to go one step further.</p>
+  <p>Ctrl All is built by an open-source advocate who believes in clarity, confidence, and control. Whether you're new to Microsoft Office or an experienced user, this space is here to help you get unstuck or go one step further.</p>
 
   <h2>Get Started</h2>
     <h3>Difficulty</h3>
