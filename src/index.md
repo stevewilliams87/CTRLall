@@ -178,6 +178,7 @@ active: index
   <div>
     <h3>Recently updated</h3>
     <ul>
+       <li><a href="/word/spelling-and-grammar-editor">Spelling and Grammar (Editor)</a></li>
        <li><a href="/word/comments">Comments</a></li>
        <li><a href="/word/track-changes">Track changes</a></li>
        <li><a href="/word/find">Find</a></li>
@@ -288,7 +289,7 @@ active: index
     <ul>
       <li><a href="/word/comments">Comments</a></li>
       <li><a href="/word/track-changes">Track changes</a></li>
-      <li>Coming soon: Spelling and grammar (Editor)</li>
+      <li><a href="/word/spelling-and-grammar-editor">Spelling and Grammar (Editor)</a></li>
     </ul>
   </div>
 
