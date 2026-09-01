@@ -323,6 +323,18 @@ active: keyboard-shortcuts
       <td>Ctrl + 0</td>
       <td>Reset zoom level to 100%</td>
     </tr>
+    <tr class="tooltip-row" data-gif="{{ '/assets/images/keyboard shortcuts/Ctrl+1.png' | url }}">
+      <td>Ctrl + 1</td>
+      <td>Single line spacing</td>
+    </tr>
+    <tr class="tooltip-row" data-gif="{{ '/assets/images/keyboard shortcuts/Ctrl+2.png' | url }}">
+      <td>Ctrl + 2</td>
+      <td>Double line spacing</td>
+    </tr>
+    <tr class="tooltip-row" data-gif="{{ '/assets/images/keyboard shortcuts/Ctrl+5.png' | url }}">
+      <td>Ctrl + 5</td>
+      <td>1.5 line spacing</td>
+    </tr>
   </tbody>
 </table>
 </div>
