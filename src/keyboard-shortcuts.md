@@ -1,7 +1,7 @@
 ---
 title: Keyboard Shortcuts for Windows, Microsoft Word, Excel and PowerPoint – Ctrl All
 layout: layout.liquid
-permalink: /content-control/keyboard-shortcuts/
+permalink: /keyboard-shortcuts/
 description: Complete keyboard shortcut reference for Windows, Microsoft Word, Excel and PowerPoint. Covers shortcuts for saving, copying, pasting, formatting, find and replace, zoom, and more.
 asset_id: ctrlall-keyboard-shortcuts-v1
 date: 2025-10-26
@@ -20,7 +20,7 @@ tags:
   - keyboard shortcuts
   - keys
   - buttons
-active: content-control
+active: keyboard-shortcuts
 ---
 
 <body data-no-difficulty="true">
@@ -84,7 +84,7 @@ active: content-control
 
 <p>Try testing your knowledge with our Keyboard shortcuts quiz:</p>
 <div class="keyboard-shortcuts-quiz-button-area">
-    <a href="/content-control/keyboard-shortcuts-quiz/" class="start-button">Keyboard shortcuts quiz</a>
+    <a href="/keyboard-shortcuts-quiz/" class="start-button">Keyboard shortcuts quiz</a>
 </div>
 <br>
 
@@ -155,7 +155,7 @@ active: content-control
       <td>Ctrl + Shift + Esc</td>
       <td>Open Task Manager</td>
     </tr>
-    <tr class="tooltip-row" data-gif="{{ '/assets/images/keyboard shortcuts/Win+W.png' | url }}">
+    <tr class="tooltip-row" data-gif="{{ '/assets/images/keyboard shortcuts/Ctrl+W.png' | url }}">
       <td>Ctrl + W</td>
       <td>Close the current window/tab/document</td>
     </tr>
