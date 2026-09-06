@@ -83,7 +83,7 @@ relatedArticles:
     <p>If you add, remove, move or replace content then this will be shown as a change. The example above shows how text is affected but keep in mind track changes can also include images, tables and objects.</p>
     
   <h2>Why use track changes?</h2>
-    <p>Track changes are normally used to collaborate with others when editing a document together or when seeking approval. Word allows multiple users to leave edits on the same document. Different user edit appear in a different colours:</p>
+    <p>Track changes are normally used to collaborate with others when editing a document together or when seeking approval. Word allows multiple users to leave edits on the same document. Different users' edits appear in a different colours:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Multiple user edits.png' | url }}" alt="Example multiple user edits to text in Word" style="max-width:662px; width:100%; height:auto; vertical-align:middle"></p>
     <p>Hovering over an edit will show a tooltip of what change has been made, the user who made it and a timestamp:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Multiple user edit hover tooltip.png' | url }}" alt="Example multiple user edits to text in Word" style="max-width:399px; width:100%; height:auto; vertical-align:middle"></p>
@@ -98,7 +98,7 @@ relatedArticles:
     <p>When content is replaced Word treats this as a deletion and addition:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Example replace deletion and addition.png' | url }}" alt="Example track changes replacing text in Word" style="max-width:743px; width:100%; height:auto; vertical-align:middle"></p>
   <h4>Moving content</h4>
-    <p>When text is moved its original position is struckthrough and  double-lined where it is moved to, this is coloured differently to illustrate that the content hasn’t changed, it’s just moved location:</p>
+    <p>When text is moved its original position is struck through and underlined double where it is moved to, this is coloured differently to illustrate that the content hasn’t changed, it’s just moved location:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Example moved text.png' | url }}" alt="Example track changes moved text in Word" style="max-width:743px; width:100%; height:auto; vertical-align:middle"></p>
     
   </section>
@@ -117,7 +117,7 @@ relatedArticles:
   <li><a href="#pdf">Saving as a PDF with track changes</a></li>
   </ul>
   <h2 id="views">Views for track changes</h2>
-    <p>Word gives you 4 view displays for review options which are found on the ribbon drop down under :
+    <p>Word gives you 4 view displays for review options which are found on the ribbon via <strong>Review > Markup > top right drop down menu</strong>:
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Views.png' | url }}" alt="Review display view options drop down on ribbon in Word" style="max-width:277px; width:100%; height:auto; vertical-align:middle"></p>
     <ul>
       <li><strong>Original</strong> – Previews the document as if all changes were rejected, without rejecting them.</li>
@@ -155,7 +155,7 @@ relatedArticles:
       <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Reject options.png' | url }}" alt="Example track changes reject options in Word" style="max-width:386px; width:100%; height:auto; vertical-align:middle"></p>
     </div>
     <h2 id="lock-tracking">Lock tracking</h2>
-    <p>You can also lock track changes to stop other users turning it off which would let them then make changes without visiblity or approval.</p>
+    <p>You can also lock track changes to stop other users turning it off which would let them then make changes without visibility or approval.</p>
     <p>To lock track changes go to <strong>Track Changes > Lock Tracking</strong>:</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock Tracking.png' | url }}" alt="Lock tracking option in Word" style="max-width:245px; width:100%; height:auto; vertical-align:middle"></p>
     <p>You'll then be prompted to set up a password, enter this in twice. There is a note to say it's not a security feature which is true, it doesn't stop any one accessing or editing the document. Then click <strong>OK</strong>.</p>
@@ -171,7 +171,7 @@ relatedArticles:
     <p><u>Note</u>: If a user enters the wrong password they will be met with this message and track changes will remain locked.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Lock tracking 5.png' | url }}" alt="Incorrect password message when attempting to unlock track changes in Word" style="max-width:369px; width:100%; height:auto; vertical-align:middle"></p>
     <h2 id="markup">Deciding what markup should appear</h2>
-    <p>You can also decide what markup appears annd how.</p>
+    <p>You can also decide what markup appears and how.</p>
     <p>On the ribbon click the <strong>Show Markup</strong> drop down menu and you'll be presented with several options including ones under <strong>Balloons</strong>. Balloons are the little margin boxes that show tracked changes in a pane off to the side of the page when they're enabled.</p>
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Balloons menu.png' | url }}" alt="Show markup Balloons menu for track changes viewing options in Word" style="max-width:514px; width:100%; height:auto; vertical-align:middle"></p>
     <p>You can determine what appears here or whether the pane does at all. Hover over the red dots to see what each option does.</p>
@@ -189,7 +189,7 @@ relatedArticles:
     <p><img class="thumbnail border left" src="{{ '/assets/images/word/Track changes/Show markup users.gif' | url }}" alt="Show markup Specific people menu for deciding whose track changes should appear in Word" style="max-width:450px; width:100%; height:auto; vertical-align:middle"></p>
     <h2 id="pdf">Saving as a PDF with track changes</h2>
     <p>When using track changes there's a trap most people fall into when saving the document as a PDF as the comments and track changes show up in the PDF by default.</p>
-    <p>As you can see it's quite messy. Unless you have old school editors who insist on annotating on paper (a position that need to be challenged) you won't want this. To stop track changes and comments appearing PDFs you need to change settings before saving as a PDF. See this article for how to prevent this: <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a>.</p>
+    <p>As you can see it's quite messy. Unless you have editors who insist on annotating on paper you won't want this. To stop track changes and comments appearing PDFs you need to change settings before saving as a PDF. See this article for how to prevent this: <a href="/word/save-as-pdf/?difficulty=intermediate#pdf-comments-track-changes">Comments/track changes showing in the PDF</a>.</p>
     <img class="thumbnail border" src="{{ '/assets/images/word/Save as PDF/Example track changes in PDF.png' | url }}" alt="PDF with comments" style="max-width:792px; width:100%; height:auto; vertical-align:middle">
     
   

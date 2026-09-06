@@ -88,7 +88,7 @@ relatedArticles:
   <p>Comments are normally used to collaborate with others when editing a document together or when seeking approval. Comments can be added to text and other content for others to see, reply to, and mark as 'resolved'. They let reviewers raise questions or concerns without changing the text; the author/editor editing the document directly can then decide how to edit the actual content.</p>
   <img class="thumbnail border" src="{{ '/assets/images/word/Comments/New comment 3.png' | url }}" alt="New comments option via right click context menu in Word" style="max-width:766px; width:100%; height:auto; vertical-align:middle">
   
-  <p>They're sometimes used alongside <a href="/word/track-changes">Track Changes</a> which is another reviewing tool in Word for collaborating with others to make propsed edits to content. This article focuses on comment themselves.</p>
+  <p>They're sometimes used alongside <a href="/word/track-changes">Track Changes</a> which is another reviewing tool in Word for collaborating with others to make proposed edits to content. This article focuses on comment themselves.</p>
 
   <h2>How to add a comment</h2>
   <p>Comments can be found under the Review tab on the ribbon. Select the text or content you want to leave a comment on and click <strong>New comment</strong>:</p>
@@ -98,7 +98,7 @@ relatedArticles:
   <p>A comment box will appear on the right of the page with a text box to enter in a comment.</p> 
   <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/New comment 2.png' | url }}" alt="New comment added and editing in Word" style="max-width:755px; width:100%; height:auto; vertical-align:middle">
   <p>When finished typing click the <strong>arrow button</strong> and the comment will be placed like this (or if you don't need to place a comment click the &#10006; to cancel).</p>
-  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/New comment 3.png' | url }}" alt="New added comment in Word style="max-width:766px; width:100%; height:auto; vertical-align:middle">
+  <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/New comment 3.png' | url }}" alt="New added comment in Word" style=max-width:766px; width:100%; height:auto; vertical-align:middle">
   
   <h2>How to delete a comment</h2>
   <p>To delete a comment, click on the <strong>ellipsis (...)</strong> then from the drop down menu select <strong>Delete thread</strong>.</p>
@@ -132,14 +132,14 @@ relatedArticles:
     <li><a href="#delete">How to delete a comment</a></li>
     <li><a href="#resolve">How to resolve a comment</a></li>
     <li><a href="#reply">Replying to a comment</a></li>
-    <li><a href="#tagging-and-assigning">Tagging and assigning in comments</a>
+    <li><a href="#tagging-and-assigning">Tagging and assigning in comments</a></li>
     <li><a href="#pdf">Saving as a PDF with comments</a></li>
   </ul>
   <br>
   <p>Comments are a useful tool to attach notes, questions, or feedback to content without editing the document itself. Each comment has its author and timestamp displayed. Commenting is typically used in collaborative editing, reviews or approval workflows. They can be edited, replied to with threaded discussions, and marked as 'resolved'.</p>
   <img class="thumbnail border" src="{{ '/assets/images/word/Comments/New comment 3.png' | url }}" alt="New comments option via right click context menu in Word" style="max-width:766px; width:100%; height:auto; vertical-align:middle">
 
-  <p>They can be used alongside <a href="/word/track-changes">Track Changes</a>, another reviewing tool for multiple users to make propsed edits to content. This article focuses on comment themselves.</p>
+  <p>They can be used alongside <a href="/word/track-changes">Track Changes</a>, another reviewing tool for multiple users to make proposed edits to content. This article focuses on comment themselves.</p>
   
   <h2 id="add">How to add a comment</h2>
   <p>While there is an option on the ribbon under Review, it's quicker to use the <span class="glossary-hover" data-term="right-click-menu">right click menu</span>. First select the content you want to add a comment to, then right click and choose <strong>New comment</strong> from the right click menu.</p> 
@@ -154,7 +154,7 @@ relatedArticles:
   <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Delete thread.png' | url }}" alt="Delete comment thread in Word" style="max-width:423px; width:100%; height:auto; vertical-align:middle">
 
   <h2 id="resolve">How to resolve a comment</h2>
-  <p>The thumbs up on the comment box lets you marked the comment as resolved with a thumbs up icon like this below. Some users also use this function to show they agree with a comment.</p>
+  <p>The thumbs up on the comment box lets you mark the comment as resolved with a thumbs up icon like this below. Some users also use this function to show they agree with a comment.</p>
   <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comments resolved.png' | url }}" alt="Approved comment in Word" style="max-width:303px; width:100%; height:auto; vertical-align:middle">
 
   <h2 id="reply">Replying to a comment</h2>
@@ -170,7 +170,7 @@ relatedArticles:
   <p>There are two views for comments:</p>
   <ul>
     <li><strong>Contextual</strong>: the default view as shown above with a box to the right of the page where it appears in the document.</li>
-    <li><strong>List</strong>: a pane that shows all the document's comments in order. This is ueful to quickly find comments in a long document or when many comments have been added.</li>
+    <li><strong>List</strong>: a pane that shows all the document's comments in order. This is useful to quickly find comments in a long document or when many comments have been added.</li>
   </ul>
 
   <p><em><strong>Contextual view</strong></em></p>
@@ -185,8 +185,8 @@ relatedArticles:
   <h2 id="tagging-and-assigning">Tagging and assigning in comments</h2>
   <p>If your Word document is stored on SharePoint or OneDrive, you can <strong>tag</strong> others in a comment. You can also choose to <strong>assign</strong> a comment to someone as a task to complete.</p>
   <p><u>Note</u>: Both tagging and assigning features require the document to be stored on SharePoint or OneDrive or these features won’t appear. SharePoint/OneDrive is what powers the modern comments/co-authoring layer in Word, Excel, and PowerPoint.</p>
-  <h2 id="tagging">@mention (tagging)</h2>
-  <p>Tagging a user in a comment sends a notification (email or Teams, depending on setup) to let that person know they were mentioned in a comment with a link to the document. It’s useful to draw attention to content, ask for input and confer ideas, or ask advice. </p>
+  <h3 id="tagging">@mention (tagging)</h3>
+  <p>Tagging a user in a comment sends a notification (email or Teams, depending on setup) to let that person know they were mentioned in a comment with a link to the document. It’s useful to draw attention to content, ask for input/advice or share ideas. </p>
   <p>There are several reasons you may want to tag someone in a comment thread related to a section of the document, for example:</p>
   <ul>
     <li>Pulling in a subject matter expert</li>
@@ -204,7 +204,7 @@ relatedArticles:
   <p>Press the <strong>arrow</strong> and the tag will be placed with the message. The tagged person will now receive an automated email titled ‘<em>[X] mentioned you in “[document]”</em>’ with a link to the document.</p>
   <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Comment tag 3.png' | url }}" alt="PDF with comments" style="max-width:429px; width:100%; height:auto; vertical-align:middle">
 
-  <h2 id="assigning">Assigning tasks in a comment thread</h2>
+  <h3 id="assigning">Assigning tasks in a comment thread</h3>
   <p>Once you’ve tagged someone, an <strong>Assign to</strong> checkbox appears below the text box where you can assign the comment as an actionable task for the tagged person to complete.</p>
   <img class="thumbnail border left" src="{{ '/assets/images/word/Comments/Assign to 1.png' | url }}" alt="PDF with comments" style="max-width:428px; width:100%; height:auto; vertical-align:middle">
   <p>When you check the box, a small ‘Assigned to [X]’ radio button appears at the top of the comment to show it's an actionable item rather than a note. Press the <strong>arrow</strong> to execute it and it will look like this:</p>
