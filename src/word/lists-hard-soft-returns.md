@@ -60,7 +60,7 @@ active: word
 
 <p>But what happens when you do this in a numbered list or bullet list? A hard return will create a new bullet/number while a soft return will add a new line under the same bullet/number. In the case of the latter, soft returns can sometimes be useful to apply to a list if you have content for a point or step that benefits from being on a separate line.</p>
 
-<p>Here's an example of a list with an extra warning on step 6. I'ts been italicised but it still doesn't really stand out very well.</p>
+<p>Here's an example of a list with an extra warning on step 6. It's been italicised but it still doesn't really stand out very well.</p>
 
 <img class="thumbnail border" src="{{ '/assets/images/word/Lists soft and hard returns/Soft-Hard return in list example.png' | url }}" alt="Soft-Hard return in list example in Word" style="max-width:550px; width:100%; height:auto; vertical-align:middle">
 
