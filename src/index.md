@@ -124,7 +124,7 @@ active: index
       <a class="tutorial-card" href="/word/fixing-irregular-spacing/">
         <img src="/assets/images/Index/Featured/Fixing irregular spacing.png" alt="Fixing irregular spacing thumbnail">
         <h3>Fixing irregular spacing</h3>
-        <p>Ever pasted something into Word and the line spacing goes beserk? Here's how to fix it, plus tricks to manipulate punctuation and hyphens in a document.</p>
+        <p>Ever pasted something into Word and the line spacing goes berserk? Here's how to fix it, plus tricks to manipulate punctuation and hyphens in a document.</p>
       </a>
       <a class="tutorial-card" href="/word/indents/">
         <img src="/assets/images/Index/Featured/Indents.png" alt="Indents thumbnail">
@@ -194,7 +194,7 @@ active: index
     <h3>Troubleshooting</h3>
     <ul>
       <li><a href="/word/lists-fixing-number-lists">Fixing number lists</a></li>
-      <li><a href="/word/lists-hard-soft-returns">Soft & hard returns in lists</a></li>
+      <li><a href="/word/lists-hard-soft-returns">Hard and soft returns in lists</a></li>
       <li><a href="/word/tables-fixing-table-image-problems">Fixing table image problems</a></li>
       <li><a href="/word/tables-fixing-tables-extending-offscreen">Fixing tables extending offscreen</a></li>
       <li><a href="/word/tables-fixing-tables-over-pages">Fixing tables over pages</a></li>
@@ -339,11 +339,11 @@ active: index
   <h2>What You'll Find Here</h2>
    <ul>
     <li>
-      <strong><p>Article guides & tutorials</strong>: Step-by-step walkthroughs for real-world digital tasks.</p>
+      <p><strong>Article guides & tutorials</strong>: Step-by-step walkthroughs for real-world digital tasks.</p>
       <p><img class="thumbnail border" src="{{ '/assets/images/Index/Example article.png' | url }}"  alt="" style="max-width:700px; width:100%; height:auto; vertical-align:middle"></p>
     </li>
-          <li>
-     <p><strong>Animated and interactive examples</strong>: Topic articles are packed with visual examples, animated GIF demonstrations, tooltip signposting and interactivites so you can understand and replicate features yourself.</p>
+    <li>
+     <p><strong>Animated and interactive examples</strong>: Topic articles are packed with visual examples, animated GIF demonstrations, tooltip signposting and interactivities so you can understand and replicate features yourself.</p>
       <p><img class="thumbnail border" src="{{ '/assets/images/word/Images/Layout options move with text.gif' | url }}"  alt="" style="max-width:550px; width:100%; height:auto; vertical-align:middle"></p>  
      </li>
      <li><strong>Expandable images</strong>: Screenshots and diagrams can be enlarged with a click, so you never have to squint or guess what you’re looking at. Try clicking on any.</li>
@@ -377,9 +377,8 @@ active: index
 <section class="section-light">
   <h2>What's new?</h2>
   <ul>
-    <li>18 Aug 2026 - Review & Collaboration section added with new articles on comments and track changes.</li>
+    <li>18 Aug 2026 - New Word <em>Review & Collaboration</em> section added with new articles on comments, track changes and reviewing spelling and grammar with the Editor tool.</li>
     <li>Been a bit busy lately, had a baby.</li>
-    <li>03 Jul 2026 - updated 'Where to now?' sections at the end of all articles.</li>
     <li>16 Jun 2026 - New exercises - <a href="/word/find#exercise">Find & Find and replace exercises</a> | <a href="/word/fixing-irregular-spacing#exercise">Fixing irregular spacing exercises</a></li>
     <li>26 May 2026 - The <a href="/glossary/">Glossary</a> is now searchable - the page now has its own search bar  you can use to query terms.</li>
     <li>12 May 2026 - More quizzes added - <a href="/word/altering-images-and-objects#ctrl-quiz">Altering images and objects quiz</a> | <a href="/word/tables#ctrl-quiz">Tables quiz</a></li>
